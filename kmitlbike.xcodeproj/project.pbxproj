@@ -3,18 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC15F0A61DB4719D005A5779 /* CommonGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F0A51DB4719D005A5779 /* CommonGlobal.swift */; };
+		AC15F0A91DB47538005A5779 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F0A81DB47538005A5779 /* UserData.swift */; };
+		AC15F0AB1DB48144005A5779 /* LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F0AA1DB48144005A5779 /* LoginDelegate.swift */; };
+		AC15F0AD1DB5CA48005A5779 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC15F0AC1DB5CA48005A5779 /* Signup.storyboard */; };
+		AC6B88A91DB1FBFE0037F189 /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88A81DB1FBFE0037F189 /* BaseViewModelProtocol.swift */; };
+		AC6B88AD1DB1FC800037F189 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88AC1DB1FC800037F189 /* BaseViewController.swift */; };
+		AC6B88B11DB1FDF40037F189 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88B01DB1FDF40037F189 /* UIColorExtension.swift */; };
+		AC6B88B31DB1FF440037F189 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88B21DB1FF440037F189 /* BaseViewModel.swift */; };
+		AC6B88B71DB35ACF0037F189 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88B61DB35ACF0037F189 /* RoundButton.swift */; };
+		AC6B88B91DB35C210037F189 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88B81DB35C210037F189 /* LoginViewController.swift */; };
+		AC6B88C41DB35CF30037F189 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88C31DB35CF30037F189 /* SignUpViewController.swift */; };
+		AC6B88C61DB35E170037F189 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88C51DB35E170037F189 /* LoginViewModel.swift */; };
+		AC6B88CB1DB365C40037F189 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88CA1DB365C40037F189 /* BaseResponse.swift */; };
+		AC6B88E41DB373990037F189 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88E31DB373990037F189 /* LoginResponse.swift */; };
+		AC6B88E91DB38DDC0037F189 /* CommonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88E81DB38DDC0037F189 /* CommonRouter.swift */; };
 		AC9068DF1DB1D235009BC898 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9068DE1DB1D235009BC898 /* AppDelegate.swift */; };
 		AC9068E11DB1D235009BC898 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9068E01DB1D235009BC898 /* ViewController.swift */; };
 		AC9068E41DB1D235009BC898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9068E21DB1D235009BC898 /* Main.storyboard */; };
 		AC9068E61DB1D235009BC898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9068E51DB1D235009BC898 /* Assets.xcassets */; };
 		AC9068E91DB1D235009BC898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9068E71DB1D235009BC898 /* LaunchScreen.storyboard */; };
+		AC9068F21DB1D47A009BC898 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9068F11DB1D47A009BC898 /* Login.storyboard */; };
+		DEA3E90B88BB7F5E5CCD0A95 /* Pods_kmitlbike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDC6F4C19EBAFA9028A4944 /* Pods_kmitlbike.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CDC6F4C19EBAFA9028A4944 /* Pods_kmitlbike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kmitlbike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FBB5C3F714D66AD13AA384 /* Pods-kmitlbike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmitlbike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kmitlbike/Pods-kmitlbike.debug.xcconfig"; sourceTree = "<group>"; };
+		AC15F0A51DB4719D005A5779 /* CommonGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonGlobal.swift; path = Common/Model/CommonGlobal.swift; sourceTree = "<group>"; };
+		AC15F0A81DB47538005A5779 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserData.swift; path = Common/Model/UserData.swift; sourceTree = "<group>"; };
+		AC15F0AA1DB48144005A5779 /* LoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginDelegate.swift; path = Login/Classes/Login/Protocol/LoginDelegate.swift; sourceTree = "<group>"; };
+		AC15F0AC1DB5CA48005A5779 /* Signup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Signup.storyboard; path = "Login/Login-Resources/Storyboard/Signup.storyboard"; sourceTree = "<group>"; };
+		AC6B88A81DB1FBFE0037F189 /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewModelProtocol.swift; path = Common/Protocol/BaseViewModelProtocol.swift; sourceTree = "<group>"; };
+		AC6B88AC1DB1FC800037F189 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Common/ViewController/BaseViewController.swift; sourceTree = "<group>"; };
+		AC6B88B01DB1FDF40037F189 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Common/Extension/UIColorExtension/UIColorExtension.swift; sourceTree = "<group>"; };
+		AC6B88B21DB1FF440037F189 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewModel.swift; path = Common/ViewModel/BaseViewModel.swift; sourceTree = "<group>"; };
+		AC6B88B61DB35ACF0037F189 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundButton.swift; path = Common/View/Button/RoundButton.swift; sourceTree = "<group>"; };
+		AC6B88B81DB35C210037F189 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Login/Classes/Login/ViewController/LoginViewController.swift; sourceTree = "<group>"; };
+		AC6B88C31DB35CF30037F189 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = Login/Classes/Signup/ViewController/SignUpViewController.swift; sourceTree = "<group>"; };
+		AC6B88C51DB35E170037F189 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = Login/Classes/Login/ViewModel/LoginViewModel.swift; sourceTree = "<group>"; };
+		AC6B88CA1DB365C40037F189 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseResponse.swift; path = Common/Model/BaseResponse.swift; sourceTree = "<group>"; };
+		AC6B88E31DB373990037F189 /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginResponse.swift; path = Login/Classes/Login/Model/LoginResponse.swift; sourceTree = "<group>"; };
+		AC6B88E81DB38DDC0037F189 /* CommonRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonRouter.swift; path = Login/Classes/Router/CommonRouter.swift; sourceTree = "<group>"; };
 		AC9068DB1DB1D235009BC898 /* kmitlbike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kmitlbike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9068DE1DB1D235009BC898 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9068E01DB1D235009BC898 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +56,8 @@
 		AC9068E51DB1D235009BC898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9068E81DB1D235009BC898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9068EA1DB1D235009BC898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC9068F11DB1D47A009BC898 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = "Login/Login-Resources/Storyboard/Login.storyboard"; sourceTree = "<group>"; };
+		BBA16D7B7E6747D8E4AF3137 /* Pods-kmitlbike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmitlbike.release.xcconfig"; path = "Pods/Target Support Files/Pods-kmitlbike/Pods-kmitlbike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +65,208 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA3E90B88BB7F5E5CCD0A95 /* Pods_kmitlbike.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A051EE3799693092847EC5E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CDC6F4C19EBAFA9028A4944 /* Pods_kmitlbike.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC15F0A71DB471D2005A5779 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88E81DB38DDC0037F189 /* CommonRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		AC6B88A11DB1F88B0037F189 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88E51DB38D690037F189 /* Router */,
+				AC6B88BE1DB35C8D0037F189 /* Signup */,
+				AC6B88A21DB1F8910037F189 /* Login */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		AC6B88A21DB1F8910037F189 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88E01DB3730F0037F189 /* Model */,
+				AC6B88A51DB1F8C70037F189 /* Protocol */,
+				AC6B88A41DB1F8BC0037F189 /* ViewModel */,
+				AC6B88A31DB1F8B00037F189 /* ViewController */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		AC6B88A31DB1F8B00037F189 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88B81DB35C210037F189 /* LoginViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AC6B88A41DB1F8BC0037F189 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88C51DB35E170037F189 /* LoginViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC6B88A51DB1F8C70037F189 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AC15F0AA1DB48144005A5779 /* LoginDelegate.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		AC6B88A61DB1FA620037F189 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AC15F0A71DB471D2005A5779 /* Router */,
+				AC6B88CE1DB3665F0037F189 /* Model */,
+				AC6B88B41DB35AA80037F189 /* View */,
+				AC6B88AE1DB1FDBC0037F189 /* Extension */,
+				AC6B88AB1DB1FC5E0037F189 /* ViewModel */,
+				AC6B88AA1DB1FC580037F189 /* ViewController */,
+				AC6B88A71DB1FA6C0037F189 /* Protocol */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		AC6B88A71DB1FA6C0037F189 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88A81DB1FBFE0037F189 /* BaseViewModelProtocol.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		AC6B88AA1DB1FC580037F189 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88AC1DB1FC800037F189 /* BaseViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AC6B88AB1DB1FC5E0037F189 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88B21DB1FF440037F189 /* BaseViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC6B88AE1DB1FDBC0037F189 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88AF1DB1FDC50037F189 /* UIColorExtension */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		AC6B88AF1DB1FDC50037F189 /* UIColorExtension */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88B01DB1FDF40037F189 /* UIColorExtension.swift */,
+			);
+			name = UIColorExtension;
+			sourceTree = "<group>";
+		};
+		AC6B88B41DB35AA80037F189 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88B51DB35AAE0037F189 /* Button */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AC6B88B51DB35AAE0037F189 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88B61DB35ACF0037F189 /* RoundButton.swift */,
+			);
+			name = Button;
+			sourceTree = "<group>";
+		};
+		AC6B88BE1DB35C8D0037F189 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88C21DB35CAD0037F189 /* ViewController */,
+				AC6B88C11DB35CA50037F189 /* ViewModel */,
+				AC6B88BF1DB35C990037F189 /* Protocol */,
+			);
+			name = Signup;
+			sourceTree = "<group>";
+		};
+		AC6B88BF1DB35C990037F189 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		AC6B88C11DB35CA50037F189 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC6B88C21DB35CAD0037F189 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88C31DB35CF30037F189 /* SignUpViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AC6B88CE1DB3665F0037F189 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88CA1DB365C40037F189 /* BaseResponse.swift */,
+				AC15F0A51DB4719D005A5779 /* CommonGlobal.swift */,
+				AC15F0A81DB47538005A5779 /* UserData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AC6B88E01DB3730F0037F189 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88E31DB373990037F189 /* LoginResponse.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AC6B88E51DB38D690037F189 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
 		AC9068D21DB1D235009BC898 = {
 			isa = PBXGroup;
 			children = (
 				AC9068DD1DB1D235009BC898 /* kmitlbike */,
 				AC9068DC1DB1D235009BC898 /* Products */,
+				BE40503DC881AC69E04A49EE /* Pods */,
+				A051EE3799693092847EC5E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +281,8 @@
 		AC9068DD1DB1D235009BC898 /* kmitlbike */ = {
 			isa = PBXGroup;
 			children = (
+				AC6B88A61DB1FA620037F189 /* Common */,
+				AC9068F01DB1D440009BC898 /* Login */,
 				AC9068DE1DB1D235009BC898 /* AppDelegate.swift */,
 				AC9068E01DB1D235009BC898 /* ViewController.swift */,
 				AC9068E21DB1D235009BC898 /* Main.storyboard */,
@@ -64,6 +293,41 @@
 			path = kmitlbike;
 			sourceTree = "<group>";
 		};
+		AC9068F01DB1D440009BC898 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AC6B88A11DB1F88B0037F189 /* Classes */,
+				AC9068F31DB1D481009BC898 /* Login-Resources */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		AC9068F31DB1D481009BC898 /* Login-Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC9068F41DB1D491009BC898 /* Storyboard */,
+			);
+			name = "Login-Resources";
+			sourceTree = "<group>";
+		};
+		AC9068F41DB1D491009BC898 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AC9068F11DB1D47A009BC898 /* Login.storyboard */,
+				AC15F0AC1DB5CA48005A5779 /* Signup.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		BE40503DC881AC69E04A49EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18FBB5C3F714D66AD13AA384 /* Pods-kmitlbike.debug.xcconfig */,
+				BBA16D7B7E6747D8E4AF3137 /* Pods-kmitlbike.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +335,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC9068ED1DB1D235009BC898 /* Build configuration list for PBXNativeTarget "kmitlbike" */;
 			buildPhases = (
+				B963F14C798B9762C9DB8AAE /* [CP] Check Pods Manifest.lock */,
 				AC9068D71DB1D235009BC898 /* Sources */,
 				AC9068D81DB1D235009BC898 /* Frameworks */,
 				AC9068D91DB1D235009BC898 /* Resources */,
+				67EF960D56A9ADCA033367EC /* [CP] Embed Pods Frameworks */,
+				F0D1CF4F6F6B4AEE548957C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -102,7 +369,7 @@
 				};
 			};
 			buildConfigurationList = AC9068D61DB1D235009BC898 /* Build configuration list for PBXProject "kmitlbike" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,20 +392,84 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9068E91DB1D235009BC898 /* LaunchScreen.storyboard in Resources */,
+				AC9068F21DB1D47A009BC898 /* Login.storyboard in Resources */,
 				AC9068E61DB1D235009BC898 /* Assets.xcassets in Resources */,
+				AC15F0AD1DB5CA48005A5779 /* Signup.storyboard in Resources */,
 				AC9068E41DB1D235009BC898 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67EF960D56A9ADCA033367EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kmitlbike/Pods-kmitlbike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B963F14C798B9762C9DB8AAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F0D1CF4F6F6B4AEE548957C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kmitlbike/Pods-kmitlbike-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC9068D71DB1D235009BC898 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC6B88A91DB1FBFE0037F189 /* BaseViewModelProtocol.swift in Sources */,
+				AC6B88AD1DB1FC800037F189 /* BaseViewController.swift in Sources */,
+				AC15F0AB1DB48144005A5779 /* LoginDelegate.swift in Sources */,
+				AC6B88B71DB35ACF0037F189 /* RoundButton.swift in Sources */,
+				AC15F0A91DB47538005A5779 /* UserData.swift in Sources */,
+				AC6B88CB1DB365C40037F189 /* BaseResponse.swift in Sources */,
+				AC6B88B11DB1FDF40037F189 /* UIColorExtension.swift in Sources */,
+				AC15F0A61DB4719D005A5779 /* CommonGlobal.swift in Sources */,
+				AC6B88B91DB35C210037F189 /* LoginViewController.swift in Sources */,
+				AC6B88B31DB1FF440037F189 /* BaseViewModel.swift in Sources */,
+				AC6B88C41DB35CF30037F189 /* SignUpViewController.swift in Sources */,
 				AC9068E11DB1D235009BC898 /* ViewController.swift in Sources */,
+				AC6B88C61DB35E170037F189 /* LoginViewModel.swift in Sources */,
 				AC9068DF1DB1D235009BC898 /* AppDelegate.swift in Sources */,
+				AC6B88E91DB38DDC0037F189 /* CommonRouter.swift in Sources */,
+				AC6B88E41DB373990037F189 /* LoginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,10 +590,12 @@
 		};
 		AC9068EE1DB1D235009BC898 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18FBB5C3F714D66AD13AA384 /* Pods-kmitlbike.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P2N373N3GP;
 				INFOPLIST_FILE = kmitlbike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kajornsak.kmitlbike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,10 +605,12 @@
 		};
 		AC9068EF1DB1D235009BC898 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBA16D7B7E6747D8E4AF3137 /* Pods-kmitlbike.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P2N373N3GP;
 				INFOPLIST_FILE = kmitlbike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kajornsak.kmitlbike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +637,7 @@
 				AC9068EF1DB1D235009BC898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
