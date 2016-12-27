@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class UserData :NSObject{
+public class UserData : NSObject{
     
     public static var sharedInstance = UserData()
     

@@ -242,6 +242,13 @@
                             <constraint firstItem="97R-3y-gIU" firstAttribute="leading" secondItem="wlN-aX-A9C" secondAttribute="leading" id="wkY-59-6OE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="xKM-Th-X3B" id="oX9-51-fLv"/>
+                        <outlet property="firstNameTextField" destination="KEQ-DA-1VI" id="Uay-52-QdL"/>
+                        <outlet property="genderSegmentedControl" destination="Kif-zl-KIv" id="JAI-Fu-4y0"/>
+                        <outlet property="lastNameTextField" destination="WLK-n5-aKz" id="jfa-lu-Pwt"/>
+                        <outlet property="mobileNumberTextField" destination="Rhn-ic-759" id="DxA-Jh-qiw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gmr-xH-kfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

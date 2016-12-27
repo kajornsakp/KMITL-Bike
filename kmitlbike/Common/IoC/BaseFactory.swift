@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import Swinject
+
+protocol BaseFactoryProtocol {
+    func setup()
+}
+
+class BaseFactory: NSObject, BaseFactoryProtocol {
+    let container = Container()
+    
+    func setup() {
+    }
+    
+    func resolve<T>(service: T.Type) -> T {
+        return container.resolve(service)!
+    }
+    
+    func resolve<T>(service: T.Type, name: String?) -> T {
+        return container.resolve(service, name: name)!
+    }
+}

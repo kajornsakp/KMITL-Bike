@@ -10,7 +10,6 @@
 		AC15F0A61DB4719D005A5779 /* CommonGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F0A51DB4719D005A5779 /* CommonGlobal.swift */; };
 		AC15F0A91DB47538005A5779 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F0A81DB47538005A5779 /* UserData.swift */; };
 		AC15F0AB1DB48144005A5779 /* LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F0AA1DB48144005A5779 /* LoginDelegate.swift */; };
-		AC15F0AD1DB5CA48005A5779 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC15F0AC1DB5CA48005A5779 /* Signup.storyboard */; };
 		AC6B88A91DB1FBFE0037F189 /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88A81DB1FBFE0037F189 /* BaseViewModelProtocol.swift */; };
 		AC6B88AD1DB1FC800037F189 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88AC1DB1FC800037F189 /* BaseViewController.swift */; };
 		AC6B88B11DB1FDF40037F189 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88B01DB1FDF40037F189 /* UIColorExtension.swift */; };
@@ -27,7 +26,15 @@
 		AC9068E41DB1D235009BC898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9068E21DB1D235009BC898 /* Main.storyboard */; };
 		AC9068E61DB1D235009BC898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9068E51DB1D235009BC898 /* Assets.xcassets */; };
 		AC9068E91DB1D235009BC898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9068E71DB1D235009BC898 /* LaunchScreen.storyboard */; };
-		AC9068F21DB1D47A009BC898 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9068F11DB1D47A009BC898 /* Login.storyboard */; };
+		ACD8A5A61DF1145000E989AA /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5A51DF1145000E989AA /* ViewControllerFactory.swift */; };
+		ACD8A5A81DF1147D00E989AA /* BaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5A71DF1147D00E989AA /* BaseFactory.swift */; };
+		ACD8A5AB1DF116B100E989AA /* NSObject+kmitlbike.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5AA1DF116B100E989AA /* NSObject+kmitlbike.swift */; };
+		ACD8A5AE1DF121F400E989AA /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD8A5AD1DF121F400E989AA /* Login.storyboard */; };
+		ACD8A5B01DF1220200E989AA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD8A5AF1DF1220200E989AA /* Home.storyboard */; };
+		ACD8A5B31DF12B9700E989AA /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5B21DF12B9700E989AA /* LoginForm.swift */; };
+		ACD8A5B81DF1303D00E989AA /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5B71DF1303D00E989AA /* SignupViewModel.swift */; };
+		ACD8A5BA1DF1306800E989AA /* SignupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5B91DF1306800E989AA /* SignupDelegate.swift */; };
+		ACEE800D1E101DBE007C6FC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEE800C1E101DBE007C6FC8 /* HomeViewController.swift */; };
 		DEA3E90B88BB7F5E5CCD0A95 /* Pods_kmitlbike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDC6F4C19EBAFA9028A4944 /* Pods_kmitlbike.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +44,6 @@
 		AC15F0A51DB4719D005A5779 /* CommonGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonGlobal.swift; path = Common/Model/CommonGlobal.swift; sourceTree = "<group>"; };
 		AC15F0A81DB47538005A5779 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserData.swift; path = Common/Model/UserData.swift; sourceTree = "<group>"; };
 		AC15F0AA1DB48144005A5779 /* LoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginDelegate.swift; path = Login/Classes/Login/Protocol/LoginDelegate.swift; sourceTree = "<group>"; };
-		AC15F0AC1DB5CA48005A5779 /* Signup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Signup.storyboard; path = "Login/Login-Resources/Storyboard/Signup.storyboard"; sourceTree = "<group>"; };
 		AC6B88A81DB1FBFE0037F189 /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewModelProtocol.swift; path = Common/Protocol/BaseViewModelProtocol.swift; sourceTree = "<group>"; };
 		AC6B88AC1DB1FC800037F189 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Common/ViewController/BaseViewController.swift; sourceTree = "<group>"; };
 		AC6B88B01DB1FDF40037F189 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Common/Extension/UIColorExtension/UIColorExtension.swift; sourceTree = "<group>"; };
@@ -56,7 +62,15 @@
 		AC9068E51DB1D235009BC898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9068E81DB1D235009BC898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9068EA1DB1D235009BC898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC9068F11DB1D47A009BC898 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = "Login/Login-Resources/Storyboard/Login.storyboard"; sourceTree = "<group>"; };
+		ACD8A5A51DF1145000E989AA /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerFactory.swift; path = Common/IoC/ViewControllerFactory.swift; sourceTree = "<group>"; };
+		ACD8A5A71DF1147D00E989AA /* BaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseFactory.swift; path = Common/IoC/BaseFactory.swift; sourceTree = "<group>"; };
+		ACD8A5AA1DF116B100E989AA /* NSObject+kmitlbike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSObject+kmitlbike.swift"; path = "Common/Extension/NSObject/NSObject+kmitlbike.swift"; sourceTree = "<group>"; };
+		ACD8A5AD1DF121F400E989AA /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboard/Login.storyboard; sourceTree = "<group>"; };
+		ACD8A5AF1DF1220200E989AA /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Storyboard/Home.storyboard; sourceTree = "<group>"; };
+		ACD8A5B21DF12B9700E989AA /* LoginForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginForm.swift; path = Common/Form/LoginForm.swift; sourceTree = "<group>"; };
+		ACD8A5B71DF1303D00E989AA /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupViewModel.swift; path = Login/Classes/Signup/ViewModel/SignupViewModel.swift; sourceTree = "<group>"; };
+		ACD8A5B91DF1306800E989AA /* SignupDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupDelegate.swift; path = Login/Classes/Signup/Protocol/SignupDelegate.swift; sourceTree = "<group>"; };
+		ACEE800C1E101DBE007C6FC8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Home/Classes/ViewController/HomeViewController.swift; sourceTree = "<group>"; };
 		BBA16D7B7E6747D8E4AF3137 /* Pods-kmitlbike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmitlbike.release.xcconfig"; path = "Pods/Target Support Files/Pods-kmitlbike/Pods-kmitlbike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +150,8 @@
 		AC6B88A61DB1FA620037F189 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				ACD8A5A41DF1142D00E989AA /* IoC */,
+				ACD8A5B11DF12B7600E989AA /* Form */,
 				AC15F0A71DB471D2005A5779 /* Router */,
 				AC6B88CE1DB3665F0037F189 /* Model */,
 				AC6B88B41DB35AA80037F189 /* View */,
@@ -174,6 +190,7 @@
 		AC6B88AE1DB1FDBC0037F189 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				ACD8A5A91DF1168B00E989AA /* NSObject */,
 				AC6B88AF1DB1FDC50037F189 /* UIColorExtension */,
 			);
 			name = Extension;
@@ -216,6 +233,7 @@
 		AC6B88BF1DB35C990037F189 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				ACD8A5B91DF1306800E989AA /* SignupDelegate.swift */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -223,6 +241,7 @@
 		AC6B88C11DB35CA50037F189 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ACD8A5B71DF1303D00E989AA /* SignupViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -281,14 +300,14 @@
 		AC9068DD1DB1D235009BC898 /* kmitlbike */ = {
 			isa = PBXGroup;
 			children = (
-				AC6B88A61DB1FA620037F189 /* Common */,
-				AC9068F01DB1D440009BC898 /* Login */,
+				AC9068EA1DB1D235009BC898 /* Info.plist */,
 				AC9068DE1DB1D235009BC898 /* AppDelegate.swift */,
 				AC9068E01DB1D235009BC898 /* ViewController.swift */,
-				AC9068E21DB1D235009BC898 /* Main.storyboard */,
 				AC9068E51DB1D235009BC898 /* Assets.xcassets */,
-				AC9068E71DB1D235009BC898 /* LaunchScreen.storyboard */,
-				AC9068EA1DB1D235009BC898 /* Info.plist */,
+				AC6B88A61DB1FA620037F189 /* Common */,
+				ACD8A5B61DF12D5200E989AA /* Home */,
+				AC9068F01DB1D440009BC898 /* Login */,
+				ACD8A5AC1DF121B300E989AA /* Storyboard */,
 			);
 			path = kmitlbike;
 			sourceTree = "<group>";
@@ -297,26 +316,52 @@
 			isa = PBXGroup;
 			children = (
 				AC6B88A11DB1F88B0037F189 /* Classes */,
-				AC9068F31DB1D481009BC898 /* Login-Resources */,
 			);
 			name = Login;
 			sourceTree = "<group>";
 		};
-		AC9068F31DB1D481009BC898 /* Login-Resources */ = {
+		ACD8A5A41DF1142D00E989AA /* IoC */ = {
 			isa = PBXGroup;
 			children = (
-				AC9068F41DB1D491009BC898 /* Storyboard */,
+				ACD8A5A51DF1145000E989AA /* ViewControllerFactory.swift */,
+				ACD8A5A71DF1147D00E989AA /* BaseFactory.swift */,
 			);
-			name = "Login-Resources";
+			name = IoC;
 			sourceTree = "<group>";
 		};
-		AC9068F41DB1D491009BC898 /* Storyboard */ = {
+		ACD8A5A91DF1168B00E989AA /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				AC9068F11DB1D47A009BC898 /* Login.storyboard */,
-				AC15F0AC1DB5CA48005A5779 /* Signup.storyboard */,
+				ACD8A5AA1DF116B100E989AA /* NSObject+kmitlbike.swift */,
+			);
+			name = NSObject;
+			sourceTree = "<group>";
+		};
+		ACD8A5AC1DF121B300E989AA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AC9068E71DB1D235009BC898 /* LaunchScreen.storyboard */,
+				AC9068E21DB1D235009BC898 /* Main.storyboard */,
+				ACD8A5AD1DF121F400E989AA /* Login.storyboard */,
+				ACD8A5AF1DF1220200E989AA /* Home.storyboard */,
 			);
 			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		ACD8A5B11DF12B7600E989AA /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				ACD8A5B21DF12B9700E989AA /* LoginForm.swift */,
+			);
+			name = Form;
+			sourceTree = "<group>";
+		};
+		ACD8A5B61DF12D5200E989AA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				ACEE800C1E101DBE007C6FC8 /* HomeViewController.swift */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		BE40503DC881AC69E04A49EE /* Pods */ = {
@@ -363,8 +408,7 @@
 				TargetAttributes = {
 					AC9068DA1DB1D235009BC898 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = P2N373N3GP;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -392,9 +436,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC9068E91DB1D235009BC898 /* LaunchScreen.storyboard in Resources */,
-				AC9068F21DB1D47A009BC898 /* Login.storyboard in Resources */,
+				ACD8A5B01DF1220200E989AA /* Home.storyboard in Resources */,
 				AC9068E61DB1D235009BC898 /* Assets.xcassets in Resources */,
-				AC15F0AD1DB5CA48005A5779 /* Signup.storyboard in Resources */,
+				ACD8A5AE1DF121F400E989AA /* Login.storyboard in Resources */,
 				AC9068E41DB1D235009BC898 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,18 +498,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACD8A5BA1DF1306800E989AA /* SignupDelegate.swift in Sources */,
 				AC6B88A91DB1FBFE0037F189 /* BaseViewModelProtocol.swift in Sources */,
+				ACD8A5A81DF1147D00E989AA /* BaseFactory.swift in Sources */,
 				AC6B88AD1DB1FC800037F189 /* BaseViewController.swift in Sources */,
+				ACD8A5B81DF1303D00E989AA /* SignupViewModel.swift in Sources */,
 				AC15F0AB1DB48144005A5779 /* LoginDelegate.swift in Sources */,
+				ACEE800D1E101DBE007C6FC8 /* HomeViewController.swift in Sources */,
 				AC6B88B71DB35ACF0037F189 /* RoundButton.swift in Sources */,
 				AC15F0A91DB47538005A5779 /* UserData.swift in Sources */,
 				AC6B88CB1DB365C40037F189 /* BaseResponse.swift in Sources */,
 				AC6B88B11DB1FDF40037F189 /* UIColorExtension.swift in Sources */,
+				ACD8A5A61DF1145000E989AA /* ViewControllerFactory.swift in Sources */,
 				AC15F0A61DB4719D005A5779 /* CommonGlobal.swift in Sources */,
+				ACD8A5AB1DF116B100E989AA /* NSObject+kmitlbike.swift in Sources */,
 				AC6B88B91DB35C210037F189 /* LoginViewController.swift in Sources */,
 				AC6B88B31DB1FF440037F189 /* BaseViewModel.swift in Sources */,
 				AC6B88C41DB35CF30037F189 /* SignUpViewController.swift in Sources */,
 				AC9068E11DB1D235009BC898 /* ViewController.swift in Sources */,
+				ACD8A5B31DF12B9700E989AA /* LoginForm.swift in Sources */,
 				AC6B88C61DB35E170037F189 /* LoginViewModel.swift in Sources */,
 				AC9068DF1DB1D235009BC898 /* AppDelegate.swift in Sources */,
 				AC6B88E91DB38DDC0037F189 /* CommonRouter.swift in Sources */,
@@ -541,6 +592,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -583,6 +635,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -593,12 +646,15 @@
 			baseConfigurationReference = 18FBB5C3F714D66AD13AA384 /* Pods-kmitlbike.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = P2N373N3GP;
 				INFOPLIST_FILE = kmitlbike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kajornsak.kmitlbike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6c5e32ff-7f4f-46c0-8f54-5fc1faf24b57";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: com.kajornsak.kmitlbike";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -608,12 +664,15 @@
 			baseConfigurationReference = BBA16D7B7E6747D8E4AF3137 /* Pods-kmitlbike.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = P2N373N3GP;
 				INFOPLIST_FILE = kmitlbike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kajornsak.kmitlbike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6c5e32ff-7f4f-46c0-8f54-5fc1faf24b57";
+				PROVISIONING_PROFILE_SPECIFIER = "XC: com.kajornsak.kmitlbike";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

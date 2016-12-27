@@ -10,21 +10,23 @@ import Foundation
 import Moya
 
 
-let KmitlBikeServiceEndpointClosure = { (target: KmitlBikeService) -> Endpoint<KmitlBikeService> in
-    let endpoint: Endpoint<KmitlBikeService> = Endpoint<KmitlBikeService>(URL: url(target),
-                                                      sampleResponseClosure: { .networkResponse(200, target.sampleData) },
-                                                      method: target.method,
-                                                      parameters: target.parameters)
-    return endpoint.endpointByAddingHTTPHeaderFields(target.headers())
+private func JSONResponseDataFormatter(_ data: Data) -> Data {
+    do {
+        let dataAsJSON = try JSONSerialization.jsonObject(with: data)
+        let prettyData =  try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
+        return prettyData
+    } catch {
+        return data // fallback to original data if it can't be serialized.
+    }
 }
 
 
-let provider = MoyaProvider<KmitlBikeService>(endpointClosure: KmitlBikeServiceEndpointClosure, stubClosure: MoyaProvider.NeverStub)
+let provider = MoyaProvider<KmitlBikeService>(plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
 
-let unitTestProvider = MoyaProvider<KmitlBikeService>(endpointClosure: KmitlBikeServiceEndpointClosure, stubClosure: MoyaProvider.DelayedStub(3))
+//let unitTestProvider = MoyaProvider<KmitlBikeService>(endpointClosure: KmitlBikeServiceEndpointClosure, stubClosure: MoyaProvider.DelayedStub(3))
 
 enum KmitlBikeService{
-    case login(username : String , password : String)
+    case login(form : LoginForm)
     case signup(username:String,first_name:String,last_name:String,gender:Int,email:String,phone_no:String)
     case borrow(bikeMac : String)
     case returnBike(totalTime : String,totalDistance : String,routeLine : [RoutePoint])
@@ -64,14 +66,14 @@ extension KmitlBikeService : TargetType{
     var method : Moya.Method{
         switch self {
         case .login,.signup,.borrow,.returnBike:
-            return .POST
+            return .post
         }
     }
     
     var parameters : [String : Any]?{
         switch self{
-        case .login(let username, let password):
-            return ["username":username,"password":password]
+        case .login(let form):
+            return form.toDict()
         case .signup(let username,let firstName, let lastName, let gender, let email,let phoneNum):
             return [
                 "username" :username,
@@ -96,7 +98,7 @@ extension KmitlBikeService : TargetType{
     
     var sampleData: Data{
         switch self {
-        case .login(_,_):
+        case .login(_):
             return "{\"result\": \"success\"}".data(using: String.Encoding.utf8)!
         case .signup(_,_,_,_,_,_):
             return "{\"result\": \"success\"}".data(using: String.Encoding.utf8)!

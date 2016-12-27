@@ -15,9 +15,18 @@ class SignUpViewController: BaseViewController {
             print(username)
         }
     }
+    
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    @IBOutlet weak var genderSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var mobileNumberTextField: UITextField!
+    var viewModel : SignupViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewModel = SignupViewModel(delegate : self)
+        viewModel.signupDelegate = self
         // Do any additional setup after loading the view.
     }
 
@@ -27,14 +36,24 @@ class SignUpViewController: BaseViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func onBackButtonClick(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
-    */
+    
+    @IBAction func onSignupButtonClick(_ sender: Any) {
+        
+    }
+    
+}
 
+extension SignUpViewController : SignupDelegate{
+    func onSignupSuccess() {
+        //
+    }
+    func onSignupError(message: String) {
+        //
+    }
+    func onInputError(message: String) {
+        //
+    }
 }

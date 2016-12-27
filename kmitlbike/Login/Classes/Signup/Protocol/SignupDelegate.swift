@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+protocol SignupDelegate : class {
+    func onSignupSuccess()
+    func onSignupError(message : String)
+    func onInputError(message : String)
+}

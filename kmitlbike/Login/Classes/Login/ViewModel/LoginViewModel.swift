@@ -14,24 +14,27 @@ class LoginViewModel: BaseViewModel {
     
     let provider = RxMoyaProvider<KmitlBikeService>()
     var loginResponse : LoginResponse!
-    var loginDelegate : LoginDelegate!
+    weak var loginDelegate : LoginDelegate!
     func login(withUsername username : String, withPassword password : String){
         if username.isEmpty || password.isEmpty{
             self.invalidInput()
             return
         }
         SVProgressHUD.show()
-        provider.request(.login(username: username, password: password))
+        let form = LoginForm()
+        form.username = username
+        form.password = password
+        provider.request(.login(form: form))
             .filterSuccessfulStatusCodes()
             .mapJSON()
-            .showErrorHUD()
             .subscribe{ event in
+                print("event",event)
                 switch event{
                 case .next(let element):
                     self.loginResponse = LoginResponse(withDictionary: element as AnyObject)
                     self.checkLogin()
                 case .error(let error):
-                    print("error")
+                    self.showError(error: error as! Moya.Error)
                 default:
                     break
                 }
@@ -42,38 +45,31 @@ class LoginViewModel: BaseViewModel {
     
     func checkLogin(){
         if self.loginResponse.result == "first_time" {
-            SVProgressHUD.dismiss()
             self.loginDelegate.onFirstTimeLogin()
         }
         else if self.loginResponse.result == "success"{
-            SVProgressHUD.showSuccess(withStatus: "Login Success")
             self.loginDelegate.onLoginSuccess()
         }
     }
     func invalidInput(){
-        SVProgressHUD.showError(withStatus: "Invalid input")
+        self.loginDelegate.onLoginError(message: "Invalid input")
+    }
+    
+    func showError(error : Moya.Error){
+        guard let errorResponse = error.response else{
+            self.loginDelegate.onLoginError(message: "Error")
+            return
+        }
+        switch errorResponse.statusCode {
+            case 400:
+                self.loginDelegate.onLoginError(message: "Failed to connect with the server")
+            case 406:
+                self.loginDelegate.onLoginError(message: "Invalid Username / Password")
+            default:
+                self.loginDelegate.onLoginError(message: "Error")
+        }
+        
+        
     }
 }
 
-extension Observable {
-    func showErrorHUD() -> Observable<Element> {
-        return self.doOn { event in
-            switch event {
-            case .error(let e):
-                // Unwrap underlying error
-                guard let error = e as? Moya.Error else { throw e }
-                guard case .statusCode(let response) = error else { throw e }
-                
-                // Check statusCode and handle desired errors
-                if response.statusCode == 400 {
-                    SVProgressHUD.showError(withStatus: "Failed to connect the server")
-                    
-                } else if response.statusCode == 406 {
-                    SVProgressHUD.showError(withStatus: "Invalid username / password")
-                }
-                
-            default: break
-            }
-        }
-    }
-}

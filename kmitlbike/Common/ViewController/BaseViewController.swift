@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MBProgressHUD
+
 class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -27,25 +27,7 @@ class BaseViewController: UIViewController {
 
 extension BaseViewController : BaseViewModelDelegate{
     
-    public func showLoading() {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        let loadingNotification = MBProgressHUD.showAdded(to: self.view, animated: true)
-        loadingNotification.mode = .indeterminate
-    }
-    
-    public func showLoading(withText text: String) {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
-        let loadingNotification = MBProgressHUD.showAdded(to: self.view, animated: true)
-        loadingNotification.mode = .indeterminate
-        loadingNotification.label.text = text
-    }
-    
-    public func hideLoading() {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = false
-        MBProgressHUD.hide(for: self.view, animated: true)
-    }
-    
-    
+        
     public func onDataDidLoad() {
         
     }

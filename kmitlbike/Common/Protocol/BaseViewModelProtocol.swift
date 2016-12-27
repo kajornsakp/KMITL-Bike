@@ -23,9 +23,5 @@ public protocol BaseViewModelDelegate : class{
     //func pushViewController(viewController: UIViewController, animated: Bool)
     
     // Loading
-    
-    func showLoading()
-    func showLoading(withText text: String)
-    func hideLoading()
-    
+ 
 }

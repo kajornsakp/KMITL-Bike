@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import SVProgressHUD
+
 class LoginViewController: BaseViewController {
 
     @IBOutlet weak var usernameTextField: UITextField!
-    
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var loginButton: RoundButton!
     
     var viewModel : LoginViewModel!
@@ -47,16 +47,18 @@ class LoginViewController: BaseViewController {
 
 extension LoginViewController : LoginDelegate{
     func onLoginSuccess() {
-        //
+        SVProgressHUD.dismiss()
+        SVProgressHUD.showSuccess(withStatus: "Login Success")
     }
     
     func onFirstTimeLogin() {
-        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
-        guard let vc = storyboard.instantiateInitialViewController() as? SignUpViewController else{
-            print("storyboard not found")
-            return
-        }
-        vc.username = "s7090002"
-        self.present(vc, animated: true, completion: nil)
+        SVProgressHUD.dismiss()
+        let vc = ViewControllerFactory.sharedInstance.resolve(service: SignUpViewController.self)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func onLoginError(message: String) {
+        SVProgressHUD.dismiss()
+        SVProgressHUD.showError(withStatus: message)
     }
 }
