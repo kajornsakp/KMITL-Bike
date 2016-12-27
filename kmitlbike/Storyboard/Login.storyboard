@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ify-ob-Awx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="hXe-NH-jAd">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="Tp3-Qb-EcM" customClass="LoginViewController" customModule="kmitlbike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="APg-46-YQh"/>
+                        <viewControllerLayoutGuide type="bottom" id="7hU-lQ-u3Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tXr-b3-OdR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kmitlbike_login_background" translatesAutoresizingMaskIntoConstraints="NO" id="NQK-y0-zv4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lTY-G6-47U">
+                                <rect key="frame" x="32" y="544" width="311" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfw-fD-R1v" customClass="RoundButton" customModule="kmitlbike" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="40"/>
+                                        <color key="backgroundColor" red="0.56078431370000004" green="0.74901960779999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="9Uo-JI-mLT"/>
+                                        </constraints>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonClick:" destination="Tp3-Qb-EcM" eventType="touchUpInside" id="nw8-s8-I68"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="MFo-jR-xIX">
+                                <rect key="frame" x="32" y="403" width="311" height="83"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IFT-TK-iUA">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="40"/>
+                                        <color key="tintColor" red="0.56078431370000004" green="0.75686274509999996" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="PEA-ok-Gup"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ALh-Cc-7cy">
+                                        <rect key="frame" x="0.0" y="43" width="311" height="40"/>
+                                        <color key="tintColor" red="0.56078431370000004" green="0.75686274509999996" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="qtA-gA-Lqv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ALh-Cc-7cy" firstAttribute="height" secondItem="IFT-TK-iUA" secondAttribute="height" id="Qsh-G6-GdX"/>
+                                    <constraint firstItem="ALh-Cc-7cy" firstAttribute="width" secondItem="IFT-TK-iUA" secondAttribute="width" id="nK1-Uw-z8b"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lTY-G6-47U" firstAttribute="leading" secondItem="tXr-b3-OdR" secondAttribute="leading" constant="32" id="2or-D5-CGW"/>
+                            <constraint firstItem="lTY-G6-47U" firstAttribute="top" secondItem="MFo-jR-xIX" secondAttribute="bottom" constant="58" id="5TP-Zx-Ex0"/>
+                            <constraint firstItem="lTY-G6-47U" firstAttribute="centerX" secondItem="tXr-b3-OdR" secondAttribute="centerX" id="5bQ-pc-rIY"/>
+                            <constraint firstItem="MFo-jR-xIX" firstAttribute="centerX" secondItem="tXr-b3-OdR" secondAttribute="centerX" id="BlS-Yk-Kxq"/>
+                            <constraint firstItem="7hU-lQ-u3Q" firstAttribute="top" secondItem="NQK-y0-zv4" secondAttribute="bottom" id="IK1-Tq-pdG"/>
+                            <constraint firstItem="MFo-jR-xIX" firstAttribute="leading" secondItem="tXr-b3-OdR" secondAttribute="leading" constant="32" id="LIZ-ah-Ugc"/>
+                            <constraint firstAttribute="trailing" secondItem="MFo-jR-xIX" secondAttribute="trailing" constant="32" id="Nbi-aN-wgx"/>
+                            <constraint firstAttribute="trailing" secondItem="NQK-y0-zv4" secondAttribute="trailing" id="REv-DJ-e5D"/>
+                            <constraint firstItem="NQK-y0-zv4" firstAttribute="leading" secondItem="tXr-b3-OdR" secondAttribute="leading" id="hHB-vd-Wvi"/>
+                            <constraint firstItem="NQK-y0-zv4" firstAttribute="top" secondItem="tXr-b3-OdR" secondAttribute="top" id="jTc-wv-IPL"/>
+                            <constraint firstAttribute="trailing" secondItem="lTY-G6-47U" secondAttribute="trailing" constant="32" id="ovG-UF-265"/>
+                            <constraint firstItem="7hU-lQ-u3Q" firstAttribute="top" secondItem="lTY-G6-47U" secondAttribute="bottom" constant="83" id="q7H-DM-nmI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ggH-ui-BMC"/>
+                    <connections>
+                        <outlet property="loginButton" destination="gfw-fD-R1v" id="oBk-DS-kQ6"/>
+                        <outlet property="passwordTextField" destination="ALh-Cc-7cy" id="Tnx-JR-LKp"/>
+                        <outlet property="usernameTextField" destination="IFT-TK-iUA" id="1ka-ji-gRY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMN-m3-NdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466" y="60"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wud-a3-u9R">
+            <objects>
+                <navigationController storyboardIdentifier="loginStoryboard" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ify-ob-Awx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4Re-yb-FG8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Tp3-Qb-EcM" kind="relationship" relationship="rootViewController" id="fCl-B4-wvT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7t3-cT-ZJA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-273" y="60"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="rzh-Gf-NEb">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="BJq-qC-Vh8" customClass="SignUpViewController" customModule="kmitlbike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zqH-om-J6g"/>
+                        <viewControllerLayoutGuide type="bottom" id="q9K-pZ-kax"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wlN-aX-A9C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kmitlbike_regis_background" translatesAutoresizingMaskIntoConstraints="NO" id="97R-3y-gIU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="keX-hp-JWO">
+                                <rect key="frame" x="32" y="334" width="311" height="213"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ha5-l9-6IQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="175"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Firstname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEQ-DA-1VI">
+                                                <rect key="frame" x="0.0" y="0.0" width="311" height="32.5"/>
+                                                <color key="tintColor" red="0.56078431370000004" green="0.75686274509999996" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lastname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WLK-n5-aKz">
+                                                <rect key="frame" x="0.0" y="35.5" width="311" height="32.5"/>
+                                                <color key="tintColor" red="0.56078431370000004" green="0.75686274509999996" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                            </textField>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kif-zl-KIv">
+                                                <rect key="frame" x="0.0" y="71" width="311" height="34"/>
+                                                <segments>
+                                                    <segment title="Male"/>
+                                                    <segment title="Female"/>
+                                                    <segment title="Other"/>
+                                                </segments>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xKM-Th-X3B">
+                                                <rect key="frame" x="0.0" y="107" width="311" height="32.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rhn-ic-759">
+                                                <rect key="frame" x="0.0" y="142.5" width="311" height="32.5"/>
+                                                <color key="tintColor" red="0.56078431370000004" green="0.75686274509999996" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Rhn-ic-759" firstAttribute="width" secondItem="xKM-Th-X3B" secondAttribute="width" id="99d-UM-EnS"/>
+                                            <constraint firstItem="WLK-n5-aKz" firstAttribute="width" secondItem="KEQ-DA-1VI" secondAttribute="width" id="frf-wN-2do"/>
+                                            <constraint firstItem="xKM-Th-X3B" firstAttribute="width" secondItem="WLK-n5-aKz" secondAttribute="width" id="t9e-dx-mA0"/>
+                                            <constraint firstItem="KEQ-DA-1VI" firstAttribute="width" secondItem="Kif-zl-KIv" secondAttribute="width" id="ydb-6j-oB3"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="EP2-q2-O8l">
+                                        <rect key="frame" x="0.0" y="183" width="311" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhE-4O-Goa" customClass="RoundButton" customModule="kmitlbike" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="151.5" height="30"/>
+                                                <color key="backgroundColor" red="0.56078431370000004" green="0.74901960779999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Back"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onBackButtonClick:" destination="BJq-qC-Vh8" eventType="touchUpInside" id="qY2-ib-hoi"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4j-WM-Dgl" customClass="RoundButton" customModule="kmitlbike" customModuleProvider="target">
+                                                <rect key="frame" x="159.5" y="0.0" width="151.5" height="30"/>
+                                                <color key="backgroundColor" red="0.56078431370000004" green="0.74901960779999999" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Sign Up"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onSignupButtonClick:" destination="BJq-qC-Vh8" eventType="touchUpInside" id="V0j-AO-vsu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="fhE-4O-Goa" firstAttribute="height" secondItem="a4j-WM-Dgl" secondAttribute="height" id="1Qf-zB-d94"/>
+                                            <constraint firstItem="fhE-4O-Goa" firstAttribute="width" secondItem="a4j-WM-Dgl" secondAttribute="width" id="KEp-Zr-QE2"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="q9K-pZ-kax" firstAttribute="top" secondItem="keX-hp-JWO" secondAttribute="bottom" constant="120" id="1VB-Dp-7lw"/>
+                            <constraint firstItem="q9K-pZ-kax" firstAttribute="top" secondItem="97R-3y-gIU" secondAttribute="bottom" id="2oy-hG-HyX"/>
+                            <constraint firstItem="keX-hp-JWO" firstAttribute="top" secondItem="97R-3y-gIU" secondAttribute="centerY" id="NEs-4C-q7s"/>
+                            <constraint firstItem="keX-hp-JWO" firstAttribute="leading" secondItem="wlN-aX-A9C" secondAttribute="leading" constant="32" id="PcK-42-i0m"/>
+                            <constraint firstItem="97R-3y-gIU" firstAttribute="top" secondItem="wlN-aX-A9C" secondAttribute="top" id="QGf-uG-WLQ"/>
+                            <constraint firstAttribute="trailing" secondItem="keX-hp-JWO" secondAttribute="trailing" constant="32" id="cDO-Qw-RIa"/>
+                            <constraint firstAttribute="trailing" secondItem="97R-3y-gIU" secondAttribute="trailing" id="lkK-XD-7vg"/>
+                            <constraint firstItem="97R-3y-gIU" firstAttribute="leading" secondItem="wlN-aX-A9C" secondAttribute="leading" id="wkY-59-6OE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gmr-xH-kfg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="60"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kmitlbike_login_background" width="319" height="567"/>
+        <image name="kmitlbike_regis_background" width="319" height="567"/>
+    </resources>
+</document>
