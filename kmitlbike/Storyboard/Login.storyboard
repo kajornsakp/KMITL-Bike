@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ify-ob-Awx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ify-ob-Awx">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--HomeViewController-->
+        <scene sceneID="KJy-jM-dV9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="HomeViewController" id="Y6B-Nb-JlT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LUb-Ju-CAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="-594"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="hXe-NH-jAd">
             <objects>
@@ -99,11 +107,12 @@
                         <outlet property="loginButton" destination="gfw-fD-R1v" id="oBk-DS-kQ6"/>
                         <outlet property="passwordTextField" destination="ALh-Cc-7cy" id="Tnx-JR-LKp"/>
                         <outlet property="usernameTextField" destination="IFT-TK-iUA" id="1ka-ji-gRY"/>
+                        <segue destination="Y6B-Nb-JlT" kind="show" identifier="goToHomePageSegue" id="ggC-cn-bu3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMN-m3-NdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="466" y="60"/>
+            <point key="canvasLocation" x="449" y="60"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wud-a3-u9R">

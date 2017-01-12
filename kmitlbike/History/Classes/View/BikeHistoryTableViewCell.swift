@@ -8,8 +8,24 @@
 
 import UIKit
 
+
 class BikeHistoryTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var bikeImage: UIImageView!
+    @IBOutlet weak var durationLabel: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+
+    var bikeHistory : HistoryModel!{
+        didSet{
+            self.bikeImage.image = #imageLiteral(resourceName: "kmitlbike_history_bike_icon_green")
+            self.dateLabel.text = bikeHistory.borrowDate
+            self.timeLabel.text = bikeHistory.borrowTime
+            self.durationLabel.text = bikeHistory.totalTime
+            self.distanceLabel.text = "\(bikeHistory.totalDistance ?? "" ) km."
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

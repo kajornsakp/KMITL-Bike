@@ -8,6 +8,7 @@
 
 import Foundation
 import Moya
+import RxSwift
 
 
 private func JSONResponseDataFormatter(_ data: Data) -> Data {
@@ -20,16 +21,26 @@ private func JSONResponseDataFormatter(_ data: Data) -> Data {
     }
 }
 
+let endpointClosure = { (target: KmitlBikeService) -> Endpoint<KmitlBikeService> in
+    let defaultEndpoint = MoyaProvider.defaultEndpointMapping(target)
+    if target.requiresAnyToken{
+        return defaultEndpoint.adding(newHttpHeaderFields: ["Authorization": UserSession.sharedInstance.data.token ?? ""])
+    }
+    else{
+        return defaultEndpoint
+    }
+}
 
-let provider = MoyaProvider<KmitlBikeService>(plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
+let provider = RxMoyaProvider<KmitlBikeService>(endpointClosure : endpointClosure, plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
 
 //let unitTestProvider = MoyaProvider<KmitlBikeService>(endpointClosure: KmitlBikeServiceEndpointClosure, stubClosure: MoyaProvider.DelayedStub(3))
 
 enum KmitlBikeService{
     case login(form : LoginForm)
-    case signup(username:String,first_name:String,last_name:String,gender:Int,email:String,phone_no:String)
+    case signup(form : SignupForm)
     case borrow(bikeMac : String)
     case returnBike(totalTime : String,totalDistance : String,routeLine : [RoutePoint])
+    case getHistory
     
 }
 
@@ -59,7 +70,8 @@ extension KmitlBikeService : TargetType{
             return "/api/v1/user/borrow/"
         case .returnBike:
             return "/api/v1/user/return/"
-            
+        case .getHistory:
+            return "/api/v1/user/history/"
         }
     }
     
@@ -67,6 +79,8 @@ extension KmitlBikeService : TargetType{
         switch self {
         case .login,.signup,.borrow,.returnBike:
             return .post
+        case .getHistory:
+            return .get
         }
     }
     
@@ -74,14 +88,8 @@ extension KmitlBikeService : TargetType{
         switch self{
         case .login(let form):
             return form.toDict()
-        case .signup(let username,let firstName, let lastName, let gender, let email,let phoneNum):
-            return [
-                "username" :username,
-                "first_name":firstName,
-                "last_name":lastName,
-                "gender":gender,
-                "email":email,
-                "phone_no":phoneNum]
+        case .signup(let form):
+            return form.toDict()
         case .borrow(let bikeMac):
             return ["bike_mac":bikeMac]
         case .returnBike(let totalTime,let totalDistance,let routeLine):
@@ -93,6 +101,8 @@ extension KmitlBikeService : TargetType{
             strRouteLine = String(strRouteLine.characters.dropLast())
             
             return ["total_time":totalTime,"total_distance":totalDistance,"route_line":strRouteLine]
+        case .getHistory:
+            return [:]
         }
     }
     
@@ -100,7 +110,7 @@ extension KmitlBikeService : TargetType{
         switch self {
         case .login(_):
             return "{\"result\": \"success\"}".data(using: String.Encoding.utf8)!
-        case .signup(_,_,_,_,_,_):
+        case .signup(_):
             return "{\"result\": \"success\"}".data(using: String.Encoding.utf8)!
         default:
             return NSData() as Data
@@ -109,25 +119,11 @@ extension KmitlBikeService : TargetType{
     
     var task : Task{
         switch self {
-        case .login,.signup,.borrow,.returnBike:
+        case .login,.signup,.borrow,.returnBike,.getHistory:
             return .request
        
         }
     }
-    public func headers() -> [String: String] {
-        var assigned: [String: String] = [
-            "Accept": "application/json",
-            "Accept-Language": "",
-            "Content-Type": "application/json",
-            ]
-        
-        
-        if self.requiresAnyToken {
-            assigned["AUTHORIZATION"] =  UserData.sharedInstance.token ?? ""
-        }
-        return assigned
-    }
-    
 }
 
 extension KmitlBikeService{
@@ -135,6 +131,8 @@ extension KmitlBikeService{
         switch self {
         case .login:
             return false
+        case .borrow,.returnBike,.getHistory:
+            return true
         default:
             return true
         }

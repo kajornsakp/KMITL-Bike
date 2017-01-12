@@ -12,7 +12,7 @@ import RxSwift
 import SVProgressHUD
 class LoginViewModel: BaseViewModel {
     
-    let provider = RxMoyaProvider<KmitlBikeService>()
+    let provider = ServiceFactory.sharedInstance.resolve(service: RxMoyaProvider<KmitlBikeService>.self)
     var loginResponse : LoginResponse!
     weak var loginDelegate : LoginDelegate!
     func login(withUsername username : String, withPassword password : String){
@@ -36,6 +36,7 @@ class LoginViewModel: BaseViewModel {
                 case .error(let error):
                     self.showError(error: error as! Moya.Error)
                 default:
+                    SVProgressHUD.dismiss()
                     break
                 }
                 
@@ -48,6 +49,12 @@ class LoginViewModel: BaseViewModel {
             self.loginDelegate.onFirstTimeLogin()
         }
         else if self.loginResponse.result == "success"{
+            guard let user = self.loginResponse.user else{
+                self.loginDelegate.onLoginError(message: "Cannot login to system, please try again later.")
+                return
+            }
+            UserSession.sharedInstance.storeUser(user: user)
+            //UserSession.sharedInstance.storeToken(token: user.token)
             self.loginDelegate.onLoginSuccess()
         }
     }

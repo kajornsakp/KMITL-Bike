@@ -12,13 +12,37 @@ import RxSwift
 import SVProgressHUD
 class SignupViewModel: BaseViewModel {
     
-    let provider = RxMoyaProvider<KmitlBikeService>()
+    let provider = ServiceFactory.sharedInstance.resolve(service: RxMoyaProvider<KmitlBikeService>.self)
     var loginResponse : LoginResponse!
     weak var signupDelegate : SignupDelegate!
     func signup(withUsername username : String,firstName : String,lastName : String,gender : Int,email : String , mobileNumber : String){
         if(!self.inputValidation(username: username,firstName: firstName,lastName: lastName,email: email,mobileNumber: mobileNumber)){
             return
         }
+        let form = SignupForm()
+        form.username = username
+        form.firstName = firstName
+        form.lastName = lastName
+        form.gender = gender
+        form.email = email
+        form.mobileNumber = mobileNumber
+        provider.request(.signup(form: form))
+            .filterSuccessfulStatusCodes()
+            .mapJSON()
+            .subscribe{ event in
+                print("event",event)
+                switch event{
+                case .next(let element):
+                    print(element)
+                case .error(let error):
+                    self.showError(error: error as! Moya.Error)
+                default:
+                    SVProgressHUD.dismiss()
+                    break
+                }
+                
+        }
+
     }
     
     
@@ -40,57 +64,10 @@ class SignupViewModel: BaseViewModel {
         }
         return true
     }
-//    func login(withUsername username : String, withPassword password : String){
-//        if username.isEmpty || password.isEmpty{
-//            self.invalidInput()
-//            return
-//        }
-//        SVProgressHUD.show()
-//        let form = LoginForm()
-//        form.username = username
-//        form.password = password
-//        provider.request(.login(form: form))
-//            .filterSuccessfulStatusCodes()
-//            .mapJSON()
-//            .subscribe{ event in
-//                print("event",event)
-//                switch event{
-//                case .next(let element):
-//                    self.loginResponse = LoginResponse(withDictionary: element as AnyObject)
-//                    self.checkLogin()
-//                case .error(let error):
-//                    self.showError(error: error as! Moya.Error)
-//                default:
-//                    break
-//                }
-//                
-//        }
-//        
-//    }
-//    
-//    func checkLogin(){
-//        if self.loginResponse.result == "first_time" {
-//            self.loginDelegate.onFirstTimeLogin()
-//        }
-//        else if self.loginResponse.result == "success"{
-//            self.loginDelegate.onLoginSuccess()
-//        }
-//    }
-//    func invalidInput(){
-//        self.loginDelegate.onLoginError(message: "Invalid input")
-//    }
-//    
-//    func showError(error : Moya.Error){
-//        if let errorResponse = error.response{
-//            switch errorResponse.statusCode {
-//            case 400:
-//                self.loginDelegate.onLoginError(message: "Failed to connect with the server")
-//            case 406:
-//                self.loginDelegate.onLoginError(message: "Invalid Username / Password")
-//            default:
-//                self.loginDelegate.onLoginError(message: "Error")
-//            }
-//        }
-//    }
+
+    func showError(error : Moya.Error){
+        SVProgressHUD.dismiss()
+        print(error)
+    }
 }
 

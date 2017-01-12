@@ -8,12 +8,24 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
-
+class HomeViewController: BaseViewController {
+    static let TAB_BAR_CONTROLLER_IDENTIFIER = "MainTabBarController"
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.setNavigationBar()
+        self.setTabBar()
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        print(UserSession.sharedInstance.data)
+    }
+    
+    func setNavigationBar(){
+        self.navigationController?.navigationItem.title = "Borrow bike"
+    }
+    func setTabBar(){
+        self.tabBarController?.tabBarItem.title = "Borrow"
     }
 
     override func didReceiveMemoryWarning() {

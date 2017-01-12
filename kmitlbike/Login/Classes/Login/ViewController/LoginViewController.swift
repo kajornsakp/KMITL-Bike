@@ -14,7 +14,7 @@ class LoginViewController: BaseViewController {
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: RoundButton!
-    
+    static let segueIdentifier = "goToHomePageSegue"
     var viewModel : LoginViewModel!
     
     override func viewDidLoad() {
@@ -30,18 +30,14 @@ class LoginViewController: BaseViewController {
     }
     
     @IBAction func loginButtonClick(_ sender: Any) {
-        viewModel.login(withUsername: usernameTextField.text!, withPassword: passwordTextField.text!)
+        if(Developer.ENABLED && Developer.BYPASS_LOGIN){
+            viewModel.login(withUsername: "s7090006", withPassword: "Abcde016400")
+        }
+        else{
+            viewModel.login(withUsername: usernameTextField.text!, withPassword: passwordTextField.text!)
+        }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 }
 
 
@@ -49,6 +45,9 @@ extension LoginViewController : LoginDelegate{
     func onLoginSuccess() {
         SVProgressHUD.dismiss()
         SVProgressHUD.showSuccess(withStatus: "Login Success")
+        let storyboard = UIStoryboard(name: "Home", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: HomeViewController.TAB_BAR_CONTROLLER_IDENTIFIER)
+        UIApplication.shared.keyWindow?.rootViewController = vc
     }
     
     func onFirstTimeLogin() {
