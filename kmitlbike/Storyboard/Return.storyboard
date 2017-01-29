@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Return Bike View Controller-->
+        <scene sceneID="zxf-rU-ZyK">
+            <objects>
+                <viewController storyboardIdentifier="ReturnBikeViewController" id="hKH-gL-8qW" customClass="ReturnBikeViewController" customModule="kmitlbike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="edH-Tp-JbU"/>
+                        <viewControllerLayoutGuide type="bottom" id="x2b-UY-g6W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e8e-TA-V6x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="36x-LS-2oh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Code : XXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvc-mC-LNZ">
+                                        <rect key="frame" x="8" y="8" width="359" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7HA-5J-SV6">
+                                        <rect key="frame" x="8" y="29" width="359" height="484"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pe2-Mj-7sf">
+                                                <rect key="frame" x="20" y="82" width="320" height="320"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Pe2-Mj-7sf" secondAttribute="height" multiplier="1:1" id="kJg-HE-M3M"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="320" id="zwx-1t-niO"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="kmitlbike_return_button"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Pe2-Mj-7sf" firstAttribute="centerX" secondItem="7HA-5J-SV6" secondAttribute="centerX" id="2kR-AB-VyV"/>
+                                            <constraint firstItem="Pe2-Mj-7sf" firstAttribute="centerY" secondItem="7HA-5J-SV6" secondAttribute="centerY" id="bdv-Zm-aXu"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2O4-WT-pkt">
+                                        <rect key="frame" x="8" y="513" width="359" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Mca-fv-rpl"/>
+                                        </constraints>
+                                        <state key="normal" title="Switch to Map View"/>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9pD-sn-5Gc">
+                                        <rect key="frame" x="8" y="557" width="359" height="82"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" verticalHuggingPriority="253" horizontalCompressionResistancePriority="753" verticalCompressionResistancePriority="753" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="p0M-IW-S0f">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="82"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Duration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihU-Pc-1Zw">
+                                                        <rect key="frame" x="8" y="16" width="164" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOw-hp-rJV">
+                                                        <rect key="frame" x="8" y="45" width="164" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="16" left="8" bottom="16" right="8"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YeS-lO-JYZ">
+                                                <rect key="frame" x="180" y="0.0" width="179" height="82"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="753" text="Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEs-gW-VON">
+                                                        <rect key="frame" x="8" y="16" width="163" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="753" text="0.00 km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWf-bh-u9F">
+                                                        <rect key="frame" x="8" y="45" width="163" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="16" left="8" bottom="16" right="8"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="36x-LS-2oh" firstAttribute="top" secondItem="edH-Tp-JbU" secondAttribute="bottom" id="ert-H4-rjV"/>
+                            <constraint firstItem="36x-LS-2oh" firstAttribute="leading" secondItem="e8e-TA-V6x" secondAttribute="leading" id="uFp-Nu-9Nd"/>
+                            <constraint firstAttribute="trailing" secondItem="36x-LS-2oh" secondAttribute="trailing" id="vu4-r2-JZ7"/>
+                            <constraint firstItem="x2b-UY-g6W" firstAttribute="top" secondItem="36x-LS-2oh" secondAttribute="bottom" id="wT9-F7-Jgk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="p4O-id-VhS"/>
+                    <connections>
+                        <outlet property="containerView" destination="7HA-5J-SV6" id="TxT-qQ-N70"/>
+                        <outlet property="distanceLabel" destination="KWf-bh-u9F" id="Rse-As-5WU"/>
+                        <outlet property="durationLabel" destination="OOw-hp-rJV" id="QKu-WQ-LP4"/>
+                        <outlet property="switchViewButton" destination="2O4-WT-pkt" id="2ub-Na-6NO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mw4-hC-0zv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751.20000000000005" y="24.7376311844078"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="kmitlbike_return_button" width="320" height="320"/>
+    </resources>
+</document>
