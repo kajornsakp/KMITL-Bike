@@ -10,10 +10,20 @@
 		AC15F0A61DB4719D005A5779 /* GlobalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F0A51DB4719D005A5779 /* GlobalModel.swift */; };
 		AC15F0A91DB47538005A5779 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F0A81DB47538005A5779 /* UserData.swift */; };
 		AC15F0AB1DB48144005A5779 /* LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F0AA1DB48144005A5779 /* LoginDelegate.swift */; };
+		AC21E9C61E313AD400401CA9 /* BikeCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC21E9C51E313AD400401CA9 /* BikeCircleButton.swift */; };
+		AC21E9C81E313F6700401CA9 /* TutorialPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC21E9C71E313F6700401CA9 /* TutorialPopupViewController.swift */; };
+		AC2322541E277CA7005BF72E /* MoreButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2322521E277CA7005BF72E /* MoreButtonTableViewCell.swift */; };
+		AC2322551E277CA7005BF72E /* MoreButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC2322531E277CA7005BF72E /* MoreButtonTableViewCell.xib */; };
+		AC23225B1E29DCF9005BF72E /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23225A1E29DCF9005BF72E /* FindViewController.swift */; };
+		AC23225D1E29DD0D005BF72E /* FindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23225C1E29DD0D005BF72E /* FindViewModel.swift */; };
+		AC23225F1E29DF72005BF72E /* BikeModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23225E1E29DF72005BF72E /* BikeModelResponse.swift */; };
 		AC38A8CA1E1F85CF00F10CEB /* Borrow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC38A8C91E1F85CF00F10CEB /* Borrow.storyboard */; };
 		AC38A8CE1E1F875B00F10CEB /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC38A8CD1E1F875B00F10CEB /* History.storyboard */; };
 		AC38A8E21E1F8ACF00F10CEB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38A8E11E1F8ACF00F10CEB /* HistoryViewController.swift */; };
 		AC38A8E71E1F8B7200F10CEB /* CommonGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38A8E61E1F8B7200F10CEB /* CommonGlobal.swift */; };
+		AC6A683D1E29EF2600215DC1 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A683C1E29EF2600215DC1 /* CreditViewController.swift */; };
+		AC6A68401E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A683E1E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift */; };
+		AC6A68411E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6A683F1E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib */; };
 		AC6B88A91DB1FBFE0037F189 /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88A81DB1FBFE0037F189 /* BaseViewModelProtocol.swift */; };
 		AC6B88AD1DB1FC800037F189 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88AC1DB1FC800037F189 /* BaseViewController.swift */; };
 		AC6B88B11DB1FDF40037F189 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88B01DB1FDF40037F189 /* UIColorExtension.swift */; };
@@ -34,7 +44,6 @@
 		AC7EC5FA1E24CC5E00766960 /* HistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EC5F91E24CC5E00766960 /* HistoryResponse.swift */; };
 		AC7EC5FC1E25290400766960 /* HistorySummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EC5FB1E25290400766960 /* HistorySummaryViewController.swift */; };
 		AC7EC6041E26442400766960 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EC6031E26442400766960 /* MoreViewController.swift */; };
-		AC7EC6091E26529C00766960 /* MoreHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EC6071E26529C00766960 /* MoreHeaderTableViewCell.swift */; };
 		AC7EC60A1E26529C00766960 /* MoreHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7EC6081E26529C00766960 /* MoreHeaderTableViewCell.xib */; };
 		AC9068DF1DB1D235009BC898 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9068DE1DB1D235009BC898 /* AppDelegate.swift */; };
 		AC9068E11DB1D235009BC898 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9068E01DB1D235009BC898 /* ViewController.swift */; };
@@ -42,6 +51,20 @@
 		AC9068E91DB1D235009BC898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9068E71DB1D235009BC898 /* LaunchScreen.storyboard */; };
 		ACA05EB51E27649000453D8D /* Find.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA05EB31E27649000453D8D /* Find.storyboard */; };
 		ACA05EB61E27649000453D8D /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA05EB41E27649000453D8D /* More.storyboard */; };
+		ACA05EBA1E276A0100453D8D /* MoreInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA05EB81E276A0100453D8D /* MoreInfoTableViewCell.xib */; };
+		ACA05EBD1E276A2F00453D8D /* MoreHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA05EBB1E276A2F00453D8D /* MoreHeaderTableViewCell.swift */; };
+		ACA05EBE1E276A2F00453D8D /* MoreInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA05EBC1E276A2F00453D8D /* MoreInfoTableViewCell.swift */; };
+		ACC15FA81E3493E100088F6E /* BorrowBikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC15FA61E3493E100088F6E /* BorrowBikeTableViewCell.swift */; };
+		ACC15FA91E3493E100088F6E /* BorrowBikeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC15FA71E3493E100088F6E /* BorrowBikeTableViewCell.xib */; };
+		ACC15FAD1E34CB1B00088F6E /* AvailableBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC15FAC1E34CB1B00088F6E /* AvailableBikeViewController.swift */; };
+		ACC15FAF1E34CB4000088F6E /* AvailableBikeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC15FAE1E34CB4000088F6E /* AvailableBikeViewModel.swift */; };
+		ACC15FB31E3501E300088F6E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC15FB21E3501E300088F6E /* HomeViewModel.swift */; };
+		ACC15FB51E35123C00088F6E /* BorrowBikeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC15FB41E35123C00088F6E /* BorrowBikeResponse.swift */; };
+		ACC341791E37764F00C6A3E1 /* BorrowBikeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC341781E37764F00C6A3E1 /* BorrowBikeProtocol.swift */; };
+		ACC3417C1E387C1200C6A3E1 /* ScanBarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3417B1E387C1200C6A3E1 /* ScanBarcodeViewController.swift */; };
+		ACC3417E1E387CD400C6A3E1 /* Barcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC3417D1E387CD400C6A3E1 /* Barcode.storyboard */; };
+		ACC341881E38929F00C6A3E1 /* ReturnBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC341871E38929F00C6A3E1 /* ReturnBikeViewController.swift */; };
+		ACC3418A1E38981400C6A3E1 /* Return.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC341891E38981400C6A3E1 /* Return.storyboard */; };
 		ACD8A5A61DF1145000E989AA /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5A51DF1145000E989AA /* ViewControllerFactory.swift */; };
 		ACD8A5A81DF1147D00E989AA /* BaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5A71DF1147D00E989AA /* BaseFactory.swift */; };
 		ACD8A5AB1DF116B100E989AA /* NSObject+kmitlbike.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5AA1DF116B100E989AA /* NSObject+kmitlbike.swift */; };
@@ -60,10 +83,20 @@
 		AC15F0A51DB4719D005A5779 /* GlobalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalModel.swift; path = Common/Model/GlobalModel.swift; sourceTree = "<group>"; };
 		AC15F0A81DB47538005A5779 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserData.swift; path = Common/Model/UserData.swift; sourceTree = "<group>"; };
 		AC15F0AA1DB48144005A5779 /* LoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginDelegate.swift; path = Login/Classes/Login/Protocol/LoginDelegate.swift; sourceTree = "<group>"; };
+		AC21E9C51E313AD400401CA9 /* BikeCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BikeCircleButton.swift; path = Home/Classes/View/BikeCircleButton.swift; sourceTree = "<group>"; };
+		AC21E9C71E313F6700401CA9 /* TutorialPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialPopupViewController.swift; path = Home/Classes/ViewController/TutorialPopupViewController.swift; sourceTree = "<group>"; };
+		AC2322521E277CA7005BF72E /* MoreButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreButtonTableViewCell.swift; path = More/Resources/Xib/MoreButtonTableViewCell.swift; sourceTree = "<group>"; };
+		AC2322531E277CA7005BF72E /* MoreButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoreButtonTableViewCell.xib; path = More/Resources/Xib/MoreButtonTableViewCell.xib; sourceTree = "<group>"; };
+		AC23225A1E29DCF9005BF72E /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindViewController.swift; path = Find/Classes/ViewController/FindViewController.swift; sourceTree = "<group>"; };
+		AC23225C1E29DD0D005BF72E /* FindViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindViewModel.swift; path = Find/Classes/ViewModel/FindViewModel.swift; sourceTree = "<group>"; };
+		AC23225E1E29DF72005BF72E /* BikeModelResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BikeModelResponse.swift; path = Find/Classes/Model/BikeModelResponse.swift; sourceTree = "<group>"; };
 		AC38A8C91E1F85CF00F10CEB /* Borrow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Borrow.storyboard; path = Storyboard/Borrow.storyboard; sourceTree = "<group>"; };
 		AC38A8CD1E1F875B00F10CEB /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = History.storyboard; path = Storyboard/History.storyboard; sourceTree = "<group>"; };
 		AC38A8E11E1F8ACF00F10CEB /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = History/Classes/ViewController/HistoryViewController.swift; sourceTree = "<group>"; };
 		AC38A8E61E1F8B7200F10CEB /* CommonGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonGlobal.swift; path = Common/Global/CommonGlobal.swift; sourceTree = "<group>"; };
+		AC6A683C1E29EF2600215DC1 /* CreditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditViewController.swift; path = More/Classes/ViewController/CreditViewController.swift; sourceTree = "<group>"; };
+		AC6A683E1E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditPeopleTableViewCell.swift; path = More/Resources/Xib/CreditPeopleTableViewCell.swift; sourceTree = "<group>"; };
+		AC6A683F1E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreditPeopleTableViewCell.xib; path = More/Resources/Xib/CreditPeopleTableViewCell.xib; sourceTree = "<group>"; };
 		AC6B88A81DB1FBFE0037F189 /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewModelProtocol.swift; path = Common/Protocol/BaseViewModelProtocol.swift; sourceTree = "<group>"; };
 		AC6B88AC1DB1FC800037F189 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Common/ViewController/BaseViewController.swift; sourceTree = "<group>"; };
 		AC6B88B01DB1FDF40037F189 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Common/Extension/UIColorExtension/UIColorExtension.swift; sourceTree = "<group>"; };
@@ -84,7 +117,6 @@
 		AC7EC5F91E24CC5E00766960 /* HistoryResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryResponse.swift; path = History/Classes/Model/HistoryResponse.swift; sourceTree = "<group>"; };
 		AC7EC5FB1E25290400766960 /* HistorySummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistorySummaryViewController.swift; path = History/Classes/ViewController/HistorySummaryViewController.swift; sourceTree = "<group>"; };
 		AC7EC6031E26442400766960 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreViewController.swift; path = More/Classes/ViewController/MoreViewController.swift; sourceTree = "<group>"; };
-		AC7EC6071E26529C00766960 /* MoreHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreHeaderTableViewCell.swift; path = More/Resources/Xib/MoreHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		AC7EC6081E26529C00766960 /* MoreHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoreHeaderTableViewCell.xib; path = More/Resources/Xib/MoreHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		AC9068DB1DB1D235009BC898 /* kmitlbike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kmitlbike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9068DE1DB1D235009BC898 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +126,20 @@
 		AC9068EA1DB1D235009BC898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACA05EB31E27649000453D8D /* Find.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Find.storyboard; path = Storyboard/Find.storyboard; sourceTree = "<group>"; };
 		ACA05EB41E27649000453D8D /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = More.storyboard; path = Storyboard/More.storyboard; sourceTree = "<group>"; };
+		ACA05EB81E276A0100453D8D /* MoreInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoreInfoTableViewCell.xib; path = More/Resources/Xib/MoreInfoTableViewCell.xib; sourceTree = "<group>"; };
+		ACA05EBB1E276A2F00453D8D /* MoreHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreHeaderTableViewCell.swift; path = More/Classes/View/MoreHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		ACA05EBC1E276A2F00453D8D /* MoreInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreInfoTableViewCell.swift; path = More/Classes/View/MoreInfoTableViewCell.swift; sourceTree = "<group>"; };
+		ACC15FA61E3493E100088F6E /* BorrowBikeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorrowBikeTableViewCell.swift; path = Home/Resource/BorrowBikeTableViewCell.swift; sourceTree = "<group>"; };
+		ACC15FA71E3493E100088F6E /* BorrowBikeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BorrowBikeTableViewCell.xib; path = Home/Resource/BorrowBikeTableViewCell.xib; sourceTree = "<group>"; };
+		ACC15FAC1E34CB1B00088F6E /* AvailableBikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvailableBikeViewController.swift; path = Home/Classes/ViewController/AvailableBikeViewController.swift; sourceTree = "<group>"; };
+		ACC15FAE1E34CB4000088F6E /* AvailableBikeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvailableBikeViewModel.swift; path = Home/Classes/ViewModel/AvailableBikeViewModel.swift; sourceTree = "<group>"; };
+		ACC15FB21E3501E300088F6E /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = Home/Classes/ViewModel/HomeViewModel.swift; sourceTree = "<group>"; };
+		ACC15FB41E35123C00088F6E /* BorrowBikeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorrowBikeResponse.swift; path = Home/Classes/Model/BorrowBikeResponse.swift; sourceTree = "<group>"; };
+		ACC341781E37764F00C6A3E1 /* BorrowBikeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorrowBikeProtocol.swift; path = Home/Classes/Protocol/BorrowBikeProtocol.swift; sourceTree = "<group>"; };
+		ACC3417B1E387C1200C6A3E1 /* ScanBarcodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanBarcodeViewController.swift; path = Home/Classes/ViewController/Barcode/ScanBarcodeViewController.swift; sourceTree = "<group>"; };
+		ACC3417D1E387CD400C6A3E1 /* Barcode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Barcode.storyboard; path = Storyboard/Barcode.storyboard; sourceTree = "<group>"; };
+		ACC341871E38929F00C6A3E1 /* ReturnBikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReturnBikeViewController.swift; path = Return/ViewController/ReturnBikeViewController.swift; sourceTree = "<group>"; };
+		ACC341891E38981400C6A3E1 /* Return.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Return.storyboard; path = Storyboard/Return.storyboard; sourceTree = "<group>"; };
 		ACD8A5A51DF1145000E989AA /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerFactory.swift; path = Common/IoC/ViewControllerFactory.swift; sourceTree = "<group>"; };
 		ACD8A5A71DF1147D00E989AA /* BaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseFactory.swift; path = Common/IoC/BaseFactory.swift; sourceTree = "<group>"; };
 		ACD8A5AA1DF116B100E989AA /* NSObject+kmitlbike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSObject+kmitlbike.swift"; path = "Common/Extension/NSObject/NSObject+kmitlbike.swift"; sourceTree = "<group>"; };
@@ -132,6 +178,15 @@
 				AC6B88E81DB38DDC0037F189 /* CommonRouter.swift */,
 			);
 			name = Router;
+			sourceTree = "<group>";
+		};
+		AC21E9C41E313ABA00401CA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACC15FA61E3493E100088F6E /* BorrowBikeTableViewCell.swift */,
+				AC21E9C51E313AD400401CA9 /* BikeCircleButton.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		AC38A8D11E1F898100F10CEB /* Find */ = {
@@ -208,6 +263,7 @@
 		AC38A8D91E1F89EF00F10CEB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				AC23225A1E29DCF9005BF72E /* FindViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -215,6 +271,7 @@
 		AC38A8DA1E1F89F200F10CEB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AC23225C1E29DD0D005BF72E /* FindViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -229,6 +286,7 @@
 		AC38A8DC1E1F89F400F10CEB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AC23225E1E29DF72005BF72E /* BikeModelResponse.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -236,7 +294,10 @@
 		AC38A8DD1E1F8A0B00F10CEB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				ACC3417A1E387BE600C6A3E1 /* Barcode */,
 				ACEE800C1E101DBE007C6FC8 /* HomeViewController.swift */,
+				AC21E9C71E313F6700401CA9 /* TutorialPopupViewController.swift */,
+				ACC15FAC1E34CB1B00088F6E /* AvailableBikeViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -244,6 +305,8 @@
 		AC38A8DE1E1F8A0F00F10CEB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ACC15FAE1E34CB4000088F6E /* AvailableBikeViewModel.swift */,
+				ACC15FB21E3501E300088F6E /* HomeViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -251,6 +314,7 @@
 		AC38A8DF1E1F8A1000F10CEB /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				ACC341781E37764F00C6A3E1 /* BorrowBikeProtocol.swift */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -258,6 +322,7 @@
 		AC38A8E01E1F8A1200F10CEB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ACC15FB41E35123C00088F6E /* BorrowBikeResponse.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -276,6 +341,7 @@
 		AC38A8E41E1F8B0D00F10CEB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				AC21E9C41E313ABA00401CA9 /* View */,
 				AC38A8E01E1F8A1200F10CEB /* Model */,
 				AC38A8DF1E1F8A1000F10CEB /* Protocol */,
 				AC38A8DE1E1F8A0F00F10CEB /* ViewModel */,
@@ -509,6 +575,7 @@
 			isa = PBXGroup;
 			children = (
 				AC7EC6031E26442400766960 /* MoreViewController.swift */,
+				AC6A683C1E29EF2600215DC1 /* CreditViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -524,6 +591,9 @@
 			isa = PBXGroup;
 			children = (
 				AC7EC6081E26529C00766960 /* MoreHeaderTableViewCell.xib */,
+				ACA05EB81E276A0100453D8D /* MoreInfoTableViewCell.xib */,
+				AC6A683F1E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib */,
+				AC2322531E277CA7005BF72E /* MoreButtonTableViewCell.xib */,
 			);
 			name = Xib;
 			sourceTree = "<group>";
@@ -531,7 +601,10 @@
 		AC7EC60B1E2652E900766960 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AC7EC6071E26529C00766960 /* MoreHeaderTableViewCell.swift */,
+				AC2322521E277CA7005BF72E /* MoreButtonTableViewCell.swift */,
+				ACA05EBB1E276A2F00453D8D /* MoreHeaderTableViewCell.swift */,
+				ACA05EBC1E276A2F00453D8D /* MoreInfoTableViewCell.swift */,
+				AC6A683E1E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -567,6 +640,7 @@
 				ACD8A5B61DF12D5200E989AA /* Home */,
 				AC9068F01DB1D440009BC898 /* Login */,
 				AC38A8D31E1F898F00F10CEB /* More */,
+				ACC3417F1E38923600C6A3E1 /* Return */,
 				ACD8A5AC1DF121B300E989AA /* Storyboard */,
 			);
 			path = kmitlbike;
@@ -578,6 +652,70 @@
 				AC6B88A11DB1F88B0037F189 /* Classes */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		ACC15FAA1E3493E500088F6E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				ACC15FAB1E34940300088F6E /* Xib */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		ACC15FAB1E34940300088F6E /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				ACC15FA71E3493E100088F6E /* BorrowBikeTableViewCell.xib */,
+			);
+			name = Xib;
+			sourceTree = "<group>";
+		};
+		ACC3417A1E387BE600C6A3E1 /* Barcode */ = {
+			isa = PBXGroup;
+			children = (
+				ACC3417B1E387C1200C6A3E1 /* ScanBarcodeViewController.swift */,
+			);
+			name = Barcode;
+			sourceTree = "<group>";
+		};
+		ACC3417F1E38923600C6A3E1 /* Return */ = {
+			isa = PBXGroup;
+			children = (
+				ACC341831E38925600C6A3E1 /* Protocol */,
+				ACC341821E38924F00C6A3E1 /* Model */,
+				ACC341811E38924900C6A3E1 /* ViewController */,
+				ACC341801E38924200C6A3E1 /* ViewModel */,
+			);
+			name = Return;
+			sourceTree = "<group>";
+		};
+		ACC341801E38924200C6A3E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACC341811E38924900C6A3E1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACC341871E38929F00C6A3E1 /* ReturnBikeViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		ACC341821E38924F00C6A3E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ACC341831E38925600C6A3E1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocol;
 			sourceTree = "<group>";
 		};
 		ACD8A5A41DF1142D00E989AA /* IoC */ = {
@@ -608,6 +746,8 @@
 				ACD8A5AF1DF1220200E989AA /* Home.storyboard */,
 				AC38A8CD1E1F875B00F10CEB /* History.storyboard */,
 				AC38A8C91E1F85CF00F10CEB /* Borrow.storyboard */,
+				ACC3417D1E387CD400C6A3E1 /* Barcode.storyboard */,
+				ACC341891E38981400C6A3E1 /* Return.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -623,6 +763,7 @@
 		ACD8A5B61DF12D5200E989AA /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				ACC15FAA1E3493E500088F6E /* Resource */,
 				AC38A8E41E1F8B0D00F10CEB /* Classes */,
 			);
 			name = Home;
@@ -701,12 +842,18 @@
 			files = (
 				ACA05EB61E27649000453D8D /* More.storyboard in Resources */,
 				AC7EC60A1E26529C00766960 /* MoreHeaderTableViewCell.xib in Resources */,
+				AC2322551E277CA7005BF72E /* MoreButtonTableViewCell.xib in Resources */,
+				AC6A68411E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib in Resources */,
 				AC9068E91DB1D235009BC898 /* LaunchScreen.storyboard in Resources */,
 				AC38A8CA1E1F85CF00F10CEB /* Borrow.storyboard in Resources */,
+				ACC3417E1E387CD400C6A3E1 /* Barcode.storyboard in Resources */,
 				AC38A8CE1E1F875B00F10CEB /* History.storyboard in Resources */,
+				ACC3418A1E38981400C6A3E1 /* Return.storyboard in Resources */,
 				ACA05EB51E27649000453D8D /* Find.storyboard in Resources */,
 				ACD8A5B01DF1220200E989AA /* Home.storyboard in Resources */,
+				ACC15FA91E3493E100088F6E /* BorrowBikeTableViewCell.xib in Resources */,
 				AC7EC5F21E2494D700766960 /* BikeHistoryTableViewCell.xib in Resources */,
+				ACA05EBA1E276A0100453D8D /* MoreInfoTableViewCell.xib in Resources */,
 				AC9068E61DB1D235009BC898 /* Assets.xcassets in Resources */,
 				ACD8A5AE1DF121F400E989AA /* Login.storyboard in Resources */,
 			);
@@ -768,21 +915,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACD8A5BA1DF1306800E989AA /* SignupDelegate.swift in Sources */,
+				AC23225D1E29DD0D005BF72E /* FindViewModel.swift in Sources */,
+				AC6A68401E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift in Sources */,
 				AC6B88A91DB1FBFE0037F189 /* BaseViewModelProtocol.swift in Sources */,
 				ACD8A5A81DF1147D00E989AA /* BaseFactory.swift in Sources */,
 				AC6B88AD1DB1FC800037F189 /* BaseViewController.swift in Sources */,
 				ACD8A5B81DF1303D00E989AA /* SignupViewModel.swift in Sources */,
 				AC15F0AB1DB48144005A5779 /* LoginDelegate.swift in Sources */,
+				AC21E9C61E313AD400401CA9 /* BikeCircleButton.swift in Sources */,
+				AC6A683D1E29EF2600215DC1 /* CreditViewController.swift in Sources */,
 				AC7EC5F81E24B3E400766960 /* ServiceProvider.swift in Sources */,
 				ACEE800D1E101DBE007C6FC8 /* HomeViewController.swift in Sources */,
 				AC6B88B71DB35ACF0037F189 /* RoundButton.swift in Sources */,
+				ACC15FAF1E34CB4000088F6E /* AvailableBikeViewModel.swift in Sources */,
 				AC38A8E71E1F8B7200F10CEB /* CommonGlobal.swift in Sources */,
+				AC2322541E277CA7005BF72E /* MoreButtonTableViewCell.swift in Sources */,
 				AC15F0A91DB47538005A5779 /* UserData.swift in Sources */,
 				AC6B88CB1DB365C40037F189 /* BaseResponse.swift in Sources */,
 				AC7EC5FC1E25290400766960 /* HistorySummaryViewController.swift in Sources */,
 				AC6B88B11DB1FDF40037F189 /* UIColorExtension.swift in Sources */,
+				ACA05EBD1E276A2F00453D8D /* MoreHeaderTableViewCell.swift in Sources */,
+				AC23225F1E29DF72005BF72E /* BikeModelResponse.swift in Sources */,
+				ACC3417C1E387C1200C6A3E1 /* ScanBarcodeViewController.swift in Sources */,
 				ACD8A5A61DF1145000E989AA /* ViewControllerFactory.swift in Sources */,
 				AC7EC6041E26442400766960 /* MoreViewController.swift in Sources */,
+				ACC15FB51E35123C00088F6E /* BorrowBikeResponse.swift in Sources */,
+				AC21E9C81E313F6700401CA9 /* TutorialPopupViewController.swift in Sources */,
 				AC15F0A61DB4719D005A5779 /* GlobalModel.swift in Sources */,
 				ACD8A5AB1DF116B100E989AA /* NSObject+kmitlbike.swift in Sources */,
 				AC6B88B91DB35C210037F189 /* LoginViewController.swift in Sources */,
@@ -790,17 +948,23 @@
 				AC38A8E21E1F8ACF00F10CEB /* HistoryViewController.swift in Sources */,
 				AC6B88B31DB1FF440037F189 /* BaseViewModel.swift in Sources */,
 				AC6B88C41DB35CF30037F189 /* SignUpViewController.swift in Sources */,
+				ACC15FA81E3493E100088F6E /* BorrowBikeTableViewCell.swift in Sources */,
 				AC9068E11DB1D235009BC898 /* ViewController.swift in Sources */,
+				AC23225B1E29DCF9005BF72E /* FindViewController.swift in Sources */,
+				ACC15FAD1E34CB1B00088F6E /* AvailableBikeViewController.swift in Sources */,
 				ACD8A5B31DF12B9700E989AA /* CommonForm.swift in Sources */,
+				ACC341791E37764F00C6A3E1 /* BorrowBikeProtocol.swift in Sources */,
 				AC6B88C61DB35E170037F189 /* LoginViewModel.swift in Sources */,
 				AC9068DF1DB1D235009BC898 /* AppDelegate.swift in Sources */,
-				AC7EC6091E26529C00766960 /* MoreHeaderTableViewCell.swift in Sources */,
 				AC7EC5CD1E223C8700766960 /* KmitlBikeUser.swift in Sources */,
 				AC7EC5F11E2494D700766960 /* BikeHistoryTableViewCell.swift in Sources */,
+				ACC341881E38929F00C6A3E1 /* ReturnBikeViewController.swift in Sources */,
 				AC6B88E91DB38DDC0037F189 /* CommonRouter.swift in Sources */,
+				ACC15FB31E3501E300088F6E /* HomeViewModel.swift in Sources */,
 				AC7EC5F61E249EB900766960 /* HistoryDelegate.swift in Sources */,
 				AC6B88E41DB373990037F189 /* LoginResponse.swift in Sources */,
 				AC7EC5F41E249E7200766960 /* HistoryViewModel.swift in Sources */,
+				ACA05EBE1E276A2F00453D8D /* MoreInfoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
