@@ -20,6 +20,7 @@ class HistorySummaryViewController: BaseViewController {
     var bikeHistory : HistoryModel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupTitle(title: "Summary")
         self.initUI()
         self.initMap()
         self.drawMap()

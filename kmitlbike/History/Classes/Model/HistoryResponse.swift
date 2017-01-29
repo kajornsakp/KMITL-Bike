@@ -34,7 +34,7 @@ class HistoryResponse: BaseResponse {
     required public init(withDictionary dict : AnyObject) {
         super.init(withDictionary : dict)
         if let data = dict["history_list"] as? [AnyObject]{
-            historyList = data.map{ HistoryModel(withDictionary: $0 as! [String : AnyObject] as AnyObject) }
+            historyList = data.map{ HistoryModel(withDictionary: $0 as! AnyObject) }
         }
         
     }

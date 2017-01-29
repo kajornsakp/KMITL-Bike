@@ -18,12 +18,7 @@ class HistoryViewModel: BaseViewModel {
     var historyResponse : HistoryResponse!{
         didSet{
             self.historyList = historyResponse.historyList!.sorted{ (a, b) -> Bool in
-                let dateFormatter = DateFormatter()
-                dateFormatter.dateStyle = .medium
-                dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
-                let date = dateFormatter.date(from: a.borrowDate!)
-                let date2 = dateFormatter.date(from: b.borrowDate!)
-                return date!.compare(date2!) == .orderedDescending
+                return a.id! > b.id!
             }
             self.delegate?.onDataDidLoad()
         }
@@ -48,7 +43,7 @@ class HistoryViewModel: BaseViewModel {
         }
 
     }
-    func showError(error : Moya.Error){
+    override func showError(error : Moya.Error){
         SVProgressHUD.dismiss()
         guard let errorResponse = error.response else{
             return

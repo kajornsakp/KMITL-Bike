@@ -11,7 +11,7 @@ import UIKit
 class HistoryViewController: BaseViewController {
 
     var viewModel : HistoryViewModel!
-    @IBOutlet var tableView : UITableView!
+    @IBOutlet weak var tableView : UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = HistoryViewModel(delegate : self)
@@ -26,11 +26,13 @@ class HistoryViewController: BaseViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        self.setupTitle(title: "History")
         viewModel.getBikeHistory()
     }
     
     override func onDataDidLoad() {
         self.tableView.reloadData()
+        //TODO: add empty view
     }
     func setupTableView(){
         self.tableView.estimatedRowHeight = 500
