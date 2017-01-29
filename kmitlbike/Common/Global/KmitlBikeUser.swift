@@ -100,6 +100,12 @@ class UserSession : NSObject{
         store(data: data)
     }
     
+    func storeUsername(username : String){
+        let data = self.data
+        data.username = username
+        store(data: data)
+    }
+    
     func clearUserSession(){
         let data = self.data
         data.username = nil
