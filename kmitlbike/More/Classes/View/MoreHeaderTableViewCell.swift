@@ -10,16 +10,16 @@ import UIKit
 
 class MoreHeaderTableViewCell: UITableViewCell {
 
-    @IBOutlet var initialView : UIView!
-    @IBOutlet var initialLabel : UILabel!
-    @IBOutlet var firstNameLabel : UILabel!
-    @IBOutlet var lastNameLabel : UILabel!
-    @IBOutlet var maleGenderLabel : UILabel!
-    @IBOutlet var femaleGenderLabel : UILabel!
-    @IBOutlet var unknownGenderLabel : UILabel!
-    @IBOutlet var maleGenderImageView : UIImageView!
-    @IBOutlet var femaleGenderImageView : UIImageView!
-    @IBOutlet var unknownGenderImageView : UIImageView!
+    @IBOutlet weak var initialView : UIView!
+    @IBOutlet weak var initialLabel : UILabel!
+    @IBOutlet weak var firstNameLabel : UILabel!
+    @IBOutlet weak var lastNameLabel : UILabel!
+    @IBOutlet weak var maleGenderLabel : UILabel!
+    @IBOutlet weak var femaleGenderLabel : UILabel!
+    @IBOutlet weak var unknownGenderLabel : UILabel!
+    @IBOutlet weak var maleGenderImageView : UIImageView!
+    @IBOutlet weak var femaleGenderImageView : UIImageView!
+    @IBOutlet weak var unknownGenderImageView : UIImageView!
     
     static let nibName = "MoreHeaderTableViewCell"
     
