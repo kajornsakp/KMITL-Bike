@@ -15,12 +15,14 @@ class LoginViewModel: BaseViewModel {
     let provider = ServiceFactory.sharedInstance.resolve(service: RxMoyaProvider<KmitlBikeService>.self)
     var loginResponse : LoginResponse!
     weak var loginDelegate : LoginDelegate!
+    var username : String!
     func login(withUsername username : String, withPassword password : String){
         if username.isEmpty || password.isEmpty{
             self.invalidInput()
             return
         }
         SVProgressHUD.show()
+        self.username = username
         let form = LoginForm()
         form.username = username
         form.password = password
@@ -54,7 +56,8 @@ class LoginViewModel: BaseViewModel {
                 return
             }
             UserSession.sharedInstance.storeUser(user: user)
-            //UserSession.sharedInstance.storeToken(token: user.token)
+            UserSession.sharedInstance.storeUsername(username: self.username)
+            UserSession.sharedInstance.storeToken(token: user.token)
             self.loginDelegate.onLoginSuccess()
         }
     }
@@ -62,7 +65,7 @@ class LoginViewModel: BaseViewModel {
         self.loginDelegate.onLoginError(message: "Invalid input")
     }
     
-    func showError(error : Moya.Error){
+    override func showError(error : Moya.Error){
         guard let errorResponse = error.response else{
             self.loginDelegate.onLoginError(message: "Error")
             return

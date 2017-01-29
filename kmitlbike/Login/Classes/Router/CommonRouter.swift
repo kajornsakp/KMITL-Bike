@@ -41,7 +41,8 @@ enum KmitlBikeService{
     case borrow(bikeMac : String)
     case returnBike(totalTime : String,totalDistance : String,routeLine : [RoutePoint])
     case getHistory
-    
+    case getAvailableBike
+    case checkUpdate(version : String)
 }
 
 
@@ -72,14 +73,18 @@ extension KmitlBikeService : TargetType{
             return "/api/v1/user/return/"
         case .getHistory:
             return "/api/v1/user/history/"
+        case .getAvailableBike:
+            return "/api/v1/services/available/"
+        case .checkUpdate:
+            return "/api/v1/services/check_update/"
         }
     }
     
     var method : Moya.Method{
         switch self {
-        case .login,.signup,.borrow,.returnBike:
+        case .login,.signup,.borrow,.returnBike,.checkUpdate:
             return .post
-        case .getHistory:
+        case .getHistory,.getAvailableBike:
             return .get
         }
     }
@@ -101,8 +106,10 @@ extension KmitlBikeService : TargetType{
             strRouteLine = String(strRouteLine.characters.dropLast())
             
             return ["total_time":totalTime,"total_distance":totalDistance,"route_line":strRouteLine]
-        case .getHistory:
+        case .getHistory,.getAvailableBike:
             return [:]
+        case .checkUpdate(let version):
+            return ["platform":"iOS","app_version":version]
         }
     }
     
@@ -119,9 +126,8 @@ extension KmitlBikeService : TargetType{
     
     var task : Task{
         switch self {
-        case .login,.signup,.borrow,.returnBike,.getHistory:
+        default:
             return .request
-       
         }
     }
 }
@@ -129,9 +135,9 @@ extension KmitlBikeService : TargetType{
 extension KmitlBikeService{
     public var requiresAnyToken: Bool {
         switch self {
-        case .login:
+        case .login,.checkUpdate:
             return false
-        case .borrow,.returnBike,.getHistory:
+        case .borrow,.returnBike,.getHistory,.getAvailableBike:
             return true
         default:
             return true

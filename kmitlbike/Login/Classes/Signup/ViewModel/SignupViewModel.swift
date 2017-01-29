@@ -13,10 +13,15 @@ import SVProgressHUD
 class SignupViewModel: BaseViewModel {
     
     let provider = ServiceFactory.sharedInstance.resolve(service: RxMoyaProvider<KmitlBikeService>.self)
-    var loginResponse : LoginResponse!
+    var signupResponse : BaseResponse!{
+        didSet{
+            self.checkResponse()
+        }
+    }
     weak var signupDelegate : SignupDelegate!
     func signup(withUsername username : String,firstName : String,lastName : String,gender : Int,email : String , mobileNumber : String){
         if(!self.inputValidation(username: username,firstName: firstName,lastName: lastName,email: email,mobileNumber: mobileNumber)){
+            self.signupDelegate.onInputError(message: "Invalid information")
             return
         }
         let form = SignupForm()
@@ -26,6 +31,7 @@ class SignupViewModel: BaseViewModel {
         form.gender = gender
         form.email = email
         form.mobileNumber = mobileNumber
+        SVProgressHUD.show()
         provider.request(.signup(form: form))
             .filterSuccessfulStatusCodes()
             .mapJSON()
@@ -33,7 +39,8 @@ class SignupViewModel: BaseViewModel {
                 print("event",event)
                 switch event{
                 case .next(let element):
-                    print(element)
+                    let response = BaseResponse(withDictionary: element as AnyObject)
+                    self.signupResponse = response
                 case .error(let error):
                     self.showError(error: error as! Moya.Error)
                 default:
@@ -45,7 +52,14 @@ class SignupViewModel: BaseViewModel {
 
     }
     
-    
+    func checkResponse(){
+        switch self.signupResponse.result! {
+        case "success":
+            self.signupDelegate.onSignupSuccess()
+        default:
+            self.signupDelegate.onSignupError(message: "Failed to register.Please try again")
+        }
+    }
     func inputValidation(username : String,firstName : String,lastName : String,email : String,mobileNumber : String)->Bool{
         if username.isEmpty {
             return false
@@ -65,7 +79,7 @@ class SignupViewModel: BaseViewModel {
         return true
     }
 
-    func showError(error : Moya.Error){
+    override func showError(error : Moya.Error){
         SVProgressHUD.dismiss()
         print(error)
     }

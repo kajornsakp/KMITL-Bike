@@ -21,6 +21,7 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         viewModel = LoginViewModel(delegate : self)
         viewModel.loginDelegate = self
+        self.setTapGesture()
         // Do any additional setup after loading the view.
     }
 
@@ -30,8 +31,9 @@ class LoginViewController: BaseViewController {
     }
     
     @IBAction func loginButtonClick(_ sender: Any) {
+        self.loginButton.isEnabled = false
         if(Developer.ENABLED && Developer.BYPASS_LOGIN){
-            viewModel.login(withUsername: "s7090006", withPassword: "Abcde016400")
+           viewModel.login(withUsername: "s7090006", withPassword: "Abcde016400")
         }
         else{
             viewModel.login(withUsername: usernameTextField.text!, withPassword: passwordTextField.text!)
@@ -43,6 +45,7 @@ class LoginViewController: BaseViewController {
 
 extension LoginViewController : LoginDelegate{
     func onLoginSuccess() {
+        self.loginButton.isEnabled = true
         SVProgressHUD.dismiss()
         SVProgressHUD.showSuccess(withStatus: "Login Success")
         let storyboard = UIStoryboard(name: "Home", bundle: nil)
@@ -51,12 +54,15 @@ extension LoginViewController : LoginDelegate{
     }
     
     func onFirstTimeLogin() {
+        self.loginButton.isEnabled = true
         SVProgressHUD.dismiss()
         let vc = ViewControllerFactory.sharedInstance.resolve(service: SignUpViewController.self)
+        vc.username = self.usernameTextField.text
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func onLoginError(message: String) {
+        self.loginButton.isEnabled = true
         SVProgressHUD.dismiss()
         SVProgressHUD.showError(withStatus: message)
     }
