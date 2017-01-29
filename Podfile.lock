@@ -14,8 +14,10 @@ PODS:
   - Moya/RxSwift (8.0.0-beta.4):
     - Moya/Core
     - RxSwift (~> 3.0)
-  - Presentr (1.0.3)
+  - PermissionScope (1.1.1)
+  - PopupDialog (0.5.3)
   - Result (3.1.0)
+  - RSBarcodes_Swift (3.0.3)
   - RxCocoa (3.0.1):
     - RxSwift (~> 3.0)
   - RxSwift (3.0.1)
@@ -27,7 +29,9 @@ DEPENDENCIES:
   - GoogleMaps (= 2.1.1)
   - Moya (= 8.0.0-beta.4)
   - Moya/RxSwift (= 8.0.0-beta.4)
-  - Presentr (= 1.0.3)
+  - PermissionScope
+  - PopupDialog (~> 0.5)
+  - RSBarcodes_Swift (~> 3.0.3)
   - RxCocoa (= 3.0.1)
   - RxSwift (= 3.0.1)
   - SVProgressHUD (= 2.0.4)
@@ -38,13 +42,15 @@ SPEC CHECKSUMS:
   EZSwiftExtensions: 4afef248066a036903d8496bf07bc355b22ce766
   GoogleMaps: a5b5bbe47734e2443bde781a6aa64e69fdb6d785
   Moya: bad6f72ec40661f09a8cd85ab470226d2795a485
-  Presentr: 9759bf538d9f3211a5ee1314a541a11bbea7ea71
+  PermissionScope: a30c16e015779ba27c97c124e7539e27b5829de2
+  PopupDialog: 533dd564f8781633375505b9fbd406f8f146ccc9
   Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
+  RSBarcodes_Swift: 3b4a9c2e81fe9f435a26f18a1b8b826665e7cf89
   RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
   RxSwift: af5680055c4ad04480189c52d28385b1029493a6
   SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
   Swinject: 69a893192efa9f2cc44be79ef423d04d571b6af9
 
-PODFILE CHECKSUM: 53ea3cdea8fdee86b2b9c4a0260b62ecf3187110
+PODFILE CHECKSUM: c17d6d72c64f7b4df2c5149759c8fb26ecac9e0e
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.1.1

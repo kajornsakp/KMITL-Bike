@@ -7,12 +7,14 @@ target 'kmitlbike' do
   pod 'Moya','8.0.0-beta.4'
   pod 'EZSwiftExtensions','1.7'
   pod 'GoogleMaps','2.1.1'
-  pod 'Presentr','1.0.3'
   pod 'Moya/RxSwift','8.0.0-beta.4'
   pod 'RxSwift','3.0.1'
   pod 'RxCocoa','3.0.1'
   pod 'SVProgressHUD','2.0.4'
   pod 'Swinject', '2.0.0-beta.2'
+  pod 'PopupDialog', '~> 0.5'
+  pod 'PermissionScope'
+  pod 'RSBarcodes_Swift', '~> 3.0.3'
   # Pods for kmitlbike
 
 end
