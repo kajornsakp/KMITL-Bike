@@ -25,3 +25,5 @@ class RoutePoint{
         self.time = dict["time"] as? TimeInterval
     }
 }
+
+

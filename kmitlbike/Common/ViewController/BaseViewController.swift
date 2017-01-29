@@ -14,15 +14,26 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setNotification()
-        self.setTapGesture()
+        self.setNavigationBar()
         // Do any additional setup after loading the view.
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    func setNavigationBar(){
+        self.navigationController?.navigationBar.barTintColor = KmitlColor.LightMainGreenColor.color()
+        self.navigationController?.navigationBar.tintColor = KmitlColor.White.color()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : KmitlColor.White.color()]
+    }
+    
+    func setupTitle(title : String){
+        self.navigationItem.title = title
+    }
+    
     func setTapGesture() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         view.addGestureRecognizer(tap)

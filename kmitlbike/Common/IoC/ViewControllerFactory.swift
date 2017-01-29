@@ -13,6 +13,10 @@ private struct Storyboard {
     static let login = "Login"
     static let home = "Home"
     static let history = "History"
+    static let more = "More"
+    static let borrow = "Borrow"
+    static let barcode = "Barcode"
+    static let returnBike = "Return"
 }
 
 class ViewControllerFactory: BaseFactory
@@ -28,6 +32,11 @@ class ViewControllerFactory: BaseFactory
         signupViewController()
         homeViewController()
         historySummaryViewController()
+        creditViewController()
+        tutorialPopupViewController()
+        availableBikeViewController()
+        scanBarcodeViewController()
+        returnBikeViewController()
     }
     
     // MARK:
@@ -62,6 +71,46 @@ class ViewControllerFactory: BaseFactory
             _ in
             let storyboard = UIStoryboard(name: Storyboard.history, bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: HistorySummaryViewController.className) as! HistorySummaryViewController
+            return vc
+        }
+    }
+    private func creditViewController(){
+        container.register(CreditViewController.self){
+            _ in
+            let storyboard = UIStoryboard(name: Storyboard.more, bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: CreditViewController.className) as! CreditViewController
+            return vc
+        }
+    }
+    private func tutorialPopupViewController(){
+        container.register(TutorialPopupViewController.self){
+            _ in
+            let storyboard = UIStoryboard(name: Storyboard.borrow, bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: TutorialPopupViewController.className) as! TutorialPopupViewController
+            return vc
+        }
+    }
+    private func availableBikeViewController(){
+        container.register(AvailableBikeViewController.self){
+            _ in
+            let storyboard = UIStoryboard(name: Storyboard.borrow, bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: AvailableBikeViewController.className) as! AvailableBikeViewController
+            return vc
+        }
+    }
+    private func scanBarcodeViewController(){
+        container.register(ScanBarcodeViewController.self){
+            _ in
+            let storyboard = UIStoryboard(name: Storyboard.barcode, bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: ScanBarcodeViewController.className) as! ScanBarcodeViewController
+            return vc
+        }
+    }
+    private func returnBikeViewController(){
+        container.register(ReturnBikeViewController.self){
+            _ in
+            let storyboard = UIStoryboard(name: Storyboard.returnBike, bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: ReturnBikeViewController.className) as! ReturnBikeViewController
             return vc
         }
     }
