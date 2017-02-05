@@ -22,7 +22,7 @@ class FindViewModel: BaseViewModel {
     }
     func getAvailableBike(){
         SVProgressHUD.show()
-        provider.request(.getAvailableBike)
+        let _ = provider.request(.getAvailableBike)
             .filterSuccessfulStatusCodes()
             .mapJSON()
             .subscribe{ event in

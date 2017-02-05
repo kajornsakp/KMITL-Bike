@@ -23,6 +23,7 @@ class FindViewController: BaseViewController {
         super.viewWillAppear(true)
         self.viewModel.getAvailableBike()
         self.setupTitle(title: "Find")
+        self.tabBarController?.tabBar.tintColor = KmitlColor.LightMainGreenColor.color()
     }
 
     
@@ -41,7 +42,7 @@ class FindViewController: BaseViewController {
     
     func updateMap(){
         self.mapView.clear()
-        self.viewModel.bikeList.map {
+        let _ = self.viewModel.bikeList.map {
             let lat = Double($0.currentLat!)
             let long = Double($0.currentLong!)
             let postion : CLLocationCoordinate2D = CLLocationCoordinate2DMake(lat!, long!)
