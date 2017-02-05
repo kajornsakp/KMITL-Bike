@@ -27,6 +27,7 @@ class HistoryViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.setupTitle(title: "History")
+        self.tabBarController?.tabBar.tintColor = KmitlColor.LightMainGreenColor.color()
         viewModel.getBikeHistory()
     }
     

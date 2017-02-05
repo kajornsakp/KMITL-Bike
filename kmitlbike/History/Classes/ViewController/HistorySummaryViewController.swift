@@ -57,7 +57,7 @@ class HistorySummaryViewController: BaseViewController {
                 return date.compare(date2) == .orderedAscending
             })
             let path = GMSMutablePath()
-            coordinateArray.map{ path.add(CLLocationCoordinate2D(latitude: $0.lat!, longitude: $0.lng!))}
+            let _ = coordinateArray.map{ path.add(CLLocationCoordinate2D(latitude: $0.lat!, longitude: $0.lng!))}
             let polyline = GMSPolyline(path: path)
             let outerPolyline = GMSPolyline(path: path)
             polyline.strokeWidth = 2.5

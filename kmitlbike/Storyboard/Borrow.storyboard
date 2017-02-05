@@ -115,6 +115,58 @@
             </objects>
             <point key="canvasLocation" x="940" y="-1128"/>
         </scene>
+        <!--Unlock Bike Code View Controller-->
+        <scene sceneID="9lj-N7-dZY">
+            <objects>
+                <viewController storyboardIdentifier="UnlockBikeCodeViewController" id="eRb-OM-4MI" customClass="UnlockBikeCodeViewController" customModule="kmitlbike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qc3-a6-43n"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qef-xb-gJA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nx9-BE-nSm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="sPA-Fq-JVi">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlocking" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVy-Zm-5az">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="92.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.75686274509999996" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlock the bike using this passcode" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OC8-Pq-NN6">
+                                        <rect key="frame" x="0.0" y="92.5" width="375" height="80"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzf-y5-Kkg">
+                                        <rect key="frame" x="0.0" y="172.5" width="375" height="101.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.75686274509999996" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kmitlbike_how_to_lock" translatesAutoresizingMaskIntoConstraints="NO" id="18b-bq-3V9">
+                                        <rect key="frame" x="0.0" y="274" width="375" height="373"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qef-xb-gJA" firstAttribute="top" secondItem="sPA-Fq-JVi" secondAttribute="bottom" id="WEo-7k-6CK"/>
+                            <constraint firstItem="sPA-Fq-JVi" firstAttribute="top" secondItem="Qc3-a6-43n" secondAttribute="bottom" id="apA-78-8ob"/>
+                            <constraint firstAttribute="trailing" secondItem="sPA-Fq-JVi" secondAttribute="trailing" id="dLb-cd-ofV"/>
+                            <constraint firstItem="sPA-Fq-JVi" firstAttribute="leading" secondItem="nx9-BE-nSm" secondAttribute="leading" id="vnn-yE-uN7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aN6-Gn-bod" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="-435"/>
+        </scene>
         <!--Available Bike View Controller-->
         <scene sceneID="6OB-BQ-Ni4">
             <objects>
@@ -190,6 +242,7 @@
     </scenes>
     <resources>
         <image name="kmitlbike_borrow_button" width="320" height="320"/>
+        <image name="kmitlbike_how_to_lock" width="160" height="107"/>
         <image name="kmitlbike_tab_icon_home" width="32" height="32"/>
     </resources>
 </document>

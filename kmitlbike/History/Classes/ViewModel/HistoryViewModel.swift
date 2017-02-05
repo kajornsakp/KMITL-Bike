@@ -25,7 +25,7 @@ class HistoryViewModel: BaseViewModel {
     }
     func getBikeHistory(){
         SVProgressHUD.show()
-        provider.request(.getHistory)
+        let _ = provider.request(.getHistory)
             .filterSuccessfulStatusCodes()
             .mapJSON()
             .subscribe{ event in

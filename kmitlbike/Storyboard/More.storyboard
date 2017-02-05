@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DWv-CG-cLv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DWv-CG-cLv">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -85,6 +85,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="11h-mq-Tg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="879" y="-2527"/>
+        </scene>
+        <!--Terms Condition View Controller-->
+        <scene sceneID="MgH-xf-ufm">
+            <objects>
+                <viewController storyboardIdentifier="TermsConditionViewController" automaticallyAdjustsScrollViewInsets="NO" id="Sjd-tn-Ydp" customClass="TermsConditionViewController" customModule="kmitlbike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nb2-LQ-g72"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jjm-1t-TWF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1jg-4D-tLo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogG-rm-YRj">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ogG-rm-YRj" firstAttribute="leading" secondItem="1jg-4D-tLo" secondAttribute="leading" id="Trv-VJ-WBs"/>
+                            <constraint firstItem="ogG-rm-YRj" firstAttribute="top" secondItem="nb2-LQ-g72" secondAttribute="bottom" id="YFM-Me-1RH"/>
+                            <constraint firstItem="Jjm-1t-TWF" firstAttribute="top" secondItem="ogG-rm-YRj" secondAttribute="bottom" id="p6q-q7-Z1j"/>
+                            <constraint firstAttribute="trailing" secondItem="ogG-rm-YRj" secondAttribute="trailing" id="sTk-14-LAw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="ogG-rm-YRj" id="jt7-4y-Df1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GLy-Qo-2Zc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879" y="-1800"/>
         </scene>
     </scenes>
 </document>
