@@ -68,6 +68,7 @@ class ScanBarcodeViewController: RSCodeReaderViewController {
     func styleScan() {
         let types = NSMutableArray(array: self.output.availableMetadataObjectTypes)
         types.remove(AVMetadataObjectTypeQRCode)
+        
         self.output.metadataObjectTypes = NSArray(array: types) as [AnyObject]
         for subview in self.view.subviews {
             self.view.bringSubview(toFront: subview)

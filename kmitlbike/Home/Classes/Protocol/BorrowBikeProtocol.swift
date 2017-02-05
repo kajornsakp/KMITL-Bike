@@ -10,6 +10,6 @@ import Foundation
 
 
 protocol BorrowBikeDelegate : class{
-    func onBorrowBikeSuccess(bike : BikeModel)
+    func onBorrowBikeSuccess(passcode : String)
     func onBorrowBikeFailed(message : String)
 }

@@ -34,7 +34,7 @@ class SignUpViewController: BaseViewController {
     
 
     @IBAction func onBackButtonClick(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        let _ = self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func onSignupButtonClick(_ sender: Any) {
@@ -51,7 +51,7 @@ class SignUpViewController: BaseViewController {
 extension SignUpViewController : SignupDelegate{
     func onSignupSuccess() {
         SVProgressHUD.showSuccess(withStatus: "Register success!")
-        self.navigationController?.popViewController(animated: true)
+        let _ = self.navigationController?.popViewController(animated: true)
     }
     func onSignupError(message: String) {
         SVProgressHUD.showError(withStatus: message)

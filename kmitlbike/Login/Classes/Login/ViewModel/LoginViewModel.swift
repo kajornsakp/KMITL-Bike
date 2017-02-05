@@ -26,7 +26,7 @@ class LoginViewModel: BaseViewModel {
         let form = LoginForm()
         form.username = username
         form.password = password
-        provider.request(.login(form: form))
+        let _ = provider.request(.login(form: form))
             .filterSuccessfulStatusCodes()
             .mapJSON()
             .subscribe{ event in

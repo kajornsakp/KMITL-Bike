@@ -10,8 +10,13 @@ import Foundation
 
 
 class BorrowBikeResponse : BaseResponse{
-    
+    var passcode : String?
+    var bikeMac : String?
     required init(withDictionary dict: AnyObject) {
         super.init(withDictionary: dict)
+        self.passcode = dict["passcode"] as? String
+        self.bikeMac = dict["bike_mac"] as? String
     }
 }
+
+

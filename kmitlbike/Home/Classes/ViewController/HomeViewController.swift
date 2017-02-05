@@ -19,15 +19,16 @@ class HomeViewController: BaseViewController {
         viewModel.borrowBikeDelegate = self
         self.setTabBar()
         self.setupTitle(title: "Borrow Bike")
+        viewModel.getStatus()
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        
     }
     
     func setTabBar(){
         self.tabBarController?.tabBarItem.title = "Borrow"
+        self.tabBarController?.tabBar.tintColor = KmitlColor.LightMainGreenColor.color()
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,8 +45,11 @@ class HomeViewController: BaseViewController {
         let popup = PopupDialog(viewController: vc, buttonAlignment: .vertical, transitionStyle: .bounceUp, gestureDismissal: true, completion: nil)
         let buttonOne = DefaultButton(title: "NEXT") {
             if(Developer.ENABLED){
-                let vc = ViewControllerFactory.sharedInstance.resolve(service: ReturnBikeViewController.self)
-                self.present(vc, animated: true, completion: nil)
+//                let vc = ViewControllerFactory.sharedInstance.resolve(service: ReturnBikeViewController.self)
+//                let ridingBike = RidingBikeModel(withBikeMac: "KB010", passcode: "12345", borrowTime: NSDate())
+//                vc.ridingBikeModel = ridingBike
+//                self.present(vc, animated: true, completion: nil)
+                self.checkPermission()
             }
             else{
                 self.checkPermission()
@@ -57,6 +61,17 @@ class HomeViewController: BaseViewController {
         self.present(popup, animated: true, completion: nil)
     }
 
+    func showHowToLock(){
+        let vc = ViewControllerFactory.sharedInstance.resolve(service: UnlockBikeCodeViewController.self)
+        let popup = PopupDialog(viewController: vc, buttonAlignment: .vertical, transitionStyle: .bounceUp, gestureDismissal: true, completion: nil)
+        let buttonNext = DefaultButton(title: "NEXT"){
+            
+        }
+        buttonNext.buttonColor = KmitlColor.LightMainGreenColor.color()
+        buttonNext.titleColor = KmitlColor.White.color()
+        popup.addButton(buttonNext)
+        self.present(popup,animated: true,completion: nil)
+    }
     func checkPermission(){
         switch PermissionScope().statusLocationInUse() {
         case .unknown:
@@ -78,8 +93,6 @@ class HomeViewController: BaseViewController {
         case .authorized:
             showBarcodeScanner()
             return
-        default:
-            return
         }
     }
     
@@ -89,34 +102,46 @@ class HomeViewController: BaseViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    func showAvailableBike(){
-        let vc = ViewControllerFactory.sharedInstance.resolve(service: AvailableBikeViewController.self)
-        vc.availableBikeDelegate = self
-        let popup = PopupDialog(viewController: vc, buttonAlignment: .vertical, transitionStyle: .bounceUp, gestureDismissal: true, completion: nil)
-        self.present(popup, animated: true, completion: nil)
+    override func onDataDidLoad() {
+        if let result = self.viewModel.userStatusResponse.result{
+            switch result {
+            case "success":
+                print("success")
+            case "continue":
+                self.resumeBikeSession()
+            default:
+                SVProgressHUD.showError(withStatus: "Failed to connect to server")
+            }
+        }
     }
-}
-
-extension HomeViewController : AvailableBikeDelegate{
-    func didSelectBike(bike: BikeModel) {
-        if let bikeMac = bike.bikeMac{
-            self.viewModel.currentBike = bike
-            self.viewModel.borrowBike(bikeMac: bikeMac)
+    
+    func resumeBikeSession(){
+        if let session = self.viewModel.userStatusResponse{
+            guard let bikeMac = session.bikeMac,let passcode = session.passcode,let routeLine = session.routeLine,let totalTime = session.totalTime,let totalDistance = session.totalDistance else{
+                return
+            }
+            let bikeSession = BikeSessionModel(withBikeMac: bikeMac, passcode: passcode, currentLat: "", currentLong: "", totalTime: totalTime, totalDistance: totalDistance, routeLine: routeLine)
+            let routeArray = bikeSession.getRouteLine()
+            let vc = ViewControllerFactory.sharedInstance.resolve(service: ReturnBikeViewController.self)
+            vc.ridingBikeModel = RidingBikeModel(withBikeMac: bikeSession.bikeMac!, passcode: bikeSession.passcode!, borrowTime: Date() as NSDate, totalTime: 0, totalDistance: Double(0.0), routeLine: routeArray)
+            self.present(vc, animated: true, completion: nil)
         }
     }
 }
 
+
 extension HomeViewController : ScanBikeDelegate{
     func onScanBikeSuccess(barcode: String) {
-        //self.viewModel.borrowBike(bikeMac: barcode)
-        self.navigationController?.popToRootViewController(animated: true)
-        let vc = ViewControllerFactory.sharedInstance.resolve(service: ReturnBikeViewController.self)
-        self.present(vc, animated: true, completion: nil)
+        let _ = self.navigationController?.popToRootViewController(animated: true)
+        self.viewModel.borrowBike(barcode: barcode)
     }
 }
 extension HomeViewController : BorrowBikeDelegate{
-    func onBorrowBikeSuccess(bike : BikeModel) {
-        let vc = ViewControllerFactory.sharedInstance.resolve(service: ReturnBikeViewController.self) 
+    func onBorrowBikeSuccess(passcode : String) {
+        SVProgressHUD.dismiss()
+        let vc = ViewControllerFactory.sharedInstance.resolve(service: ReturnBikeViewController.self)
+        let ridingBike = RidingBikeModel(withBikeMac: passcode, passcode: passcode, borrowTime: NSDate())
+        vc.ridingBikeModel = ridingBike
         self.navigationController?.pushViewController(vc, animated: true)
     }
     func onBorrowBikeFailed(message: String) {

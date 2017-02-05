@@ -28,6 +28,7 @@ class MoreViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.setupTitle(title: "More")
+        self.tabBarController?.tabBar.tintColor = KmitlColor.LightMainGreenColor.color()
     }
     func registerNib(){
         self.tableView.register(UINib(nibName: MoreHeaderTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: MoreHeaderTableViewCell.className)
@@ -57,7 +58,12 @@ class MoreViewController: BaseViewController {
         UserSession.sharedInstance.clearUserSession()
         let vc = ViewControllerFactory.sharedInstance.resolve(service: LoginViewController.self)
         UIApplication.shared.keyWindow?.rootViewController = vc
-        self.navigationController?.popToRootViewController(animated: true)
+        let _ = self.navigationController?.popToRootViewController(animated: true)
+    }
+    
+    func onTermsConditionClick(){
+        let vc = ViewControllerFactory.sharedInstance.resolve(service: TermsConditionViewController.self)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -73,7 +79,7 @@ extension MoreViewController : UITableViewDelegate,UITableViewDataSource{
             case .info:
                 return self.infoDetailList.count
             case .button:
-                return 2
+                return 3
             }
         }
         return 0
@@ -91,7 +97,7 @@ extension MoreViewController : UITableViewDelegate,UITableViewDataSource{
                 
             case .button:
                 let cell = tableView.dequeueReusableCell(withIdentifier: MoreButtonTableViewCell.className) as! MoreButtonTableViewCell
-                cell.buttonType = indexPath.row == 0 ? ButtonType.about : ButtonType.logout
+                cell.buttonType = ButtonType(rawValue: indexPath.row)
                 return cell
             }
         }
@@ -101,16 +107,24 @@ extension MoreViewController : UITableViewDelegate,UITableViewDataSource{
         if let index = MoreTableViewIndex(rawValue: indexPath.section){
             switch index{
             case .button:
-                if indexPath.row == 0 {
-                    self.onAboutClick()
-                }
-                else{
-                    self.onLogoutClick()
-                }
+                let buttonType = ButtonType(rawValue: indexPath.row)
+                self.buttonCellClick(buttonType: buttonType!)
                 
             default:
                 break
             }
         }
     }
+    
+    func buttonCellClick(buttonType : ButtonType){
+        switch buttonType {
+        case .about:
+            self.onAboutClick()
+        case .termscondition:
+            self.onTermsConditionClick()
+        case .logout:
+            self.onLogoutClick()
+        }
+    }
+    
 }

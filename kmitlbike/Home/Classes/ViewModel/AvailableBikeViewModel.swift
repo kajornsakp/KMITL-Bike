@@ -21,7 +21,7 @@ class AvailableBikeViewModel: BaseViewModel {
         }
     }
     func getAvailableBike(){
-        provider.request(.getAvailableBike)
+        let _ = provider.request(.getAvailableBike)
             .filterSuccessfulStatusCodes()
             .mapJSON()
             .subscribe{ event in

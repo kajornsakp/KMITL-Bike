@@ -38,11 +38,13 @@ let provider = RxMoyaProvider<KmitlBikeService>(endpointClosure : endpointClosur
 enum KmitlBikeService{
     case login(form : LoginForm)
     case signup(form : SignupForm)
-    case borrow(bikeMac : String)
-    case returnBike(totalTime : String,totalDistance : String,routeLine : [RoutePoint])
+    case borrow(barcode : String)
+    case returnBike(form : ReturnForm)
     case getHistory
     case getAvailableBike
     case checkUpdate(version : String)
+    case getStatus
+    case getTermsCondition
 }
 
 
@@ -59,7 +61,7 @@ public func url(_ route: TargetType) -> String {
 
 extension KmitlBikeService : TargetType{
     var baseURL : URL{
-        return URL(string: "http://161.246.94.246:1995")!
+        return URL(string: "https://app.greenkmitl.com")!
     }
     var path : String{
         switch self {
@@ -68,7 +70,7 @@ extension KmitlBikeService : TargetType{
         case .signup:
             return "/api/v1/services/register/"
         case .borrow:
-            return "/api/v1/user/borrow/"
+            return "/api/v2/user/borrow/"
         case .returnBike:
             return "/api/v1/user/return/"
         case .getHistory:
@@ -77,6 +79,10 @@ extension KmitlBikeService : TargetType{
             return "/api/v1/services/available/"
         case .checkUpdate:
             return "/api/v1/services/check_update/"
+        case .getStatus:
+            return "/api/v1/user/status"
+        case .getTermsCondition:
+            return "/api/v1/services/get_terms_conditions"
         }
     }
     
@@ -84,7 +90,7 @@ extension KmitlBikeService : TargetType{
         switch self {
         case .login,.signup,.borrow,.returnBike,.checkUpdate:
             return .post
-        case .getHistory,.getAvailableBike:
+        case .getHistory,.getAvailableBike,.getStatus,.getTermsCondition:
             return .get
         }
     }
@@ -95,21 +101,14 @@ extension KmitlBikeService : TargetType{
             return form.toDict()
         case .signup(let form):
             return form.toDict()
-        case .borrow(let bikeMac):
-            return ["bike_mac":bikeMac]
-        case .returnBike(let totalTime,let totalDistance,let routeLine):
-            var strRouteLine = ""
-            for coordinate in routeLine {
-                let strObj = "{\"lat\":\(coordinate.lat),\"lng\":\(coordinate.lng),\"time\":\(coordinate.time)},"
-                strRouteLine += strObj
-            }
-            strRouteLine = String(strRouteLine.characters.dropLast())
-            
-            return ["total_time":totalTime,"total_distance":totalDistance,"route_line":strRouteLine]
-        case .getHistory,.getAvailableBike:
-            return [:]
+        case .borrow(let barcode):
+            return ["bike_barcode":barcode]
+        case .returnBike(let form):
+            return form.toDict()
         case .checkUpdate(let version):
             return ["platform":"iOS","app_version":version]
+        default:
+            return [:]
         }
     }
     
@@ -135,9 +134,9 @@ extension KmitlBikeService : TargetType{
 extension KmitlBikeService{
     public var requiresAnyToken: Bool {
         switch self {
-        case .login,.checkUpdate:
+        case .login,.checkUpdate,.getTermsCondition:
             return false
-        case .borrow,.returnBike,.getHistory,.getAvailableBike:
+        case .borrow,.returnBike,.getHistory,.getAvailableBike,.getStatus:
             return true
         default:
             return true

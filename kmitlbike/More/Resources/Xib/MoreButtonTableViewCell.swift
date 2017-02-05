@@ -8,8 +8,8 @@
 
 import UIKit
 
-enum ButtonType{
-    case about,logout
+enum ButtonType:Int{
+    case about=0,termscondition,logout
 }
 class MoreButtonTableViewCell: UITableViewCell {
 
@@ -33,6 +33,9 @@ class MoreButtonTableViewCell: UITableViewCell {
         case .logout:
             self.buttonImageView.image = #imageLiteral(resourceName: "kmitlbike_more_button_logout")
             self.buttonTitleLabel.text = "Logout"
+        case .termscondition:
+            self.buttonImageView.image = #imageLiteral(resourceName: "kmitlbike_more_button_about")
+            self.buttonTitleLabel.text = "Terms & Condition"
         }
     }
 

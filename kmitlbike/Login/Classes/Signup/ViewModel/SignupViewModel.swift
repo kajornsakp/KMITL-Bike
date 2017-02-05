@@ -32,7 +32,7 @@ class SignupViewModel: BaseViewModel {
         form.email = email
         form.mobileNumber = mobileNumber
         SVProgressHUD.show()
-        provider.request(.signup(form: form))
+        let _ = provider.request(.signup(form: form))
             .filterSuccessfulStatusCodes()
             .mapJSON()
             .subscribe{ event in
