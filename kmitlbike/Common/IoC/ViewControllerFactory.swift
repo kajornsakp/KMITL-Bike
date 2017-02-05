@@ -34,9 +34,14 @@ class ViewControllerFactory: BaseFactory
         historySummaryViewController()
         creditViewController()
         tutorialPopupViewController()
+        unlockBikeCodeViewController()
+        scanBikeBarcodeViewController()
         availableBikeViewController()
         scanBarcodeViewController()
         returnBikeViewController()
+        returnBikeButtonViewController()
+        returnBikeMapViewController()
+        termsConditionViewController()
     }
     
     // MARK:
@@ -114,4 +119,46 @@ class ViewControllerFactory: BaseFactory
             return vc
         }
     }
+    private func returnBikeButtonViewController(){
+        container.register(ReturnButtonViewController.self){
+            _ in
+            let storyboard = UIStoryboard(name: Storyboard.returnBike, bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: ReturnButtonViewController.className) as! ReturnButtonViewController
+            return vc
+        }
+    }
+    private func returnBikeMapViewController(){
+        container.register(ReturnMapViewController.self){
+            _ in
+            let storyboard = UIStoryboard(name: Storyboard.returnBike, bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: ReturnMapViewController.className) as! ReturnMapViewController
+            return vc
+        }
+    }
+    private func unlockBikeCodeViewController(){
+        container.register(UnlockBikeCodeViewController.self){
+            _ in
+            let storyboard = UIStoryboard(name: Storyboard.borrow, bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: UnlockBikeCodeViewController.className) as! UnlockBikeCodeViewController
+            return vc
+        }
+    }
+    private func scanBikeBarcodeViewController(){
+        container.register(ScanBikeBarcodeViewController.self){
+            _ in
+            let storyboard = UIStoryboard(name: Storyboard.borrow, bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: ScanBikeBarcodeViewController.className) as! ScanBikeBarcodeViewController
+            return vc
+        }
+    }
+    
+    private func termsConditionViewController(){
+        container.register(TermsConditionViewController.self){
+            _ in
+            let storyboard = UIStoryboard(name: Storyboard.more, bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: TermsConditionViewController.className) as! TermsConditionViewController
+            return vc
+        }
+    }
+    
 }

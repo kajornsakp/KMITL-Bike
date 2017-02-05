@@ -17,7 +17,6 @@ public class BaseViewModel : NSObject{
         self.delegate = delegate
     }
     func showError(error : Moya.Error){
-        SVProgressHUD.dismiss()
         guard let errorResponse = error.response else{
             return
         }
@@ -25,7 +24,7 @@ public class BaseViewModel : NSObject{
         case 400:
             print("error")
         case 406:
-            SVProgressHUD.showError(withStatus: "Service is unavailable")
+            SVProgressHUD.showError(withStatus: errorResponse.description)
         case 500...599:
             SVProgressHUD.showError(withStatus: "Invalid Bike")
         default:

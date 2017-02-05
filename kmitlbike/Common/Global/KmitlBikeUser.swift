@@ -9,7 +9,11 @@
 import Foundation
 
 class UserSessionData : NSObject,NSCoding {
-    var valid = false
+    var valid : Bool{
+        get{
+            return token != nil
+        }
+    }
     var username : String?
     var firstname : String?
     var lastname : String?
