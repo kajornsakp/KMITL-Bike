@@ -11,6 +11,7 @@ import UIKit
 class TermsConditionViewController: BaseViewController {
 
     @IBOutlet weak var webView : UIWebView!
+    var htmlString : String = ""
     var viewModel : TermsConditionViewModel!
     
     override func viewDidLoad() {
@@ -20,6 +21,7 @@ class TermsConditionViewController: BaseViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        webView.loadHTMLString(self.htmlString, baseURL: nil)
         viewModel.getTermsCondition()
     }
     override func didReceiveMemoryWarning() {

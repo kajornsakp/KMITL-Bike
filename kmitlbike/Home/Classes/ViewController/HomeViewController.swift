@@ -123,7 +123,10 @@ class HomeViewController: BaseViewController {
             let bikeSession = BikeSessionModel(withBikeMac: bikeMac, passcode: passcode, currentLat: "", currentLong: "", totalTime: totalTime, totalDistance: totalDistance, routeLine: routeLine)
             let routeArray = bikeSession.getRouteLine()
             let vc = ViewControllerFactory.sharedInstance.resolve(service: ReturnBikeViewController.self)
-            vc.ridingBikeModel = RidingBikeModel(withBikeMac: bikeSession.bikeMac!, passcode: bikeSession.passcode!, borrowTime: Date() as NSDate, totalTime: 0, totalDistance: Double(0.0), routeLine: routeArray)
+            let diffSec = totalTime.toIntSec()
+            let epochDiff = Date().timeIntervalSince1970.subtracting(TimeInterval(diffSec))
+            let borrowedDate = Date(timeIntervalSince1970: epochDiff)
+            vc.ridingBikeModel = RidingBikeModel(withBikeMac: bikeSession.bikeMac!, passcode: bikeSession.passcode!, borrowTime: borrowedDate as NSDate, totalTime: diffSec, totalDistance: Double(totalDistance)!, routeLine: routeArray)
             self.present(vc, animated: true, completion: nil)
         }
     }
@@ -142,7 +145,7 @@ extension HomeViewController : BorrowBikeDelegate{
         let vc = ViewControllerFactory.sharedInstance.resolve(service: ReturnBikeViewController.self)
         let ridingBike = RidingBikeModel(withBikeMac: passcode, passcode: passcode, borrowTime: NSDate())
         vc.ridingBikeModel = ridingBike
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.present(vc, animated: true, completion: nil)
     }
     func onBorrowBikeFailed(message: String) {
         SVProgressHUD.showError(withStatus: message)

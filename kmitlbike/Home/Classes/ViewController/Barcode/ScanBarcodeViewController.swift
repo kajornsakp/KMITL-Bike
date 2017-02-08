@@ -23,6 +23,7 @@ class ScanBarcodeViewController: RSCodeReaderViewController {
     weak var delegate : ScanBikeDelegate!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view.
     }
     
@@ -63,6 +64,9 @@ class ScanBarcodeViewController: RSCodeReaderViewController {
             return
         }
         
+    }
+    @IBAction func toggleFlash(_ sender: Any) {
+        self.toggleTorch()
     }
     
     func styleScan() {

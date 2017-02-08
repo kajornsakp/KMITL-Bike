@@ -11,3 +11,7 @@ import CoreLocation
 protocol BikeMapDelegate : class{
     func onMapDidUpdate(location : CLLocation)
 }
+
+protocol BikeTimerDelegate : class{
+    func onSecUpdate()
+}

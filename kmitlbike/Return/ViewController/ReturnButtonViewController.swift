@@ -30,7 +30,6 @@ class ReturnButtonViewController: BaseViewController {
     override func onDataDidLoad() {
         NotificationCenter.default.removeObserver(self, name: Notification.Name(rawValue: "com.kajornsak.notificationkey"), object: nil)
         NotificationCenter.default.post(name: Notification.Name(rawValue: ReturnButtonViewController.DISMISS_NOTIFICATION_KEY), object: nil)
-        self.dismiss(animated: true, completion: nil)
     }
     override func onDataDidLoadErrorWithMessage(errorMessage: String) {
         SVProgressHUD.showError(withStatus: errorMessage)

@@ -19,9 +19,11 @@ class RidingBikeModel : NSObject{
     init(withBikeMac bikeMac : String,passcode : String,borrowTime : NSDate) {
         self.bikeMac = bikeMac
         self.passcode = passcode
+        self.borrowTime = borrowTime
         self.totalTime = 0
         self.totalDistance = 0.0
         self.routeLine = []
+        
     }
     
     init(withBikeMac bikeMac : String,passcode : String,borrowTime : NSDate,totalTime : Int,totalDistance : Double,routeLine : [CLLocation]){

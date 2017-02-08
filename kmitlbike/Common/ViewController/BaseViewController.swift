@@ -84,4 +84,11 @@ extension BaseViewController : BaseViewModelDelegate{
     public func onDataDidLoadErrorWithMessage(errorMessage: String) {
         
     }
+    
+    public func onSessionExpire() {
+        guard let navigationController = self.navigationController else{
+            return
+        }
+        AppRoute.logout(withNavController: navigationController)
+    }
 }

@@ -20,15 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         setupFactory()
         setupGoogleMaps()
-        if(checkUserLogin()){
-            let storyboard = UIStoryboard(name: "Home", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: HomeViewController.TAB_BAR_CONTROLLER_IDENTIFIER)
-            self.window?.rootViewController = vc
-        }
-        else{
-            let vc = ViewControllerFactory.sharedInstance.resolve(service: LoginViewController.self)
-            self.window?.rootViewController = vc
-        }
+
         return true
     }
 
@@ -66,9 +58,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSServices.provideAPIKey("AIzaSyBQWGJ4MdB4mwOuYVueu_lV0DKZE4CIFik")
     }
     
-    func checkUserLogin()->Bool{
-        let user = UserSession.sharedInstance.data
-        return user.valid
-    }
+    
 }
 

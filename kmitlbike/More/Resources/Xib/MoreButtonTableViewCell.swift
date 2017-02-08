@@ -34,8 +34,8 @@ class MoreButtonTableViewCell: UITableViewCell {
             self.buttonImageView.image = #imageLiteral(resourceName: "kmitlbike_more_button_logout")
             self.buttonTitleLabel.text = "Logout"
         case .termscondition:
-            self.buttonImageView.image = #imageLiteral(resourceName: "kmitlbike_more_button_about")
-            self.buttonTitleLabel.text = "Terms & Condition"
+            self.buttonImageView.image = #imageLiteral(resourceName: "kmitlbike_more_button_termscondition")
+            self.buttonTitleLabel.text = "Terms & Conditions"
         }
     }
 

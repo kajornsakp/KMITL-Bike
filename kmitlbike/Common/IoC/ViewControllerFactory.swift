@@ -17,6 +17,7 @@ private struct Storyboard {
     static let borrow = "Borrow"
     static let barcode = "Barcode"
     static let returnBike = "Return"
+    static let launchScreen = "LaunchScreen"
 }
 
 class ViewControllerFactory: BaseFactory
@@ -42,6 +43,8 @@ class ViewControllerFactory: BaseFactory
         returnBikeButtonViewController()
         returnBikeMapViewController()
         termsConditionViewController()
+        updateViewController()
+        signupTermsConditionViewController()
     }
     
     // MARK:
@@ -157,6 +160,23 @@ class ViewControllerFactory: BaseFactory
             _ in
             let storyboard = UIStoryboard(name: Storyboard.more, bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: TermsConditionViewController.className) as! TermsConditionViewController
+            return vc
+        }
+    }
+    
+    private func updateViewController(){
+        container.register(UpdateViewController.self){
+            _ in
+            let storyboard = UIStoryboard(name: Storyboard.launchScreen, bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: UpdateViewController.className) as! UpdateViewController
+            return vc
+        }
+    }
+    private func signupTermsConditionViewController(){
+        container.register(SignUpTermsConditionViewController.self){
+            _ in
+            let storyboard = UIStoryboard(name: Storyboard.login, bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: SignUpTermsConditionViewController.className) as! SignUpTermsConditionViewController
             return vc
         }
     }

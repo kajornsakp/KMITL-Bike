@@ -23,6 +23,8 @@ public class BaseViewModel : NSObject{
         switch errorResponse.statusCode {
         case 400:
             print("error")
+        case 401:
+            self.delegate?.onSessionExpire()
         case 406:
             SVProgressHUD.showError(withStatus: errorResponse.description)
         case 500...599:

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Launch Screen View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LaunchScreenViewController" id="01J-lp-oVM" customClass="LaunchScreenViewController" customModule="kmitlbike" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
@@ -37,8 +37,76 @@
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
+        <!--Update View Controller-->
+        <scene sceneID="rZJ-Zs-y9u">
+            <objects>
+                <viewController storyboardIdentifier="UpdateViewController" id="JcD-nF-hnu" customClass="UpdateViewController" customModule="kmitlbike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8kb-hb-dW5"/>
+                        <viewControllerLayoutGuide type="bottom" id="XNl-xu-MNu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Vd-Qw-F7E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kmitlbike_bike_icon" translatesAutoresizingMaskIntoConstraints="NO" id="OMu-cq-dt9">
+                                <rect key="frame" x="108" y="138" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="LPZ-u3-2YZ"/>
+                                    <constraint firstAttribute="height" constant="160" id="ham-N2-xJ0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update required" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOX-IE-cyH">
+                                <rect key="frame" x="119" y="314" width="138" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Y9R-h9-1NP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This version of KMITL Bike is no longer available Please update your application first" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEQ-2Y-KoP">
+                                <rect key="frame" x="48" y="370" width="279" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVy-10-7bP">
+                                <rect key="frame" x="57" y="447" width="260" height="45"/>
+                                <color key="backgroundColor" red="0.56078431370000004" green="0.75686274509999996" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="RmC-KV-0uh"/>
+                                    <constraint firstAttribute="height" constant="45" id="utI-od-qyw"/>
+                                </constraints>
+                                <state key="normal" title="GET UPDATE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onUpdateClick:" destination="JcD-nF-hnu" eventType="touchUpInside" id="7z9-2h-kRN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iEQ-2Y-KoP" firstAttribute="top" secondItem="vOX-IE-cyH" secondAttribute="bottom" constant="16" id="A4t-5X-DXI"/>
+                            <constraint firstAttribute="trailing" secondItem="iEQ-2Y-KoP" secondAttribute="trailing" constant="48" id="DEE-fS-ewF"/>
+                            <constraint firstItem="vOX-IE-cyH" firstAttribute="centerX" secondItem="4Vd-Qw-F7E" secondAttribute="centerX" id="F1Y-A4-qFw"/>
+                            <constraint firstItem="vOX-IE-cyH" firstAttribute="centerY" secondItem="4Vd-Qw-F7E" secondAttribute="centerY" id="Ga8-dk-Nss"/>
+                            <constraint firstItem="lVy-10-7bP" firstAttribute="top" secondItem="iEQ-2Y-KoP" secondAttribute="bottom" constant="16" id="JGP-uI-J5u"/>
+                            <constraint firstItem="iEQ-2Y-KoP" firstAttribute="leading" secondItem="4Vd-Qw-F7E" secondAttribute="leading" constant="48" id="QI1-d0-oSk"/>
+                            <constraint firstItem="lVy-10-7bP" firstAttribute="centerX" secondItem="iEQ-2Y-KoP" secondAttribute="centerX" id="TJp-9u-Jpi"/>
+                            <constraint firstItem="vOX-IE-cyH" firstAttribute="top" secondItem="OMu-cq-dt9" secondAttribute="bottom" constant="16" id="YMc-TU-SXa"/>
+                            <constraint firstItem="OMu-cq-dt9" firstAttribute="centerX" secondItem="vOX-IE-cyH" secondAttribute="centerX" id="ZNW-Lo-fSK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iyv-Vn-UuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="919" y="375"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="kmitlbike_bike_icon" width="90" height="90"/>
         <image name="kmitlbike_launchscreen_background" width="389" height="587"/>
     </resources>
 </document>

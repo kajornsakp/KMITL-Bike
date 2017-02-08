@@ -45,6 +45,7 @@ enum KmitlBikeService{
     case checkUpdate(version : String)
     case getStatus
     case getTermsCondition
+    case updateUserLocation(form : UpdateForm)
 }
 
 
@@ -72,7 +73,7 @@ extension KmitlBikeService : TargetType{
         case .borrow:
             return "/api/v2/user/borrow/"
         case .returnBike:
-            return "/api/v1/user/return/"
+            return "/api/v2/user/return/"
         case .getHistory:
             return "/api/v1/user/history/"
         case .getAvailableBike:
@@ -83,12 +84,14 @@ extension KmitlBikeService : TargetType{
             return "/api/v1/user/status"
         case .getTermsCondition:
             return "/api/v1/services/get_terms_conditions"
+        case .updateUserLocation:
+            return "/api/v1/user/update_user_location"
         }
     }
     
     var method : Moya.Method{
         switch self {
-        case .login,.signup,.borrow,.returnBike,.checkUpdate:
+        case .login,.signup,.borrow,.returnBike,.checkUpdate,.updateUserLocation:
             return .post
         case .getHistory,.getAvailableBike,.getStatus,.getTermsCondition:
             return .get
@@ -107,6 +110,8 @@ extension KmitlBikeService : TargetType{
             return form.toDict()
         case .checkUpdate(let version):
             return ["platform":"iOS","app_version":version]
+        case .updateUserLocation(let form):
+            return form.toDict()
         default:
             return [:]
         }
@@ -136,7 +141,7 @@ extension KmitlBikeService{
         switch self {
         case .login,.checkUpdate,.getTermsCondition:
             return false
-        case .borrow,.returnBike,.getHistory,.getAvailableBike,.getStatus:
+        case .borrow,.returnBike,.getHistory,.getAvailableBike,.getStatus,.updateUserLocation:
             return true
         default:
             return true

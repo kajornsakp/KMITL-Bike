@@ -60,6 +60,8 @@
 		AC9068E11DB1D235009BC898 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9068E01DB1D235009BC898 /* ViewController.swift */; };
 		AC9068E61DB1D235009BC898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9068E51DB1D235009BC898 /* Assets.xcassets */; };
 		AC9068E91DB1D235009BC898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9068E71DB1D235009BC898 /* LaunchScreen.storyboard */; };
+		AC93C5A91E4750870094CC00 /* CheckUpdateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93C5A81E4750870094CC00 /* CheckUpdateResponse.swift */; };
+		AC93C5AB1E4815EA0094CC00 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93C5AA1E4815EA0094CC00 /* UpdateViewController.swift */; };
 		ACA05EB51E27649000453D8D /* Find.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA05EB31E27649000453D8D /* Find.storyboard */; };
 		ACA05EB61E27649000453D8D /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA05EB41E27649000453D8D /* More.storyboard */; };
 		ACA05EBA1E276A0100453D8D /* MoreInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA05EB81E276A0100453D8D /* MoreInfoTableViewCell.xib */; };
@@ -76,8 +78,13 @@
 		ACC3417E1E387CD400C6A3E1 /* Barcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC3417D1E387CD400C6A3E1 /* Barcode.storyboard */; };
 		ACC341881E38929F00C6A3E1 /* ReturnBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC341871E38929F00C6A3E1 /* ReturnBikeViewController.swift */; };
 		ACC3418A1E38981400C6A3E1 /* Return.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC341891E38981400C6A3E1 /* Return.storyboard */; };
+		ACCB5C2E1E48733600D4B2B0 /* Integer+kmitlbike.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB5C2D1E48733600D4B2B0 /* Integer+kmitlbike.swift */; };
+		ACCB5C301E48E67800D4B2B0 /* SignUpTermsConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB5C2F1E48E67800D4B2B0 /* SignUpTermsConditionViewController.swift */; };
+		ACCB5C321E498A7100D4B2B0 /* UpdateBikeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB5C311E498A7000D4B2B0 /* UpdateBikeResponse.swift */; };
 		ACD0873A1E46E54A008401E1 /* TermsConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD087391E46E54A008401E1 /* TermsConditionViewController.swift */; };
 		ACD0873C1E46E575008401E1 /* TermsConditionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0873B1E46E575008401E1 /* TermsConditionViewModel.swift */; };
+		ACD087451E4718BB008401E1 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD087441E4718BB008401E1 /* LaunchScreenViewController.swift */; };
+		ACD087471E4718E1008401E1 /* LaunchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD087461E4718E1008401E1 /* LaunchScreenViewModel.swift */; };
 		ACD8A5A61DF1145000E989AA /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5A51DF1145000E989AA /* ViewControllerFactory.swift */; };
 		ACD8A5A81DF1147D00E989AA /* BaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5A71DF1147D00E989AA /* BaseFactory.swift */; };
 		ACD8A5AB1DF116B100E989AA /* NSObject+kmitlbike.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5AA1DF116B100E989AA /* NSObject+kmitlbike.swift */; };
@@ -148,6 +155,8 @@
 		AC9068E51DB1D235009BC898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9068E81DB1D235009BC898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9068EA1DB1D235009BC898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC93C5A81E4750870094CC00 /* CheckUpdateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckUpdateResponse.swift; path = LaunchScreen/Model/CheckUpdateResponse.swift; sourceTree = "<group>"; };
+		AC93C5AA1E4815EA0094CC00 /* UpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpdateViewController.swift; path = LaunchScreen/ViewController/UpdateViewController.swift; sourceTree = "<group>"; };
 		ACA05EB31E27649000453D8D /* Find.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Find.storyboard; path = Storyboard/Find.storyboard; sourceTree = "<group>"; };
 		ACA05EB41E27649000453D8D /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = More.storyboard; path = Storyboard/More.storyboard; sourceTree = "<group>"; };
 		ACA05EB81E276A0100453D8D /* MoreInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoreInfoTableViewCell.xib; path = More/Resources/Xib/MoreInfoTableViewCell.xib; sourceTree = "<group>"; };
@@ -164,8 +173,13 @@
 		ACC3417D1E387CD400C6A3E1 /* Barcode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Barcode.storyboard; path = Storyboard/Barcode.storyboard; sourceTree = "<group>"; };
 		ACC341871E38929F00C6A3E1 /* ReturnBikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReturnBikeViewController.swift; path = Return/ViewController/ReturnBikeViewController.swift; sourceTree = "<group>"; };
 		ACC341891E38981400C6A3E1 /* Return.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Return.storyboard; path = Storyboard/Return.storyboard; sourceTree = "<group>"; };
+		ACCB5C2D1E48733600D4B2B0 /* Integer+kmitlbike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Integer+kmitlbike.swift"; path = "Common/Extension/Integer/Integer+kmitlbike.swift"; sourceTree = "<group>"; };
+		ACCB5C2F1E48E67800D4B2B0 /* SignUpTermsConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpTermsConditionViewController.swift; path = Login/Classes/Signup/ViewController/SignUpTermsConditionViewController.swift; sourceTree = "<group>"; };
+		ACCB5C311E498A7000D4B2B0 /* UpdateBikeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpdateBikeResponse.swift; path = Return/Model/UpdateBikeResponse.swift; sourceTree = "<group>"; };
 		ACD087391E46E54A008401E1 /* TermsConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsConditionViewController.swift; path = More/Classes/ViewController/TermsConditionViewController.swift; sourceTree = "<group>"; };
 		ACD0873B1E46E575008401E1 /* TermsConditionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsConditionViewModel.swift; path = More/Classes/ViewModel/TermsConditionViewModel.swift; sourceTree = "<group>"; };
+		ACD087441E4718BB008401E1 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchScreenViewController.swift; path = LaunchScreen/ViewController/LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		ACD087461E4718E1008401E1 /* LaunchScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchScreenViewModel.swift; path = LaunchScreen/ViewModel/LaunchScreenViewModel.swift; sourceTree = "<group>"; };
 		ACD8A5A51DF1145000E989AA /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerFactory.swift; path = Common/IoC/ViewControllerFactory.swift; sourceTree = "<group>"; };
 		ACD8A5A71DF1147D00E989AA /* BaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseFactory.swift; path = Common/IoC/BaseFactory.swift; sourceTree = "<group>"; };
 		ACD8A5AA1DF116B100E989AA /* NSObject+kmitlbike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSObject+kmitlbike.swift"; path = "Common/Extension/NSObject/NSObject+kmitlbike.swift"; sourceTree = "<group>"; };
@@ -475,6 +489,7 @@
 		AC6B88AE1DB1FDBC0037F189 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				ACCB5C2A1E48730D00D4B2B0 /* Integer */,
 				AC86268B1E3F361700F1C6F0 /* Notification */,
 				ACD8A5A91DF1168B00E989AA /* NSObject */,
 				AC6B88AF1DB1FDC50037F189 /* UIColorExtension */,
@@ -536,6 +551,7 @@
 			isa = PBXGroup;
 			children = (
 				AC6B88C31DB35CF30037F189 /* SignUpViewController.swift */,
+				ACCB5C2F1E48E67800D4B2B0 /* SignUpTermsConditionViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -678,18 +694,19 @@
 		AC9068DD1DB1D235009BC898 /* kmitlbike */ = {
 			isa = PBXGroup;
 			children = (
-				AC9068EA1DB1D235009BC898 /* Info.plist */,
 				AC9068DE1DB1D235009BC898 /* AppDelegate.swift */,
-				AC9068E01DB1D235009BC898 /* ViewController.swift */,
 				AC9068E51DB1D235009BC898 /* Assets.xcassets */,
 				AC6B88A61DB1FA620037F189 /* Common */,
 				AC38A8D11E1F898100F10CEB /* Find */,
 				AC38A8D21E1F898900F10CEB /* History */,
 				ACD8A5B61DF12D5200E989AA /* Home */,
+				AC9068EA1DB1D235009BC898 /* Info.plist */,
+				ACD0873E1E471629008401E1 /* LaunchScreen */,
 				AC9068F01DB1D440009BC898 /* Login */,
 				AC38A8D31E1F898F00F10CEB /* More */,
 				ACC3417F1E38923600C6A3E1 /* Return */,
 				ACD8A5AC1DF121B300E989AA /* Storyboard */,
+				AC9068E01DB1D235009BC898 /* ViewController.swift */,
 			);
 			path = kmitlbike;
 			sourceTree = "<group>";
@@ -761,6 +778,7 @@
 			children = (
 				AC8626971E40334000F1C6F0 /* BikeSessionModel.swift */,
 				AC86E3CF1E40B920000CB940 /* RidingBikeModel.swift */,
+				ACCB5C311E498A7000D4B2B0 /* UpdateBikeResponse.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -773,12 +791,55 @@
 			name = Protocol;
 			sourceTree = "<group>";
 		};
+		ACCB5C2A1E48730D00D4B2B0 /* Integer */ = {
+			isa = PBXGroup;
+			children = (
+				ACCB5C2D1E48733600D4B2B0 /* Integer+kmitlbike.swift */,
+			);
+			name = Integer;
+			sourceTree = "<group>";
+		};
 		ACD0873D1E46E57F008401E1 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				ACD0873B1E46E575008401E1 /* TermsConditionViewModel.swift */,
 			);
 			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACD0873E1E471629008401E1 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ACD087431E47187F008401E1 /* Model */,
+				ACD087421E471874008401E1 /* ViewModel */,
+				ACD087411E471873008401E1 /* ViewController */,
+			);
+			name = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		ACD087411E471873008401E1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACD087441E4718BB008401E1 /* LaunchScreenViewController.swift */,
+				AC93C5AA1E4815EA0094CC00 /* UpdateViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		ACD087421E471874008401E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACD087461E4718E1008401E1 /* LaunchScreenViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACD087431E47187F008401E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC93C5A81E4750870094CC00 /* CheckUpdateResponse.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		ACD8A5A41DF1142D00E989AA /* IoC */ = {
@@ -981,6 +1042,7 @@
 				ACD8A5BA1DF1306800E989AA /* SignupDelegate.swift in Sources */,
 				AC23225D1E29DD0D005BF72E /* FindViewModel.swift in Sources */,
 				AC86E3D01E40B921000CB940 /* RidingBikeModel.swift in Sources */,
+				ACCB5C321E498A7100D4B2B0 /* UpdateBikeResponse.swift in Sources */,
 				AC6A68401E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift in Sources */,
 				AC6B88A91DB1FBFE0037F189 /* BaseViewModelProtocol.swift in Sources */,
 				AC83B05F1E3EF985009350AB /* ReturnMapViewController.swift in Sources */,
@@ -1005,6 +1067,7 @@
 				AC7EC5FC1E25290400766960 /* HistorySummaryViewController.swift in Sources */,
 				AC6B88B11DB1FDF40037F189 /* UIColorExtension.swift in Sources */,
 				ACA05EBD1E276A2F00453D8D /* MoreHeaderTableViewCell.swift in Sources */,
+				ACCB5C301E48E67800D4B2B0 /* SignUpTermsConditionViewController.swift in Sources */,
 				AC23225F1E29DF72005BF72E /* BikeModelResponse.swift in Sources */,
 				ACC3417C1E387C1200C6A3E1 /* ScanBarcodeViewController.swift in Sources */,
 				ACD8A5A61DF1145000E989AA /* ViewControllerFactory.swift in Sources */,
@@ -1014,7 +1077,9 @@
 				AC15F0A61DB4719D005A5779 /* GlobalModel.swift in Sources */,
 				ACD0873A1E46E54A008401E1 /* TermsConditionViewController.swift in Sources */,
 				ACD8A5AB1DF116B100E989AA /* NSObject+kmitlbike.swift in Sources */,
+				AC93C5A91E4750870094CC00 /* CheckUpdateResponse.swift in Sources */,
 				AC6B88B91DB35C210037F189 /* LoginViewController.swift in Sources */,
+				AC93C5AB1E4815EA0094CC00 /* UpdateViewController.swift in Sources */,
 				AC7EC5FA1E24CC5E00766960 /* HistoryResponse.swift in Sources */,
 				AC8626941E3F4C8400F1C6F0 /* ScanBikeBarcodeViewController.swift in Sources */,
 				AC38A8E21E1F8ACF00F10CEB /* HistoryViewController.swift in Sources */,
@@ -1024,6 +1089,7 @@
 				ACC15FA81E3493E100088F6E /* BorrowBikeTableViewCell.swift in Sources */,
 				AC9068E11DB1D235009BC898 /* ViewController.swift in Sources */,
 				AC23225B1E29DCF9005BF72E /* FindViewController.swift in Sources */,
+				ACD087471E4718E1008401E1 /* LaunchScreenViewModel.swift in Sources */,
 				ACC15FAD1E34CB1B00088F6E /* AvailableBikeViewController.swift in Sources */,
 				ACD8A5B31DF12B9700E989AA /* CommonForm.swift in Sources */,
 				ACC341791E37764F00C6A3E1 /* BorrowBikeProtocol.swift in Sources */,
@@ -1037,9 +1103,11 @@
 				AC6B88E91DB38DDC0037F189 /* CommonRouter.swift in Sources */,
 				ACC15FB31E3501E300088F6E /* HomeViewModel.swift in Sources */,
 				AC7EC5F61E249EB900766960 /* HistoryDelegate.swift in Sources */,
+				ACCB5C2E1E48733600D4B2B0 /* Integer+kmitlbike.swift in Sources */,
 				AC8626921E3F4C6D00F1C6F0 /* UnlockBikeCodeViewController.swift in Sources */,
 				AC6B88E41DB373990037F189 /* LoginResponse.swift in Sources */,
 				AC7EC5F41E249E7200766960 /* HistoryViewModel.swift in Sources */,
+				ACD087451E4718BB008401E1 /* LaunchScreenViewController.swift in Sources */,
 				ACA05EBE1E276A2F00453D8D /* MoreInfoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

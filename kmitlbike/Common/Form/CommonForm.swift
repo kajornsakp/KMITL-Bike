@@ -71,3 +71,34 @@ class ReturnForm : NSObject{
     }
 }
 
+class UpdateForm : NSObject{
+    var bikeMac : String = ""
+    var latitude : String = ""
+    var longitude : String = ""
+    var totalTime : String = ""
+    var totalDistance : String = ""
+    var routeLine : [CLLocation] = [CLLocation]()
+    
+    func toDict()->[String:AnyObject]{
+        var dict = [String:AnyObject]()
+        dict["total_time"] = totalTime as AnyObject?
+        dict["total_distance"] = totalDistance as AnyObject?
+        dict["latitude"] = latitude as AnyObject?
+        dict["longitude"] = longitude as AnyObject?
+        dict["bike_mac"] = bikeMac as AnyObject?
+        dict["route_line"] = getRouteString(routeLine : routeLine) as AnyObject?
+        return dict
+    }
+    func getRouteString(routeLine : [CLLocation])->String{
+        var outputString = ""
+        let _ = routeLine.map{
+            let lat = $0.coordinate.latitude
+            let long = $0.coordinate.longitude
+            let time = $0.timestamp.timeIntervalSince1970
+            outputString += "{\"lat\":\(lat),\"lng\":\(long),\"time\":\(time)},"
+        }
+        outputString = String(outputString.characters.dropLast())
+        return "[\(outputString)]"
+    }
+    
+}

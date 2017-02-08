@@ -55,10 +55,7 @@ class MoreViewController: BaseViewController {
     }
     
     func onLogoutClick(){
-        UserSession.sharedInstance.clearUserSession()
-        let vc = ViewControllerFactory.sharedInstance.resolve(service: LoginViewController.self)
-        UIApplication.shared.keyWindow?.rootViewController = vc
-        let _ = self.navigationController?.popToRootViewController(animated: true)
+        AppRoute.logout(withNavController: self.navigationController!)
     }
     
     func onTermsConditionClick(){

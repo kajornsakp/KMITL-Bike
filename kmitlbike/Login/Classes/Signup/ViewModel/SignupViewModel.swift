@@ -13,6 +13,8 @@ import SVProgressHUD
 class SignupViewModel: BaseViewModel {
     
     let provider = ServiceFactory.sharedInstance.resolve(service: RxMoyaProvider<KmitlBikeService>.self)
+    var agreeTerm :Bool = false
+    var htmlString : String = ""
     var signupResponse : BaseResponse!{
         didSet{
             self.checkResponse()
@@ -21,7 +23,6 @@ class SignupViewModel: BaseViewModel {
     weak var signupDelegate : SignupDelegate!
     func signup(withUsername username : String,firstName : String,lastName : String,gender : Int,email : String , mobileNumber : String){
         if(!self.inputValidation(username: username,firstName: firstName,lastName: lastName,email: email,mobileNumber: mobileNumber)){
-            self.signupDelegate.onInputError(message: "Invalid information")
             return
         }
         let form = SignupForm()
@@ -61,27 +62,51 @@ class SignupViewModel: BaseViewModel {
         }
     }
     func inputValidation(username : String,firstName : String,lastName : String,email : String,mobileNumber : String)->Bool{
+        if !self.agreeTerm{
+            self.signupDelegate.onSignupError(message: "You must agree to our Terms and Conditions before using the service")
+            return false
+        }
         if username.isEmpty {
             return false
         }
         if firstName.isEmpty{
+            self.signupDelegate.onSignupError(message: "First name is required for register")
             return false
         }
         if lastName.isEmpty{
+            self.signupDelegate.onSignupError(message: "Last name is required for register")
             return false
         }
-        if email.isEmpty{
+        if email.isEmpty || email.isValidEmail(){
+            self.signupDelegate.onSignupError(message: "Email is required for register")
             return false
         }
         if mobileNumber.isEmpty{
+            self.signupDelegate.onSignupError(message: "Mobile number is required for register")
             return false
         }
         return true
     }
+    
+    func getTermsCondition(){
+        SVProgressHUD.show()
+        let _ = provider.request(.getTermsCondition)
+            .filterSuccessfulStatusCodes()
+            .subscribe{ event in
 
-    override func showError(error : Moya.Error){
-        SVProgressHUD.dismiss()
-        print(error)
+                switch event{
+                case .next(let element):
+                    self.htmlString =  String(data: element.data, encoding: String.Encoding.utf8)!
+                case .error(let error):
+                    self.showError(error: error as! Moya.Error)
+                default:
+                    SVProgressHUD.dismiss()
+                    break
+                }
+
+            
+        
     }
+}
 }
 

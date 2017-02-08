@@ -31,6 +31,7 @@ class LoginViewController: BaseViewController {
     }
     
     @IBAction func loginButtonClick(_ sender: Any) {
+        self.view.endEditing(true)
         self.loginButton.isEnabled = false
         if(Developer.ENABLED && Developer.BYPASS_LOGIN){
            viewModel.login(withUsername: "s7090006", withPassword: "Abcde016400")
@@ -58,7 +59,11 @@ extension LoginViewController : LoginDelegate{
         SVProgressHUD.dismiss()
         let vc = ViewControllerFactory.sharedInstance.resolve(service: SignUpViewController.self)
         vc.username = self.usernameTextField.text
-        self.navigationController?.pushViewController(vc, animated: true)
+        guard let navigationController = self.navigationController else{
+            self.present(vc, animated: true, completion: nil)
+            return
+        }
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func onLoginError(message: String) {

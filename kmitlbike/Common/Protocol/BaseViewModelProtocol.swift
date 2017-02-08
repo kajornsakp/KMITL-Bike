@@ -17,7 +17,7 @@ public protocol BaseViewModelDelegate : class{
     
     func onDataDidLoad()
     func onDataDidLoadErrorWithMessage(errorMessage:String)
-    
+    func onSessionExpire()
     // Navigation Controller
     
     //func pushViewController(viewController: UIViewController, animated: Bool)
