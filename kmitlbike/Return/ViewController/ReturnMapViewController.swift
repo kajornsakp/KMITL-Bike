@@ -45,6 +45,12 @@ class ReturnMapViewController: BaseViewController {
             path.add($0.coordinate)
         }
         let polyline = GMSPolyline(path: path)
+        let outerPolyline = GMSPolyline(path: path)
+        polyline.strokeWidth = 2.5
+        outerPolyline.strokeWidth = 5
+        polyline.strokeColor = UIColor(netHex: 0x00b3fc)
+        outerPolyline.strokeColor = UIColor(netHex: 0x387cc4)
+        outerPolyline.map = self.mapView
         polyline.map = mapView
     }
     

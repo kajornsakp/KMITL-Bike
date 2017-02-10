@@ -31,6 +31,7 @@ class ReturnBikeViewModel: BaseViewModel {
     func setTime(){
         self.secAmount = Int(Date().timeIntervalSince(self.bikeModel.borrowTime as! Date))
         self.distanceAmount = bikeModel.totalDistance!
+        self.routeList = bikeModel.routeLine ?? [CLLocation]()
     }
     func setupLocationManager(){
         locationManager = CLLocationManager()
@@ -115,7 +116,7 @@ class ReturnBikeViewModel: BaseViewModel {
                 case .next(let element):
                     self.delegate?.onDataDidLoad()
                 case .error(let error):
-                    self.showError(error: error as! Moya.Error)
+                    self.checkError(errorResponse: BaseResponse(withDictionary: error as AnyObject))
                 default:
                     break
                 }
@@ -134,7 +135,9 @@ class ReturnBikeViewModel: BaseViewModel {
         }
         
     }
-    
+    func checkError(errorResponse : BaseResponse){
+        self.delegate?.onDataDidLoadErrorWithMessage(errorMessage: errorResponse.result ?? "Barcode mismatch")
+    }
 }
 
 extension ReturnBikeViewModel : CLLocationManagerDelegate{

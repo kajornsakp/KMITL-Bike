@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import GoogleMaps
+import SVProgressHUD
 
 class ReturnBikeViewController: BaseViewController {
 
@@ -103,6 +104,9 @@ class ReturnBikeViewController: BaseViewController {
     override func onDataDidLoad() {
         self.viewModel.stopUpdating()
         self.dismiss(animated: true, completion: nil)
+    }
+    override func onDataDidLoadErrorWithMessage(errorMessage: String) {
+        SVProgressHUD.showError(withStatus: errorMessage)
     }
 }
 extension ReturnBikeViewController : ScanBikeDelegate{
