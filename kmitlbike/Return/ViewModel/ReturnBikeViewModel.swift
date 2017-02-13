@@ -96,6 +96,7 @@ class ReturnBikeViewModel: BaseViewModel {
     func increaseSec(){
         self.secAmount += 1
         self.timerDelegate.onSecUpdate()
+        self.setTime()
     }
     func stopUpdating(){
         locationManager.stopUpdatingLocation()
@@ -130,7 +131,7 @@ class ReturnBikeViewModel: BaseViewModel {
         self.distanceAmount = 0.0
         self.currentLocation = firstLocation
         for coordinate in routeList{
-            self.distanceAmount += coordinate.distance(from: currentLocation)/1000
+            self.distanceAmount += (coordinate.distance(from: currentLocation)/1000)
             self.currentLocation = coordinate
         }
         

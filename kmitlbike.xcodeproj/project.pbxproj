@@ -915,6 +915,7 @@
 				AC9068D91DB1D235009BC898 /* Resources */,
 				67EF960D56A9ADCA033367EC /* [CP] Embed Pods Frameworks */,
 				F0D1CF4F6F6B4AEE548957C0 /* [CP] Copy Pods Resources */,
+				AC23A4801E507C8900A6BF29 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1000,6 +1001,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kmitlbike/Pods-kmitlbike-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		AC23A4801E507C8900A6BF29 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 1388d4c1a88eb7d52685b4282dff420ef063e99f d1a78670d5e711e6353343f1abb69f32d651d8b16237d1ea6880ea7054b757de ";
 		};
 		B963F14C798B9762C9DB8AAE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

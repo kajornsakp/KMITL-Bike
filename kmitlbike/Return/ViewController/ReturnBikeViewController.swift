@@ -11,6 +11,7 @@ import RxSwift
 import RxCocoa
 import GoogleMaps
 import SVProgressHUD
+import PopupDialog
 
 class ReturnBikeViewController: BaseViewController {
 
@@ -27,6 +28,7 @@ class ReturnBikeViewController: BaseViewController {
     var buttonVC : ReturnButtonViewController!
     var mapVC : ReturnMapViewController!
     var viewModel : ReturnBikeViewModel!
+    var isPopupShown : Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = ReturnBikeViewModel(delegate: self)
@@ -40,6 +42,17 @@ class ReturnBikeViewController: BaseViewController {
         viewModel.setupLocationManager()
         viewModel.setupSecTimer()
         viewModel.setupUpdateTimer()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if(!isPopupShown){
+            let vc = ViewControllerFactory.sharedInstance.resolve(service: UnlockBikeCodeViewController.self)
+            vc.passcode = self.ridingBikeModel.passcode
+            let popup = PopupDialog(viewController: vc)
+            self.present(popup, animated: true, completion: nil)
+            self.isPopupShown = true
+        }
     }
     func setupNotification(){
         NotificationCenter.default.setObserver(self, selector: #selector(callReturnBike), name: Notification.Name(rawValue: ReturnButtonViewController.DISMISS_NOTIFICATION_KEY), object: nil)

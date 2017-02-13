@@ -15,6 +15,9 @@ target 'kmitlbike' do
   pod 'PopupDialog', '~> 0.5'
   pod 'PermissionScope'
   pod 'RSBarcodes_Swift', '~> 3.0.3'
+  #Fabric
+  pod 'Fabric' 
+  pod 'Crashlytics'
   # Pods for kmitlbike
 
 end

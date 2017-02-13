@@ -9,6 +9,8 @@
 import UIKit
 import Swinject
 import GoogleMaps
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         setupFactory()
         setupGoogleMaps()
-
+        Fabric.with([Crashlytics.self])
         return true
     }
 

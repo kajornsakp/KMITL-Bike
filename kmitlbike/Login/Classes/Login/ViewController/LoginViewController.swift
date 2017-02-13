@@ -17,6 +17,7 @@ class LoginViewController: BaseViewController {
     static let segueIdentifier = "goToHomePageSegue"
     var viewModel : LoginViewModel!
     
+    @IBOutlet weak var bikeIconHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = LoginViewModel(delegate : self)
@@ -40,6 +41,11 @@ class LoginViewController: BaseViewController {
             viewModel.login(withUsername: usernameTextField.text!, withPassword: passwordTextField.text!)
         }
     }
+    
+    @IBAction func onSignupIAMKmitlCLick(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://iam.kmitl.ac.th/page_iamsystem.php")!)
+    }
+    
     
 }
 

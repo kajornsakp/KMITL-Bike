@@ -74,11 +74,10 @@ class LoginViewModel: BaseViewModel {
             case 400:
                 self.loginDelegate.onLoginError(message: "Failed to connect with the server")
             case 406:
-                self.loginDelegate.onLoginError(message: "Invalid Username / Password")
+                self.loginDelegate.onLoginError(message: "Invalid username/password. Your username/password is either incorrect or it is not KMITL Gen. 2 account")
             default:
                 self.loginDelegate.onLoginError(message: "Error")
         }
-        
         
     }
 }

@@ -10,9 +10,15 @@ import UIKit
 
 class UnlockBikeCodeViewController: BaseViewController {
 
+    @IBOutlet weak var passcodeLabel: UILabel!
+    var passcode : String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        guard let passcode = self.passcode else{
+            return
+        }
+        self.passcodeLabel.text = passcode
         // Do any additional setup after loading the view.
     }
 
