@@ -50,8 +50,9 @@ class ReturnMapViewController: BaseViewController {
         outerPolyline.strokeWidth = 5
         polyline.strokeColor = UIColor(netHex: 0x00b3fc)
         outerPolyline.strokeColor = UIColor(netHex: 0x387cc4)
-        outerPolyline.map = self.mapView
+        outerPolyline.map = mapView
         polyline.map = mapView
+
     }
     
     func updateLocation(_ notification : NSNotification){

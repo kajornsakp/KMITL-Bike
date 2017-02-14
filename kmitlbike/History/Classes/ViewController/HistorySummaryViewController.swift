@@ -64,8 +64,8 @@ class HistorySummaryViewController: BaseViewController {
             outerPolyline.strokeWidth = 5
             polyline.strokeColor = UIColor(netHex: 0x00b3fc)
             outerPolyline.strokeColor = UIColor(netHex: 0x387cc4)
-            polyline.map = self.mapView
             outerPolyline.map = self.mapView
+            polyline.map = self.mapView
             let startPosition = CLLocationCoordinate2DMake(coordinateArray.first!.lat!, coordinateArray.first!.lng!)
             let startMarker = GMSMarker(position: startPosition)
             let goalPosition = CLLocationCoordinate2DMake(coordinateArray.last!.lat!, coordinateArray.last!.lng!)

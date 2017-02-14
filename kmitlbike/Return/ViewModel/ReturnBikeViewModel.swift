@@ -131,7 +131,7 @@ class ReturnBikeViewModel: BaseViewModel {
         self.distanceAmount = 0.0
         self.currentLocation = firstLocation
         for coordinate in routeList{
-            self.distanceAmount += (coordinate.distance(from: currentLocation)/1000)
+            self.distanceAmount += (coordinate.distance(from: currentLocation)/1000).roundedTwoDigit
             self.currentLocation = coordinate
         }
         

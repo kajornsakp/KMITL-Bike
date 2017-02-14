@@ -37,3 +37,11 @@ extension String{
         return emailTest.evaluate(with: self)
     }
 }
+
+extension Double{
+    
+    var roundedTwoDigit:Double {
+        let rounded = 100*self/100
+        return rounded
+    }
+}
