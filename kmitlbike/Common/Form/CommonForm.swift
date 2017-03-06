@@ -87,6 +87,7 @@ class UpdateForm : NSObject{
         dict["longitude"] = longitude as AnyObject?
         dict["bike_mac"] = bikeMac as AnyObject?
         dict["route_line"] = getRouteString(routeLine : routeLine) as AnyObject?
+        print(dict)
         return dict
     }
     func getRouteString(routeLine : [CLLocation])->String{

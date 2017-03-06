@@ -11,12 +11,12 @@ import SVProgressHUD
 
 class LoginViewController: BaseViewController {
 
-    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var usernameTextField: RoundTextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var placeholderTextField: RoundTextField!
     @IBOutlet weak var loginButton: RoundButton!
     static let segueIdentifier = "goToHomePageSegue"
     var viewModel : LoginViewModel!
-    
     @IBOutlet weak var bikeIconHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,11 +26,16 @@ class LoginViewController: BaseViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     @IBAction func loginButtonClick(_ sender: Any) {
         self.view.endEditing(true)
         self.loginButton.isEnabled = false

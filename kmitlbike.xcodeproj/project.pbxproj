@@ -67,6 +67,7 @@
 		ACA05EBA1E276A0100453D8D /* MoreInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA05EB81E276A0100453D8D /* MoreInfoTableViewCell.xib */; };
 		ACA05EBD1E276A2F00453D8D /* MoreHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA05EBB1E276A2F00453D8D /* MoreHeaderTableViewCell.swift */; };
 		ACA05EBE1E276A2F00453D8D /* MoreInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA05EBC1E276A2F00453D8D /* MoreInfoTableViewCell.swift */; };
+		ACB098841E6D7CB400DCAE1A /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB098831E6D7CB400DCAE1A /* RoundTextField.swift */; };
 		ACC15FA81E3493E100088F6E /* BorrowBikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC15FA61E3493E100088F6E /* BorrowBikeTableViewCell.swift */; };
 		ACC15FA91E3493E100088F6E /* BorrowBikeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC15FA71E3493E100088F6E /* BorrowBikeTableViewCell.xib */; };
 		ACC15FAD1E34CB1B00088F6E /* AvailableBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC15FAC1E34CB1B00088F6E /* AvailableBikeViewController.swift */; };
@@ -162,6 +163,7 @@
 		ACA05EB81E276A0100453D8D /* MoreInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoreInfoTableViewCell.xib; path = More/Resources/Xib/MoreInfoTableViewCell.xib; sourceTree = "<group>"; };
 		ACA05EBB1E276A2F00453D8D /* MoreHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreHeaderTableViewCell.swift; path = More/Classes/View/MoreHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		ACA05EBC1E276A2F00453D8D /* MoreInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreInfoTableViewCell.swift; path = More/Classes/View/MoreInfoTableViewCell.swift; sourceTree = "<group>"; };
+		ACB098831E6D7CB400DCAE1A /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundTextField.swift; path = Common/View/TextField/RoundTextField.swift; sourceTree = "<group>"; };
 		ACC15FA61E3493E100088F6E /* BorrowBikeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorrowBikeTableViewCell.swift; path = Home/Resource/BorrowBikeTableViewCell.swift; sourceTree = "<group>"; };
 		ACC15FA71E3493E100088F6E /* BorrowBikeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BorrowBikeTableViewCell.xib; path = Home/Resource/BorrowBikeTableViewCell.xib; sourceTree = "<group>"; };
 		ACC15FAC1E34CB1B00088F6E /* AvailableBikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvailableBikeViewController.swift; path = Home/Classes/ViewController/AvailableBikeViewController.swift; sourceTree = "<group>"; };
@@ -508,6 +510,7 @@
 		AC6B88B41DB35AA80037F189 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ACB098821E6D7C9800DCAE1A /* TextField */,
 				AC6B88B51DB35AAE0037F189 /* Button */,
 			);
 			name = View;
@@ -717,6 +720,14 @@
 				AC6B88A11DB1F88B0037F189 /* Classes */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		ACB098821E6D7C9800DCAE1A /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				ACB098831E6D7CB400DCAE1A /* RoundTextField.swift */,
+			);
+			name = TextField;
 			sourceTree = "<group>";
 		};
 		ACC15FAA1E3493E500088F6E /* Resource */ = {
@@ -1073,6 +1084,7 @@
 				AC15F0AB1DB48144005A5779 /* LoginDelegate.swift in Sources */,
 				AC21E9C61E313AD400401CA9 /* BikeCircleButton.swift in Sources */,
 				AC8626981E40334000F1C6F0 /* BikeSessionModel.swift in Sources */,
+				ACB098841E6D7CB400DCAE1A /* RoundTextField.swift in Sources */,
 				AC6A683D1E29EF2600215DC1 /* CreditViewController.swift in Sources */,
 				AC7EC5F81E24B3E400766960 /* ServiceProvider.swift in Sources */,
 				ACEE800D1E101DBE007C6FC8 /* HomeViewController.swift in Sources */,

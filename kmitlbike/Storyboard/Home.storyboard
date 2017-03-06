@@ -112,7 +112,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fT9-Ol-ut6" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="V74-Dm-L24"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4T2-EL-iqv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4T2-EL-iqv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

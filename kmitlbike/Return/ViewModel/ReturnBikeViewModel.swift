@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 import Moya
 import RxSwift
-
+import RxCocoa
 class ReturnBikeViewModel: BaseViewModel {
 
     var provider = ServiceFactory.sharedInstance.resolve(service: RxMoyaProvider<KmitlBikeService>.self)
@@ -18,24 +18,30 @@ class ReturnBikeViewModel: BaseViewModel {
     weak var timerDelegate : BikeTimerDelegate!
     var locationManager : CLLocationManager!
     var currentLocation : CLLocation!
-    var routeList : [CLLocation] = [CLLocation]()
+    var routeList : [CLLocation]!
     var updateTimer = Timer()
     var secTimer = Timer()
     var secAmount : Int = 0
     var distanceAmount : Double = 0.0
+    var lastestDistance : Double = 0.0
     var bikeModel : RidingBikeModel!{
         didSet{
             self.setTime()
+            self.routeList = bikeModel.routeLine ?? [CLLocation]()
         }
     }
     func setTime(){
-        self.secAmount = Int(Date().timeIntervalSince(self.bikeModel.borrowTime as! Date))
+        self.secAmount = self.bikeModel.totalTime!
         self.distanceAmount = bikeModel.totalDistance!
-        self.routeList = bikeModel.routeLine ?? [CLLocation]()
+        
     }
     func setupLocationManager(){
+        self.routeList = [CLLocation]()
         locationManager = CLLocationManager()
         locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest // The accuracy of the location data
+        locationManager.distanceFilter = 5
+        locationManager.allowsBackgroundLocationUpdates = true
         locationManager.startUpdatingLocation()
     }
     func setupUpdateTimer(){
@@ -70,8 +76,8 @@ class ReturnBikeViewModel: BaseViewModel {
         let form = UpdateForm()
         form.bikeMac = bikeModel.bikeMac!
         form.totalTime = secAmount.toTimeString()
-        form.totalDistance = String(distanceAmount)
-        guard let currentLocation = routeList.last else{
+        form.totalDistance = String(format : "%.3f",self.lastestDistance)
+        guard let currentLocation = self.routeList.last else{
             return
         }
         form.latitude = String(currentLocation.coordinate.latitude)
@@ -96,7 +102,6 @@ class ReturnBikeViewModel: BaseViewModel {
     func increaseSec(){
         self.secAmount += 1
         self.timerDelegate.onSecUpdate()
-        self.setTime()
     }
     func stopUpdating(){
         locationManager.stopUpdatingLocation()
@@ -106,7 +111,7 @@ class ReturnBikeViewModel: BaseViewModel {
     func returnBike(withBarcode barcode : String){
         let form = ReturnForm()
         form.bikeBarcode = barcode
-        form.totalDistance = String(self.distanceAmount)
+        form.totalDistance = String(self.lastestDistance)
         form.totalTime = self.secAmount.toTimeString()
         form.routeLine = self.routeList
         let _ = provider.request(.returnBike(form: form))
@@ -125,16 +130,18 @@ class ReturnBikeViewModel: BaseViewModel {
         }
     }
     func calculateDistance(){
+        print(routeList)
         guard let firstLocation = self.routeList.first else {
             return
         }
         self.distanceAmount = 0.0
         self.currentLocation = firstLocation
-        for coordinate in routeList{
-            self.distanceAmount += (coordinate.distance(from: currentLocation)/1000).roundedTwoDigit
+        for coordinate in self.routeList{
+            self.distanceAmount += (coordinate.distance(from: currentLocation)/1000)
             self.currentLocation = coordinate
+            print(routeList)
         }
-        
+        self.lastestDistance += (self.distanceAmount - self.lastestDistance)
     }
     func checkError(errorResponse : BaseResponse){
         self.delegate?.onDataDidLoadErrorWithMessage(errorMessage: errorResponse.result ?? "Barcode mismatch")
@@ -147,8 +154,8 @@ extension ReturnBikeViewModel : CLLocationManagerDelegate{
         guard let currentLocation = locations.last else{
             return
         }
-        if currentLocation.speed <= 0 {
-            return
+        if currentLocation.speed <= 0{
+            return 
         }
         self.routeList.append(currentLocation)
         self.calculateDistance()

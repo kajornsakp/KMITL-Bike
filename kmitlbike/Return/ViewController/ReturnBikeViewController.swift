@@ -42,6 +42,7 @@ class ReturnBikeViewController: BaseViewController {
         viewModel.setupLocationManager()
         viewModel.setupSecTimer()
         viewModel.setupUpdateTimer()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -101,18 +102,16 @@ class ReturnBikeViewController: BaseViewController {
         }
     }
     
-//    func callReturnBike(){
-//        self.viewModel.stopUpdating()
-//        self.dismiss(animated: true, completion: nil)
-//    }
-    
     func callReturnBike(){
         let vc = ViewControllerFactory.sharedInstance.resolve(service: ScanBarcodeViewController.self)
         vc.delegate = self
         self.present(vc, animated: true, completion: nil)
     }
     func updateDistanceDisplay(){
-        self.distanceLabel.text = String(self.viewModel.distanceAmount)
+        if(self.viewModel.lastestDistance == 0.0){
+            return
+        }
+        self.distanceLabel.text = String(format: "%.3f km",self.viewModel.lastestDistance)
     }
     override func onDataDidLoad() {
         self.viewModel.stopUpdating()
@@ -134,11 +133,11 @@ extension ReturnBikeViewController : BikeMapDelegate{
         NotificationCenter.default.post(name: Notification.Name(rawValue: notificationKey), object: self,userInfo: locationDict)
         updateDistanceDisplay()
     }
-    
 }
 
 extension ReturnBikeViewController : BikeTimerDelegate{
     func onSecUpdate() {
         self.durationLabel.text = self.viewModel.secAmount.toTimeString()
+        self.updateDistanceDisplay()
     }
 }
