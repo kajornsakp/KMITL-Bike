@@ -77,11 +77,11 @@ class SignupViewModel: BaseViewModel {
             self.signupDelegate.onSignupError(message: "Last name is required for register")
             return false
         }
-        if email.isEmpty || email.isValidEmail(){
+        if email.isEmpty || !email.isValidEmail(){
             self.signupDelegate.onSignupError(message: "Email is required for register")
             return false
         }
-        if mobileNumber.isEmpty{
+        if mobileNumber.isEmpty || mobileNumber.characters.count != 10{
             self.signupDelegate.onSignupError(message: "Mobile number is required for register")
             return false
         }
@@ -107,6 +107,23 @@ class SignupViewModel: BaseViewModel {
             
         
     }
+        
+        
 }
+    override func showError(error : Moya.Error){
+        guard let errorResponse = error.response else{
+            self.signupDelegate.onSignupError(message: "Error")
+            return
+        }
+        switch errorResponse.statusCode {
+        case 400:
+            self.signupDelegate.onSignupError(message: "Failed to connect with the server")
+        case 406:
+            self.signupDelegate.onSignupError(message: "Invalid username/password. Your username/password is either incorrect or it is not KMITL Gen. 2 account")
+        default:
+            self.signupDelegate.onSignupError(message: "Error")
+        }
+        
+    }
 }
 

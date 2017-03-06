@@ -637,7 +637,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Login/Classes/Signup/ViewModel/SignupViewModel.swift"
@@ -653,7 +653,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Login/Classes/Signup/ViewModel/SignupViewModel.swift"
@@ -669,7 +669,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Login/Classes/Signup/ViewModel/SignupViewModel.swift"
@@ -685,7 +685,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Login/Classes/Signup/ViewModel/SignupViewModel.swift"
@@ -701,7 +701,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Login/Classes/Signup/ViewModel/SignupViewModel.swift"
@@ -753,7 +753,7 @@
                   moduleName = "kmitlbike"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kajornsak/bitbucket/newKmitlBike/kmitlbike/Find/Classes/Model/BikeModelResponse.swift"
-                  timestampString = "508752446.408149"
+                  timestampString = "508920119.599729"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -768,7 +768,7 @@
                   moduleName = "kmitlbike"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kajornsak/bitbucket/newKmitlBike/kmitlbike/Find/Classes/Model/BikeModelResponse.swift"
-                  timestampString = "508752446.409858"
+                  timestampString = "508920119.601271"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -2046,7 +2046,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Login/Classes/Signup/ViewModel/SignupViewModel.swift"
@@ -2310,6 +2310,22 @@
             startingLineNumber = "74"
             endingLineNumber = "74"
             landmarkName = "updateLocation()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kmitlbike/Login/Classes/Signup/ViewModel/SignupViewModel.swift"
+            timestampString = "508920156.720518"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "inputValidation(username:firstName:lastName:email:mobileNumber:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

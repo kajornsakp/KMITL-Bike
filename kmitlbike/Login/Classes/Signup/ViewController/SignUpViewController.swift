@@ -58,7 +58,9 @@ class SignUpViewController: BaseViewController {
         self.agreeTermButton.setImage(#imageLiteral(resourceName: "kmitlbike_signup_check_button"), for: .normal)
         
     }
+
     @IBAction func onViewTermConditions(_ sender: Any) {
+        self.view.endEditing(true)
         let vc = ViewControllerFactory.sharedInstance.resolve(service: SignUpTermsConditionViewController.self)
         guard let navigationController = self.navigationController else{
             self.present(vc, animated: true, completion: nil)
