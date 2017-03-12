@@ -23,7 +23,8 @@ class BikeHistoryTableViewCell: UITableViewCell {
             self.dateLabel.text = bikeHistory.borrowDate
             self.timeLabel.text = bikeHistory.borrowTime
             self.durationLabel.text = bikeHistory.totalTime
-            self.distanceLabel.text = "\(bikeHistory.totalDistance ?? "" ) km."
+            var distanceDouble = Double(bikeHistory.totalDistance!) ?? 0.0
+            self.distanceLabel.text = String(format: "%.3f km.",distanceDouble)
         }
     }
     override func awakeFromNib() {

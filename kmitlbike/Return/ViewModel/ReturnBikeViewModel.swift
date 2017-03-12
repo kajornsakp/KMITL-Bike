@@ -111,7 +111,7 @@ class ReturnBikeViewModel: BaseViewModel {
     func returnBike(withBarcode barcode : String){
         let form = ReturnForm()
         form.bikeBarcode = barcode
-        form.totalDistance = String(self.lastestDistance)
+        form.totalDistance = String(format: "%.3f",self.lastestDistance)
         form.totalTime = self.secAmount.toTimeString()
         form.routeLine = self.routeList
         let _ = provider.request(.returnBike(form: form))
@@ -139,7 +139,6 @@ class ReturnBikeViewModel: BaseViewModel {
         for coordinate in self.routeList{
             self.distanceAmount += (coordinate.distance(from: currentLocation)/1000)
             self.currentLocation = coordinate
-            print(routeList)
         }
         self.lastestDistance += (self.distanceAmount - self.lastestDistance)
     }
