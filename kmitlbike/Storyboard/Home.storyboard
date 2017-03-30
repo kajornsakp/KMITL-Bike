@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Animated Tab Bar Controller-->
         <scene sceneID="CVS-KA-uzt">
             <objects>
-                <tabBarController storyboardIdentifier="MainTabBarController" id="02V-lj-exo" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" id="02V-lj-exo" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="3Sc-tV-CGt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.60032320019999996" green="0.74509954450000004" blue="0.29400736090000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBar>
                     <connections>
                         <segue destination="0Ci-Md-gIh" kind="relationship" relationship="viewControllers" id="apX-7n-JTq"/>
@@ -68,11 +69,15 @@
             </objects>
             <point key="canvasLocation" x="1048.8" y="-2527.736131934033"/>
         </scene>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="CCu-jG-TfA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Ci-Md-gIh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="CwB-Sr-v5r"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="kmitlbike_tab_icon_home" selectedImage="kmitlbike_tab_icon_home_selected" id="CwB-Sr-v5r" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="4QK-37-syu" id="Hfj-Z8-qgv"/>
+                        </connections>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ef8-zS-XWZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -84,14 +89,28 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aso-Ce-evX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="4QK-37-syu" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
+                            <color key="value" red="0.60032320019999996" green="0.74509954450000004" blue="0.29400736090000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.60032320019999996" green="0.74509954450000004" blue="0.29400736090000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-866.39999999999998" y="-1127.5862068965519"/>
         </scene>
-        <!--Item-->
+        <!--Find-->
         <scene sceneID="ORL-dL-a59">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RUx-ad-GOq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="rmm-ZL-AiQ"/>
+                    <tabBarItem key="tabBarItem" title="Find" image="kmitlbike_tab_icon_find" selectedImage="kmitlbike_tab_icon_find_selected" id="rmm-ZL-AiQ" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="o3W-Xr-eO8" id="U09-zV-8kx"/>
+                        </connections>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fbC-PU-EzJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -103,14 +122,28 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNF-Fe-HDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="o3W-Xr-eO8" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
+                            <color key="value" red="0.60032320019999996" green="0.74509954450000004" blue="0.29400736090000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.60032320019999996" green="0.74509954450000004" blue="0.29400736090000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="1119.2" y="-1126.6866566716642"/>
         </scene>
-        <!--Item-->
+        <!--History-->
         <scene sceneID="VwB-Z3-8yy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fT9-Ol-ut6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="V74-Dm-L24"/>
+                    <tabBarItem key="tabBarItem" title="History" image="kmitlbike_tab_icon_history" selectedImage="kmitlbike_tab_icon_history_selected" id="V74-Dm-L24" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="YnK-zF-NOW" id="cmp-by-8d5"/>
+                        </connections>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4T2-EL-iqv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -126,14 +159,28 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXO-Y7-rlo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="YnK-zF-NOW" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
+                            <color key="value" red="0.60032320019999996" green="0.74509954450000004" blue="0.29400736090000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.60032320019999996" green="0.74509954450000004" blue="0.29400736090000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="181.59999999999999" y="-1860.7196401799101"/>
         </scene>
-        <!--Item-->
+        <!--More-->
         <scene sceneID="pFl-rr-GPX">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hAs-uc-ul1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ed7-t6-WDN"/>
+                    <tabBarItem key="tabBarItem" title="More" image="kmitlbike_tab_icon_more" selectedImage="kmitlbike_tab_icon_more_selected" id="ed7-t6-WDN" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <connections>
+                            <outlet property="animation" destination="IMT-VN-KXw" id="MJn-zj-YKf"/>
+                        </connections>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tzi-nH-Rgi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -145,8 +192,29 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9eL-H6-aUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="IMT-VN-KXw" customClass="RAMBounceAnimation" customModule="RAMAnimatedTabBarController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
+                            <color key="value" red="0.60032320019999996" green="0.74509954450000004" blue="0.29400736090000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
+                            <color key="value" red="0.60032320019999996" green="0.74509954450000004" blue="0.29400736090000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="109.59999999999999" y="-2527.2863568215894"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kmitlbike_tab_icon_find" width="20" height="20"/>
+        <image name="kmitlbike_tab_icon_find_selected" width="20" height="20"/>
+        <image name="kmitlbike_tab_icon_history" width="20" height="20"/>
+        <image name="kmitlbike_tab_icon_history_selected" width="20" height="20"/>
+        <image name="kmitlbike_tab_icon_home" width="20" height="20"/>
+        <image name="kmitlbike_tab_icon_home_selected" width="20" height="20"/>
+        <image name="kmitlbike_tab_icon_more" width="20" height="20"/>
+        <image name="kmitlbike_tab_icon_more_selected" width="20" height="20"/>
+    </resources>
+    <color key="tintColor" red="0.60032320019999996" green="0.74509954450000004" blue="0.29400736090000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

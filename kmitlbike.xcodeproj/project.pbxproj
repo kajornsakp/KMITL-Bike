@@ -95,6 +95,7 @@
 		ACD8A5B31DF12B9700E989AA /* CommonForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5B21DF12B9700E989AA /* CommonForm.swift */; };
 		ACD8A5B81DF1303D00E989AA /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5B71DF1303D00E989AA /* SignupViewModel.swift */; };
 		ACD8A5BA1DF1306800E989AA /* SignupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5B91DF1306800E989AA /* SignupDelegate.swift */; };
+		ACE2934F1E8D311500448446 /* KmitlBikeBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE2934E1E8D311500448446 /* KmitlBikeBounceAnimation.swift */; };
 		ACEE800D1E101DBE007C6FC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEE800C1E101DBE007C6FC8 /* HomeViewController.swift */; };
 		DEA3E90B88BB7F5E5CCD0A95 /* Pods_kmitlbike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDC6F4C19EBAFA9028A4944 /* Pods_kmitlbike.framework */; };
 /* End PBXBuildFile section */
@@ -192,6 +193,7 @@
 		ACD8A5B21DF12B9700E989AA /* CommonForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonForm.swift; path = Common/Form/CommonForm.swift; sourceTree = "<group>"; };
 		ACD8A5B71DF1303D00E989AA /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupViewModel.swift; path = Login/Classes/Signup/ViewModel/SignupViewModel.swift; sourceTree = "<group>"; };
 		ACD8A5B91DF1306800E989AA /* SignupDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupDelegate.swift; path = Login/Classes/Signup/Protocol/SignupDelegate.swift; sourceTree = "<group>"; };
+		ACE2934E1E8D311500448446 /* KmitlBikeBounceAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KmitlBikeBounceAnimation.swift; path = Common/View/TabBarItemAnimation/KmitlBikeBounceAnimation.swift; sourceTree = "<group>"; };
 		ACEE800C1E101DBE007C6FC8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Home/Classes/ViewController/HomeViewController.swift; sourceTree = "<group>"; };
 		BBA16D7B7E6747D8E4AF3137 /* Pods-kmitlbike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmitlbike.release.xcconfig"; path = "Pods/Target Support Files/Pods-kmitlbike/Pods-kmitlbike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -512,6 +514,7 @@
 		AC6B88B41DB35AA80037F189 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ACE2934D1E8D30E100448446 /* TabBarItemAnimation */,
 				ACB098821E6D7C9800DCAE1A /* TextField */,
 				AC6B88B51DB35AAE0037F189 /* Button */,
 			);
@@ -907,6 +910,14 @@
 			name = Home;
 			sourceTree = "<group>";
 		};
+		ACE2934D1E8D30E100448446 /* TabBarItemAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2934E1E8D311500448446 /* KmitlBikeBounceAnimation.swift */,
+			);
+			name = TabBarItemAnimation;
+			sourceTree = "<group>";
+		};
 		BE40503DC881AC69E04A49EE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -947,7 +958,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Kajornsak Peerapathananont";
 				TargetAttributes = {
 					AC9068DA1DB1D235009BC898 = {
@@ -1134,6 +1145,7 @@
 				AC872B151E89085B0085326B /* AttentionMapViewController.swift in Sources */,
 				ACD0873C1E46E575008401E1 /* TermsConditionViewModel.swift in Sources */,
 				AC83B0611E3F0D57009350AB /* ReturnBikeProtocol.swift in Sources */,
+				ACE2934F1E8D311500448446 /* KmitlBikeBounceAnimation.swift in Sources */,
 				ACC341881E38929F00C6A3E1 /* ReturnBikeViewController.swift in Sources */,
 				AC6B88E91DB38DDC0037F189 /* CommonRouter.swift in Sources */,
 				ACC15FB31E3501E300088F6E /* HomeViewModel.swift in Sources */,
@@ -1179,6 +1191,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1230,6 +1243,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1260,6 +1274,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18FBB5C3F714D66AD13AA384 /* Pods-kmitlbike.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = P2N373N3GP;
@@ -1278,6 +1293,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BBA16D7B7E6747D8E4AF3137 /* Pods-kmitlbike.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = P2N373N3GP;
