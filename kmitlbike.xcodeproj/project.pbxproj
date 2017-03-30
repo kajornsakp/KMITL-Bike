@@ -56,6 +56,7 @@
 		AC8626961E3F742600F1C6F0 /* BikeStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626951E3F742600F1C6F0 /* BikeStatusResponse.swift */; };
 		AC8626981E40334000F1C6F0 /* BikeSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626971E40334000F1C6F0 /* BikeSessionModel.swift */; };
 		AC86E3D01E40B921000CB940 /* RidingBikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86E3CF1E40B920000CB940 /* RidingBikeModel.swift */; };
+		AC872B151E89085B0085326B /* AttentionMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC872B141E89085B0085326B /* AttentionMapViewController.swift */; };
 		AC9068DF1DB1D235009BC898 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9068DE1DB1D235009BC898 /* AppDelegate.swift */; };
 		AC9068E11DB1D235009BC898 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9068E01DB1D235009BC898 /* ViewController.swift */; };
 		AC9068E61DB1D235009BC898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9068E51DB1D235009BC898 /* Assets.xcassets */; };
@@ -150,6 +151,7 @@
 		AC8626951E3F742600F1C6F0 /* BikeStatusResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BikeStatusResponse.swift; path = Home/Classes/Model/BikeStatusResponse.swift; sourceTree = "<group>"; };
 		AC8626971E40334000F1C6F0 /* BikeSessionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BikeSessionModel.swift; path = Return/Model/BikeSessionModel.swift; sourceTree = "<group>"; };
 		AC86E3CF1E40B920000CB940 /* RidingBikeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RidingBikeModel.swift; path = Return/Model/RidingBikeModel.swift; sourceTree = "<group>"; };
+		AC872B141E89085B0085326B /* AttentionMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttentionMapViewController.swift; path = Home/Classes/ViewController/Popup/AttentionMapViewController.swift; sourceTree = "<group>"; };
 		AC9068DB1DB1D235009BC898 /* kmitlbike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kmitlbike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9068DE1DB1D235009BC898 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9068E01DB1D235009BC898 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -672,6 +674,7 @@
 			children = (
 				AC8626911E3F4C6D00F1C6F0 /* UnlockBikeCodeViewController.swift */,
 				AC8626931E3F4C8400F1C6F0 /* ScanBikeBarcodeViewController.swift */,
+				AC872B141E89085B0085326B /* AttentionMapViewController.swift */,
 			);
 			name = Popup;
 			sourceTree = "<group>";
@@ -1128,6 +1131,7 @@
 				AC9068DF1DB1D235009BC898 /* AppDelegate.swift in Sources */,
 				AC7EC5CD1E223C8700766960 /* KmitlBikeUser.swift in Sources */,
 				AC7EC5F11E2494D700766960 /* BikeHistoryTableViewCell.swift in Sources */,
+				AC872B151E89085B0085326B /* AttentionMapViewController.swift in Sources */,
 				ACD0873C1E46E575008401E1 /* TermsConditionViewModel.swift in Sources */,
 				AC83B0611E3F0D57009350AB /* ReturnBikeProtocol.swift in Sources */,
 				ACC341881E38929F00C6A3E1 /* ReturnBikeViewController.swift in Sources */,

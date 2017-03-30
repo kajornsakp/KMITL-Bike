@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fte-Qg-HEW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="72.799999999999997" y="-1127.5862068965519"/>
+            <point key="canvasLocation" x="-410" y="-1128"/>
         </scene>
         <!--Tutorial Popup View Controller-->
         <scene sceneID="6gC-bJ-bJt">
@@ -120,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efp-p7-HVX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="940" y="-1128"/>
+            <point key="canvasLocation" x="1135" y="-1128"/>
         </scene>
         <!--Unlock Bike Code View Controller-->
         <scene sceneID="9lj-N7-dZY">
@@ -263,8 +263,70 @@
             </objects>
             <point key="canvasLocation" x="1789.5999999999999" y="-1128.4857571214393"/>
         </scene>
+        <!--Attention Map View Controller-->
+        <scene sceneID="LPD-IZ-TQb">
+            <objects>
+                <viewController storyboardIdentifier="AttentionMapViewController" id="8Dm-O8-E87" customClass="AttentionMapViewController" customModule="kmitlbike" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4ei-8x-0Vn"/>
+                        <viewControllerLayoutGuide type="bottom" id="w0G-1f-Ome"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TaB-td-abR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="o0h-RO-snq">
+                                <rect key="frame" x="8" y="28" width="359" height="631"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attention!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFv-bG-BS1">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="DHu-oX-Ogd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" red="0.56078431370000004" green="0.75686274509999996" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please DO NOT take the bike outside the green area." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFJ-nS-Bnc">
+                                        <rect key="frame" x="0.0" y="68" width="359" height="193.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <color key="textColor" red="1" green="0.23137255009999999" blue="0.18823529780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kmitlbike_attention_map" translatesAutoresizingMaskIntoConstraints="NO" id="6uY-yG-eva">
+                                        <rect key="frame" x="0.0" y="269.5" width="359" height="160"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="160" id="7ZX-s4-Fzi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please lock the bike after every use." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gol-hf-YPG">
+                                        <rect key="frame" x="0.0" y="437.5" width="359" height="193.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gol-hf-YPG" firstAttribute="height" secondItem="QFJ-nS-Bnc" secondAttribute="height" id="yhH-7J-Emj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o0h-RO-snq" firstAttribute="leading" secondItem="TaB-td-abR" secondAttribute="leading" constant="8" id="Fq2-PR-8bN"/>
+                            <constraint firstItem="o0h-RO-snq" firstAttribute="top" secondItem="4ei-8x-0Vn" secondAttribute="bottom" constant="8" id="Iq5-L6-KoX"/>
+                            <constraint firstItem="w0G-1f-Ome" firstAttribute="top" secondItem="o0h-RO-snq" secondAttribute="bottom" constant="8" id="QWl-bV-kU2"/>
+                            <constraint firstAttribute="trailing" secondItem="o0h-RO-snq" secondAttribute="trailing" constant="8" id="hVd-IE-cSS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UZL-DB-R0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="-1128"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="kmitlbike_attention_map" width="636" height="360"/>
         <image name="kmitlbike_borrow_button" width="320" height="320"/>
         <image name="kmitlbike_how_to_lock" width="359" height="239"/>
         <image name="kmitlbike_tab_icon_home" width="32" height="32"/>

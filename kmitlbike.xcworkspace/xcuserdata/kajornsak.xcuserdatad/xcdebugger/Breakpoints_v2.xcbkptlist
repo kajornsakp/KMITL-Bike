@@ -962,11 +962,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Home/Classes/ViewController/HomeViewController.swift"
-            timestampString = "507806952.275053"
+            timestampString = "512298301.647067"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "showHowToLock()"
             landmarkType = "7">
          </BreakpointContent>
@@ -978,11 +978,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Home/Classes/ViewController/HomeViewController.swift"
-            timestampString = "507806952.275053"
+            timestampString = "512298301.647067"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "checkPermission()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1154,11 +1154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Home/Classes/ViewController/HomeViewController.swift"
-            timestampString = "508211041.930703"
+            timestampString = "512298301.647067"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "resumeBikeSession()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1442,11 +1442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Home/Classes/ViewController/HomeViewController.swift"
-            timestampString = "507818676.070049"
+            timestampString = "512298301.647067"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "resumeBikeSession()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1634,11 +1634,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Home/Classes/ViewController/HomeViewController.swift"
-            timestampString = "508211041.930703"
+            timestampString = "512298301.647067"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
+            startingLineNumber = "162"
+            endingLineNumber = "162"
             landmarkName = "onBorrowBikeFailed(message:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2469,8 +2469,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
             endingLineNumber = "31"
-            landmarkName = "ReturnBikeViewModel"
-            landmarkType = "3">
+            landmarkName = "bikeModel"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2485,8 +2485,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
             endingLineNumber = "29"
-            landmarkName = "ReturnBikeViewModel"
-            landmarkType = "3">
+            landmarkName = "bikeModel"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

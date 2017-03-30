@@ -37,7 +37,7 @@ class HomeViewController: BaseViewController {
     }
     
     @IBAction func onBorrowBikeClick(_ sender: Any) {
-        showTutorial()
+        showMap()
     }
     
     func showTutorial(){
@@ -45,10 +45,6 @@ class HomeViewController: BaseViewController {
         let popup = PopupDialog(viewController: vc, buttonAlignment: .vertical, transitionStyle: .bounceUp, gestureDismissal: true, completion: nil)
         let buttonOne = DefaultButton(title: "NEXT") {
             if(Developer.ENABLED){
-//                let vc = ViewControllerFactory.sharedInstance.resolve(service: ReturnBikeViewController.self)
-//                let ridingBike = RidingBikeModel(withBikeMac: "KB010", passcode: "12345", borrowTime: NSDate())
-//                vc.ridingBikeModel = ridingBike
-//                self.present(vc, animated: true, completion: nil)
                 self.checkPermission()
             }
             else{
@@ -61,6 +57,19 @@ class HomeViewController: BaseViewController {
         self.present(popup, animated: true, completion: nil)
     }
 
+    func showMap(){
+        let storyboard = UIStoryboard(name: "Borrow", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "AttentionMapViewController")
+        let popup = PopupDialog(viewController: vc)
+        let buttonNext = DefaultButton(title: "NEXT"){
+            self.showTutorial()
+        }
+        buttonNext.buttonColor = KmitlColor.LightMainGreenColor.color()
+        buttonNext.titleColor = KmitlColor.White.color()
+        popup.addButton(buttonNext)
+        self.present(popup,animated: true,completion: nil)
+    }
+    
     func showHowToLock(){
         let vc = ViewControllerFactory.sharedInstance.resolve(service: UnlockBikeCodeViewController.self)
         let popup = PopupDialog(viewController: vc, buttonAlignment: .vertical, transitionStyle: .bounceUp, gestureDismissal: true, completion: nil)
@@ -72,6 +81,7 @@ class HomeViewController: BaseViewController {
         popup.addButton(buttonNext)
         self.present(popup,animated: true,completion: nil)
     }
+    
     func checkPermission(){
         switch PermissionScope().statusLocationInUse() {
         case .unknown:
