@@ -27,6 +27,7 @@ class ReturnBikeViewModel: BaseViewModel {
     var bikeModel : RidingBikeModel!{
         didSet{
             self.setTime()
+            self.secAmount = bikeModel.totalTime ?? 0
             self.routeList = bikeModel.routeLine ?? [CLLocation]()
         }
     }
@@ -40,7 +41,8 @@ class ReturnBikeViewModel: BaseViewModel {
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest // The accuracy of the location data
-        locationManager.distanceFilter = 5
+        locationManager.distanceFilter = 5.0
+        locationManager.activityType = .fitness
         locationManager.allowsBackgroundLocationUpdates = true
         locationManager.startUpdatingLocation()
     }
@@ -58,7 +60,7 @@ class ReturnBikeViewModel: BaseViewModel {
         }
     }
     func setupSecTimer(){
-        self.secAmount = 0
+//        self.secAmount = 0
         if #available(iOS 10.0, *) {
             secTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true){_ in
                 self.increaseSec()
@@ -149,13 +151,15 @@ class ReturnBikeViewModel: BaseViewModel {
 
 extension ReturnBikeViewModel : CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
+        if(Developer.ENABLED){
+            print(locations.last)
+        }
         guard let currentLocation = locations.last else{
             return
         }
-        if currentLocation.speed <= 0{
-            return 
-        }
+//        if currentLocation.speed <= 0{
+//            return 
+//        }
         self.routeList.append(currentLocation)
         self.calculateDistance()
         self.locationDelegate.onMapDidUpdate(location: currentLocation)
