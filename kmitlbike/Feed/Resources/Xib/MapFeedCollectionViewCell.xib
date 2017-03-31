@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MapFeedCollectionViewCell" id="Fiy-S5-JAG" customClass="MapFeedCollectionViewCell" customModule="kmitlbike" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="227" height="219"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="227" height="219"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2E0-5E-GRH">
+                        <rect key="frame" x="0.0" y="0.0" width="227" height="219"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoS-3E-Aez" customClass="GMSMapView">
+                                <rect key="frame" x="8" y="8" width="211" height="203"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xoS-3E-Aez" firstAttribute="top" secondItem="2E0-5E-GRH" secondAttribute="top" constant="8" id="7W8-gO-zPn"/>
+                            <constraint firstAttribute="bottom" secondItem="xoS-3E-Aez" secondAttribute="bottom" constant="8" id="8ot-yc-hWN"/>
+                            <constraint firstItem="xoS-3E-Aez" firstAttribute="leading" secondItem="2E0-5E-GRH" secondAttribute="leading" constant="8" id="FZ4-IN-Rpk"/>
+                            <constraint firstAttribute="trailing" secondItem="xoS-3E-Aez" secondAttribute="trailing" constant="8" id="oeT-fI-mvr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2E0-5E-GRH" secondAttribute="bottom" id="741-3B-Grk"/>
+                <constraint firstAttribute="trailing" secondItem="2E0-5E-GRH" secondAttribute="trailing" id="bHw-rD-LKq"/>
+                <constraint firstItem="2E0-5E-GRH" firstAttribute="top" secondItem="Fiy-S5-JAG" secondAttribute="top" id="d0b-Z5-9gK"/>
+                <constraint firstItem="2E0-5E-GRH" firstAttribute="leading" secondItem="Fiy-S5-JAG" secondAttribute="leading" id="j3D-fa-0h3"/>
+            </constraints>
+            <size key="customSize" width="227" height="219"/>
+            <point key="canvasLocation" x="73.5" y="52.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -21,6 +21,12 @@
 		AC38A8CE1E1F875B00F10CEB /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC38A8CD1E1F875B00F10CEB /* History.storyboard */; };
 		AC38A8E21E1F8ACF00F10CEB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38A8E11E1F8ACF00F10CEB /* HistoryViewController.swift */; };
 		AC38A8E71E1F8B7200F10CEB /* CommonGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38A8E61E1F8B7200F10CEB /* CommonGlobal.swift */; };
+		AC4DEB271E8D61FD00B3046B /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4DEB261E8D61FD00B3046B /* Feed.storyboard */; };
+		AC4DEB2B1E8D65BA00B3046B /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DEB2A1E8D65BA00B3046B /* FeedViewController.swift */; };
+		AC4DEB2D1E8D65EA00B3046B /* FeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC4DEB2C1E8D65EA00B3046B /* FeedCollectionViewCell.xib */; };
+		AC4DEB301E8D880D00B3046B /* FeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DEB2F1E8D880D00B3046B /* FeedCollectionViewCell.swift */; };
+		AC4DEB321E8DA0CF00B3046B /* MapFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4DEB311E8DA0CF00B3046B /* MapFeedCollectionViewCell.swift */; };
+		AC4DEB341E8DA0E200B3046B /* MapFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC4DEB331E8DA0E200B3046B /* MapFeedCollectionViewCell.xib */; };
 		AC6A683D1E29EF2600215DC1 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A683C1E29EF2600215DC1 /* CreditViewController.swift */; };
 		AC6A68401E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A683E1E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift */; };
 		AC6A68411E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6A683F1E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib */; };
@@ -117,6 +123,12 @@
 		AC38A8CD1E1F875B00F10CEB /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = History.storyboard; path = Storyboard/History.storyboard; sourceTree = "<group>"; };
 		AC38A8E11E1F8ACF00F10CEB /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = History/Classes/ViewController/HistoryViewController.swift; sourceTree = "<group>"; };
 		AC38A8E61E1F8B7200F10CEB /* CommonGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonGlobal.swift; path = Common/Global/CommonGlobal.swift; sourceTree = "<group>"; };
+		AC4DEB261E8D61FD00B3046B /* Feed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Feed.storyboard; path = Storyboard/Feed.storyboard; sourceTree = "<group>"; };
+		AC4DEB2A1E8D65BA00B3046B /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = Feed/Classes/ViewController/FeedViewController.swift; sourceTree = "<group>"; };
+		AC4DEB2C1E8D65EA00B3046B /* FeedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FeedCollectionViewCell.xib; path = Feed/Resources/Xib/FeedCollectionViewCell.xib; sourceTree = "<group>"; };
+		AC4DEB2F1E8D880D00B3046B /* FeedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCollectionViewCell.swift; path = Feed/Classes/View/FeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		AC4DEB311E8DA0CF00B3046B /* MapFeedCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapFeedCollectionViewCell.swift; path = Feed/Classes/View/MapFeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		AC4DEB331E8DA0E200B3046B /* MapFeedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MapFeedCollectionViewCell.xib; path = Feed/Resources/Xib/MapFeedCollectionViewCell.xib; sourceTree = "<group>"; };
 		AC6A683C1E29EF2600215DC1 /* CreditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditViewController.swift; path = More/Classes/ViewController/CreditViewController.swift; sourceTree = "<group>"; };
 		AC6A683E1E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditPeopleTableViewCell.swift; path = More/Resources/Xib/CreditPeopleTableViewCell.swift; sourceTree = "<group>"; };
 		AC6A683F1E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreditPeopleTableViewCell.xib; path = More/Resources/Xib/CreditPeopleTableViewCell.xib; sourceTree = "<group>"; };
@@ -405,6 +417,82 @@
 				AC7EC5CC1E223C8700766960 /* KmitlBikeUser.swift */,
 			);
 			name = Global;
+			sourceTree = "<group>";
+		};
+		AC4DEB1F1E8D5E0800B3046B /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				AC4DEB281E8D655500B3046B /* Resources */,
+				AC4DEB201E8D5E1A00B3046B /* Classes */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		AC4DEB201E8D5E1A00B3046B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC4DEB2E1E8D87DF00B3046B /* View */,
+				AC4DEB251E8D5E3500B3046B /* ViewController */,
+				AC4DEB241E8D5E3400B3046B /* ViewModel */,
+				AC4DEB231E8D5E3200B3046B /* Protocol */,
+				AC4DEB211E8D5E1E00B3046B /* Model */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		AC4DEB211E8D5E1E00B3046B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AC4DEB231E8D5E3200B3046B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		AC4DEB241E8D5E3400B3046B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC4DEB251E8D5E3500B3046B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AC4DEB2A1E8D65BA00B3046B /* FeedViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AC4DEB281E8D655500B3046B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC4DEB291E8D655C00B3046B /* Xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AC4DEB291E8D655C00B3046B /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				AC4DEB2C1E8D65EA00B3046B /* FeedCollectionViewCell.xib */,
+				AC4DEB331E8DA0E200B3046B /* MapFeedCollectionViewCell.xib */,
+			);
+			name = Xib;
+			sourceTree = "<group>";
+		};
+		AC4DEB2E1E8D87DF00B3046B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC4DEB2F1E8D880D00B3046B /* FeedCollectionViewCell.swift */,
+				AC4DEB311E8DA0CF00B3046B /* MapFeedCollectionViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		AC6B88A11DB1F88B0037F189 /* Classes */ = {
@@ -703,6 +791,7 @@
 		AC9068DD1DB1D235009BC898 /* kmitlbike */ = {
 			isa = PBXGroup;
 			children = (
+				AC4DEB1F1E8D5E0800B3046B /* Feed */,
 				AC9068DE1DB1D235009BC898 /* AppDelegate.swift */,
 				AC9068E51DB1D235009BC898 /* Assets.xcassets */,
 				AC6B88A61DB1FA620037F189 /* Common */,
@@ -889,6 +978,7 @@
 				AC38A8C91E1F85CF00F10CEB /* Borrow.storyboard */,
 				ACC3417D1E387CD400C6A3E1 /* Barcode.storyboard */,
 				ACC341891E38981400C6A3E1 /* Return.storyboard */,
+				AC4DEB261E8D61FD00B3046B /* Feed.storyboard */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -1007,9 +1097,12 @@
 				ACA05EB51E27649000453D8D /* Find.storyboard in Resources */,
 				ACD8A5B01DF1220200E989AA /* Home.storyboard in Resources */,
 				ACC15FA91E3493E100088F6E /* BorrowBikeTableViewCell.xib in Resources */,
+				AC4DEB341E8DA0E200B3046B /* MapFeedCollectionViewCell.xib in Resources */,
 				AC7EC5F21E2494D700766960 /* BikeHistoryTableViewCell.xib in Resources */,
 				ACA05EBA1E276A0100453D8D /* MoreInfoTableViewCell.xib in Resources */,
+				AC4DEB271E8D61FD00B3046B /* Feed.storyboard in Resources */,
 				AC9068E61DB1D235009BC898 /* Assets.xcassets in Resources */,
+				AC4DEB2D1E8D65EA00B3046B /* FeedCollectionViewCell.xib in Resources */,
 				ACD8A5AE1DF121F400E989AA /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1104,6 +1197,7 @@
 				ACEE800D1E101DBE007C6FC8 /* HomeViewController.swift in Sources */,
 				AC6B88B71DB35ACF0037F189 /* RoundButton.swift in Sources */,
 				ACC15FAF1E34CB4000088F6E /* AvailableBikeViewModel.swift in Sources */,
+				AC4DEB2B1E8D65BA00B3046B /* FeedViewController.swift in Sources */,
 				AC38A8E71E1F8B7200F10CEB /* CommonGlobal.swift in Sources */,
 				AC2322541E277CA7005BF72E /* MoreButtonTableViewCell.swift in Sources */,
 				AC15F0A91DB47538005A5779 /* UserData.swift in Sources */,
@@ -1115,6 +1209,7 @@
 				ACCB5C301E48E67800D4B2B0 /* SignUpTermsConditionViewController.swift in Sources */,
 				AC23225F1E29DF72005BF72E /* BikeModelResponse.swift in Sources */,
 				ACC3417C1E387C1200C6A3E1 /* ScanBarcodeViewController.swift in Sources */,
+				AC4DEB301E8D880D00B3046B /* FeedCollectionViewCell.swift in Sources */,
 				ACD8A5A61DF1145000E989AA /* ViewControllerFactory.swift in Sources */,
 				AC7EC6041E26442400766960 /* MoreViewController.swift in Sources */,
 				ACC15FB51E35123C00088F6E /* BorrowBikeResponse.swift in Sources */,
@@ -1145,6 +1240,7 @@
 				AC872B151E89085B0085326B /* AttentionMapViewController.swift in Sources */,
 				ACD0873C1E46E575008401E1 /* TermsConditionViewModel.swift in Sources */,
 				AC83B0611E3F0D57009350AB /* ReturnBikeProtocol.swift in Sources */,
+				AC4DEB321E8DA0CF00B3046B /* MapFeedCollectionViewCell.swift in Sources */,
 				ACE2934F1E8D311500448446 /* KmitlBikeBounceAnimation.swift in Sources */,
 				ACC341881E38929F00C6A3E1 /* ReturnBikeViewController.swift in Sources */,
 				AC6B88E91DB38DDC0037F189 /* CommonRouter.swift in Sources */,

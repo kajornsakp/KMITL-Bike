@@ -753,7 +753,7 @@
                   moduleName = "kmitlbike"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kajornsak/bitbucket/newKmitlBike/kmitlbike/Find/Classes/Model/BikeModelResponse.swift"
-                  timestampString = "510495825.673141"
+                  timestampString = "512631391.88857"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -768,7 +768,7 @@
                   moduleName = "kmitlbike"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kajornsak/bitbucket/newKmitlBike/kmitlbike/Find/Classes/Model/BikeModelResponse.swift"
-                  timestampString = "510495825.674729"
+                  timestampString = "512631391.890596"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -1314,11 +1314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495242.580798"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
             landmarkName = "stopUpdating()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1330,11 +1330,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495242.580798"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "stopUpdating()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1346,11 +1346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495242.580798"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "returnBike(withBarcode:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1938,11 +1938,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495511.866026"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
             landmarkName = "setupSecTimer()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1954,11 +1954,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495511.866026"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "updateLocation()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2194,11 +2194,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510852667.647631"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
             landmarkName = "checkError(errorResponse:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2210,11 +2210,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495242.580798"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "returnBike(withBarcode:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2268,15 +2268,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495511.866026"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "setTime()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2288,11 +2288,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495511.866026"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "updateLocation()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2304,11 +2304,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495511.866026"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "updateLocation()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2352,11 +2352,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495511.866026"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "updateLocation()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2368,11 +2368,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495242.580798"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "calculateDistance()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2384,11 +2384,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495242.580798"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
             landmarkName = "calculateDistance()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2400,11 +2400,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510852667.647631"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "calculateDistance()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2416,11 +2416,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510852667.647631"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "calculateDistance()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2432,11 +2432,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495511.866026"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "updateLocation()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2448,11 +2448,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495511.866026"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "setTime()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2464,11 +2464,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495511.866026"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "bikeModel"
             landmarkType = "24">
          </BreakpointContent>
@@ -2480,13 +2480,29 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/Return/ViewModel/ReturnBikeViewModel.swift"
-            timestampString = "510495511.866026"
+            timestampString = "512632395.625056"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "29"
             endingLineNumber = "29"
             landmarkName = "bikeModel"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kmitlbike/Feed/Classes/ViewController/FeedViewController.swift"
+            timestampString = "512598829.351945"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

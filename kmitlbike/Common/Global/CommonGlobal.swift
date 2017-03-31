@@ -9,7 +9,7 @@
 import UIKit
 
 struct Developer {
-    static let ENABLED = false
+    static let ENABLED = true
     static let BYPASS_LOGIN = false
     
 }
