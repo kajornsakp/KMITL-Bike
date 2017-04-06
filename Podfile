@@ -20,5 +20,6 @@ target 'kmitlbike' do
   pod 'Fabric' 
   pod 'Crashlytics'
   # Pods for kmitlbike
-
+  
 end
+

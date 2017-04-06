@@ -102,6 +102,8 @@
 		ACD8A5B81DF1303D00E989AA /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5B71DF1303D00E989AA /* SignupViewModel.swift */; };
 		ACD8A5BA1DF1306800E989AA /* SignupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5B91DF1306800E989AA /* SignupDelegate.swift */; };
 		ACE2934F1E8D311500448446 /* KmitlBikeBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE2934E1E8D311500448446 /* KmitlBikeBounceAnimation.swift */; };
+		ACE9630C1E8FFA1900C5B191 /* ThirdPartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE9630B1E8FFA1900C5B191 /* ThirdPartyViewController.swift */; };
+		ACE963101E90095900C5B191 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ACE9630F1E90095900C5B191 /* Settings.bundle */; };
 		ACEE800D1E101DBE007C6FC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEE800C1E101DBE007C6FC8 /* HomeViewController.swift */; };
 		DEA3E90B88BB7F5E5CCD0A95 /* Pods_kmitlbike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDC6F4C19EBAFA9028A4944 /* Pods_kmitlbike.framework */; };
 /* End PBXBuildFile section */
@@ -206,6 +208,8 @@
 		ACD8A5B71DF1303D00E989AA /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupViewModel.swift; path = Login/Classes/Signup/ViewModel/SignupViewModel.swift; sourceTree = "<group>"; };
 		ACD8A5B91DF1306800E989AA /* SignupDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupDelegate.swift; path = Login/Classes/Signup/Protocol/SignupDelegate.swift; sourceTree = "<group>"; };
 		ACE2934E1E8D311500448446 /* KmitlBikeBounceAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KmitlBikeBounceAnimation.swift; path = Common/View/TabBarItemAnimation/KmitlBikeBounceAnimation.swift; sourceTree = "<group>"; };
+		ACE9630B1E8FFA1900C5B191 /* ThirdPartyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ThirdPartyViewController.swift; path = More/Classes/ViewController/ThirdPartyViewController.swift; sourceTree = "<group>"; };
+		ACE9630F1E90095900C5B191 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../../../Downloads/Acknowledgements/Settings.bundle; sourceTree = "<group>"; };
 		ACEE800C1E101DBE007C6FC8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Home/Classes/ViewController/HomeViewController.swift; sourceTree = "<group>"; };
 		BBA16D7B7E6747D8E4AF3137 /* Pods-kmitlbike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmitlbike.release.xcconfig"; path = "Pods/Target Support Files/Pods-kmitlbike/Pods-kmitlbike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -719,6 +723,7 @@
 				AC7EC6031E26442400766960 /* MoreViewController.swift */,
 				AC6A683C1E29EF2600215DC1 /* CreditViewController.swift */,
 				ACD087391E46E54A008401E1 /* TermsConditionViewController.swift */,
+				ACE9630B1E8FFA1900C5B191 /* ThirdPartyViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -791,6 +796,7 @@
 		AC9068DD1DB1D235009BC898 /* kmitlbike */ = {
 			isa = PBXGroup;
 			children = (
+				ACE9630F1E90095900C5B191 /* Settings.bundle */,
 				AC4DEB1F1E8D5E0800B3046B /* Feed */,
 				AC9068DE1DB1D235009BC898 /* AppDelegate.swift */,
 				AC9068E51DB1D235009BC898 /* Assets.xcassets */,
@@ -1097,6 +1103,7 @@
 				ACA05EB51E27649000453D8D /* Find.storyboard in Resources */,
 				ACD8A5B01DF1220200E989AA /* Home.storyboard in Resources */,
 				ACC15FA91E3493E100088F6E /* BorrowBikeTableViewCell.xib in Resources */,
+				ACE963101E90095900C5B191 /* Settings.bundle in Resources */,
 				AC4DEB341E8DA0E200B3046B /* MapFeedCollectionViewCell.xib in Resources */,
 				AC7EC5F21E2494D700766960 /* BikeHistoryTableViewCell.xib in Resources */,
 				ACA05EBA1E276A0100453D8D /* MoreInfoTableViewCell.xib in Resources */,
@@ -1214,6 +1221,7 @@
 				AC7EC6041E26442400766960 /* MoreViewController.swift in Sources */,
 				ACC15FB51E35123C00088F6E /* BorrowBikeResponse.swift in Sources */,
 				AC21E9C81E313F6700401CA9 /* TutorialPopupViewController.swift in Sources */,
+				ACE9630C1E8FFA1900C5B191 /* ThirdPartyViewController.swift in Sources */,
 				AC15F0A61DB4719D005A5779 /* GlobalModel.swift in Sources */,
 				ACD0873A1E46E54A008401E1 /* TermsConditionViewController.swift in Sources */,
 				ACD8A5AB1DF116B100E989AA /* NSObject+kmitlbike.swift in Sources */,

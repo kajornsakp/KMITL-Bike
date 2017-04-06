@@ -19,7 +19,7 @@ enum CreditTableViewIndex:Int{
 class CreditViewController: BaseViewController {
     
     @IBOutlet weak var tableView : UITableView!
-    var peopleCredit : [CreditModel]!
+    var peopleCredit : [CreditModel]! = []
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
@@ -42,11 +42,16 @@ class CreditViewController: BaseViewController {
     }
     func setupPeopleCredit(){
         let array = ["Dr. Ronnachai Tiyarattanachai":"Adviser","Dr. Isara Anantavrasilp":"Adviser","Mr. Sasawat Chanate":"Coordinator","Mr. Chaiwat Wattanapaiboonsuk":"Database","Mr. Puriwat Khantiviriya":"Database","Mr. Boonnithi Jiaramaneepinit":"Hardware","Mr. Pavit Noinongyao":"Hardware","Ms. Chatchaya Chanchua":"Software (Android) & Database","Mr. Kajornsak Peerapathananont":"Software (iOS)"]
-        self.peopleCredit = []
-        for i in array{
-            self.peopleCredit.append(CreditModel(name: i.key, position: i.value))
+        self.peopleCredit = array.map{
+            return CreditModel(name: $0, position: $1)
+            }.sorted{
+                return $0.position < $1.position
         }
-        self.peopleCredit = self.peopleCredit.sorted{$0.position < $1.position}
+        self.peopleCredit.append(CreditModel(name: "Freepik", position: "All icons used in KMITL Bike made by Freepik from www.flaticon.com"))
+//        for i in array{
+//            self.peopleCredit.append(CreditModel(name: i.key, position: i.value))
+//        }
+//        self.peopleCredit = self.peopleCredit.sorted{$0.position < $1.position}
         self.tableView.reloadData()
     }
     

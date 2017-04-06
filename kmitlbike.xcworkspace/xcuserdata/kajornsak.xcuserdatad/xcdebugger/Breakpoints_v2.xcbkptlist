@@ -817,11 +817,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "kmitlbike/More/Classes/ViewController/CreditViewController.swift"
-            timestampString = "506280464.591956"
+            timestampString = "512991821.920125"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "setupPeopleCredit()"
             landmarkType = "7">
          </BreakpointContent>
