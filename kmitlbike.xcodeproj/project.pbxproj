@@ -17,6 +17,7 @@
 		AC23225B1E29DCF9005BF72E /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23225A1E29DCF9005BF72E /* FindViewController.swift */; };
 		AC23225D1E29DD0D005BF72E /* FindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23225C1E29DD0D005BF72E /* FindViewModel.swift */; };
 		AC23225F1E29DF72005BF72E /* BikeModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23225E1E29DF72005BF72E /* BikeModelResponse.swift */; };
+		AC30110E1EA5E2A80015DC7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC30110D1EA5E2A80015DC7D /* GoogleService-Info.plist */; };
 		AC38A8CA1E1F85CF00F10CEB /* Borrow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC38A8C91E1F85CF00F10CEB /* Borrow.storyboard */; };
 		AC38A8CE1E1F875B00F10CEB /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC38A8CD1E1F875B00F10CEB /* History.storyboard */; };
 		AC38A8E21E1F8ACF00F10CEB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38A8E11E1F8ACF00F10CEB /* HistoryViewController.swift */; };
@@ -113,6 +114,8 @@
 		AC23225A1E29DCF9005BF72E /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindViewController.swift; path = Find/Classes/ViewController/FindViewController.swift; sourceTree = "<group>"; };
 		AC23225C1E29DD0D005BF72E /* FindViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindViewModel.swift; path = Find/Classes/ViewModel/FindViewModel.swift; sourceTree = "<group>"; };
 		AC23225E1E29DF72005BF72E /* BikeModelResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BikeModelResponse.swift; path = Find/Classes/Model/BikeModelResponse.swift; sourceTree = "<group>"; };
+		AC30110D1EA5E2A80015DC7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC30110F1EA5E72B0015DC7D /* kmitlbike.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kmitlbike.entitlements; sourceTree = "<group>"; };
 		AC38A8C91E1F85CF00F10CEB /* Borrow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Borrow.storyboard; path = Storyboard/Borrow.storyboard; sourceTree = "<group>"; };
 		AC38A8CD1E1F875B00F10CEB /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = History.storyboard; path = Storyboard/History.storyboard; sourceTree = "<group>"; };
 		AC38A8E11E1F8ACF00F10CEB /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = History/Classes/ViewController/HistoryViewController.swift; sourceTree = "<group>"; };
@@ -703,6 +706,8 @@
 		AC9068DD1DB1D235009BC898 /* kmitlbike */ = {
 			isa = PBXGroup;
 			children = (
+				AC30110F1EA5E72B0015DC7D /* kmitlbike.entitlements */,
+				AC30110D1EA5E2A80015DC7D /* GoogleService-Info.plist */,
 				AC9068DE1DB1D235009BC898 /* AppDelegate.swift */,
 				AC9068E51DB1D235009BC898 /* Assets.xcassets */,
 				AC6B88A61DB1FA620037F189 /* Common */,
@@ -968,6 +973,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.Push = {
+								enabled = 1;
+							};
 						};
 					};
 				};
@@ -1007,6 +1015,7 @@
 				ACA05EB51E27649000453D8D /* Find.storyboard in Resources */,
 				ACD8A5B01DF1220200E989AA /* Home.storyboard in Resources */,
 				ACC15FA91E3493E100088F6E /* BorrowBikeTableViewCell.xib in Resources */,
+				AC30110E1EA5E2A80015DC7D /* GoogleService-Info.plist in Resources */,
 				AC7EC5F21E2494D700766960 /* BikeHistoryTableViewCell.xib in Resources */,
 				ACA05EBA1E276A0100453D8D /* MoreInfoTableViewCell.xib in Resources */,
 				AC9068E61DB1D235009BC898 /* Assets.xcassets in Resources */,
@@ -1276,6 +1285,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kmitlbike/kmitlbike.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = P2N373N3GP;
 				INFOPLIST_FILE = kmitlbike/Info.plist;
@@ -1295,6 +1305,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kmitlbike/kmitlbike.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = P2N373N3GP;
 				INFOPLIST_FILE = kmitlbike/Info.plist;

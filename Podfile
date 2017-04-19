@@ -19,6 +19,7 @@ target 'kmitlbike' do
   #Fabric
   pod 'Fabric' 
   pod 'Crashlytics'
-  # Pods for kmitlbike
-
+  #Firebase
+  pod 'Firebase/Core' 
+  pod 'Firebase/Messaging'
 end
