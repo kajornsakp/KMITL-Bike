@@ -28,6 +28,11 @@ class BaseViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = KmitlColor.LightMainGreenColor.color()
         self.navigationController?.navigationBar.tintColor = KmitlColor.White.color()
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : KmitlColor.White.color()]
+        let image = #imageLiteral(resourceName: "kmitlbike_tab_icon_find")
+//        let button = UIBarButtonItem(image: image, style: .plain, target: self, action: nil)
+        let button = UIBarButtonItem(title: "20 Point", style: .plain, target: self, action: nil)
+        
+        self.navigationItem.rightBarButtonItem = button
     }
     
     func setupTitle(title : String){

@@ -17,7 +17,7 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
         viewModel = HomeViewModel(delegate: self)
         viewModel.borrowBikeDelegate = self
-//        self.setTabBar()
+
         self.setupTitle(title: "Borrow Bike")
         viewModel.getStatus()
         // Do any additional setup after loading the view.

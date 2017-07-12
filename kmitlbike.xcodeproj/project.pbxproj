@@ -22,6 +22,8 @@
 		AC38A8CE1E1F875B00F10CEB /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC38A8CD1E1F875B00F10CEB /* History.storyboard */; };
 		AC38A8E21E1F8ACF00F10CEB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38A8E11E1F8ACF00F10CEB /* HistoryViewController.swift */; };
 		AC38A8E71E1F8B7200F10CEB /* CommonGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38A8E61E1F8B7200F10CEB /* CommonGlobal.swift */; };
+		AC5543941EDEEDA100B56C99 /* PointButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5543931EDEEDA100B56C99 /* PointButton.xib */; };
+		AC5543961EDEEDBB00B56C99 /* PointButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5543951EDEEDBB00B56C99 /* PointButton.swift */; };
 		AC6A683D1E29EF2600215DC1 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A683C1E29EF2600215DC1 /* CreditViewController.swift */; };
 		AC6A68401E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A683E1E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift */; };
 		AC6A68411E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6A683F1E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib */; };
@@ -120,6 +122,8 @@
 		AC38A8CD1E1F875B00F10CEB /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = History.storyboard; path = Storyboard/History.storyboard; sourceTree = "<group>"; };
 		AC38A8E11E1F8ACF00F10CEB /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = History/Classes/ViewController/HistoryViewController.swift; sourceTree = "<group>"; };
 		AC38A8E61E1F8B7200F10CEB /* CommonGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonGlobal.swift; path = Common/Global/CommonGlobal.swift; sourceTree = "<group>"; };
+		AC5543931EDEEDA100B56C99 /* PointButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PointButton.xib; path = Common/View/PointButton/PointButton.xib; sourceTree = "<group>"; };
+		AC5543951EDEEDBB00B56C99 /* PointButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointButton.swift; path = Common/View/PointButton/PointButton.swift; sourceTree = "<group>"; };
 		AC6A683C1E29EF2600215DC1 /* CreditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditViewController.swift; path = More/Classes/ViewController/CreditViewController.swift; sourceTree = "<group>"; };
 		AC6A683E1E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditPeopleTableViewCell.swift; path = More/Resources/Xib/CreditPeopleTableViewCell.swift; sourceTree = "<group>"; };
 		AC6A683F1E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreditPeopleTableViewCell.xib; path = More/Resources/Xib/CreditPeopleTableViewCell.xib; sourceTree = "<group>"; };
@@ -410,6 +414,15 @@
 			name = Global;
 			sourceTree = "<group>";
 		};
+		AC5543921EDEED6300B56C99 /* PointButton */ = {
+			isa = PBXGroup;
+			children = (
+				AC5543931EDEEDA100B56C99 /* PointButton.xib */,
+				AC5543951EDEEDBB00B56C99 /* PointButton.swift */,
+			);
+			name = PointButton;
+			sourceTree = "<group>";
+		};
 		AC6B88A11DB1F88B0037F189 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,6 +530,7 @@
 		AC6B88B41DB35AA80037F189 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC5543921EDEED6300B56C99 /* PointButton */,
 				ACE2934D1E8D30E100448446 /* TabBarItemAnimation */,
 				ACB098821E6D7C9800DCAE1A /* TextField */,
 				AC6B88B51DB35AAE0037F189 /* Button */,
@@ -1007,6 +1021,7 @@
 				AC7EC60A1E26529C00766960 /* MoreHeaderTableViewCell.xib in Resources */,
 				AC2322551E277CA7005BF72E /* MoreButtonTableViewCell.xib in Resources */,
 				AC6A68411E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib in Resources */,
+				AC5543941EDEEDA100B56C99 /* PointButton.xib in Resources */,
 				AC9068E91DB1D235009BC898 /* LaunchScreen.storyboard in Resources */,
 				AC38A8CA1E1F85CF00F10CEB /* Borrow.storyboard in Resources */,
 				ACC3417E1E387CD400C6A3E1 /* Barcode.storyboard in Resources */,
@@ -1165,6 +1180,7 @@
 				AC7EC5F41E249E7200766960 /* HistoryViewModel.swift in Sources */,
 				ACD087451E4718BB008401E1 /* LaunchScreenViewController.swift in Sources */,
 				ACA05EBE1E276A2F00453D8D /* MoreInfoTableViewCell.swift in Sources */,
+				AC5543961EDEEDBB00B56C99 /* PointButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

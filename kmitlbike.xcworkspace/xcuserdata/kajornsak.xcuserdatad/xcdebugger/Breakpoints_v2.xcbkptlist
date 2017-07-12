@@ -753,12 +753,12 @@
                   moduleName = "kmitlbike"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kajornsak/bitbucket/newKmitlBike/kmitlbike/Find/Classes/Model/BikeModelResponse.swift"
-                  timestampString = "510495825.673141"
+                  timestampString = "517933504.920503"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "4">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -768,12 +768,12 @@
                   moduleName = "kmitlbike"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/kajornsak/bitbucket/newKmitlBike/kmitlbike/Find/Classes/Model/BikeModelResponse.swift"
-                  timestampString = "510495825.674729"
+                  timestampString = "517933504.922755"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
                   endingLineNumber = "0"
-                  offsetFromSymbolStart = "20">
+                  offsetFromSymbolStart = "4">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -2487,6 +2487,22 @@
             endingLineNumber = "29"
             landmarkName = "bikeModel"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "kmitlbike/Common/Model/UserData.swift"
+            timestampString = "515934950.748761"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init(withDictionary:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
