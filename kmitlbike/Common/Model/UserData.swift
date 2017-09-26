@@ -8,16 +8,22 @@
 
 import Foundation
 
-public class UserData :NSObject{
+class User : NSObject{
     
-    public static var sharedInstance = UserData()
+    var username : String?
+    var firstname : String?
+    var lastname : String?
+    var phoneNumber : String?
+    var email : String?
+    var token : String?
+    var gender : NSNumber?
     
-    public var firstName : String?
-    public var lastName : String?
-    public var email : String?
-    public var phoneNum : String?
-    public var token : String?
-    public var gender : Int?
-    
-    
+    required init(withDictionary dict: AnyObject) {
+        self.firstname = dict["first_name"] as? String
+        self.lastname = dict["last_name"] as? String
+        self.gender = dict["gender"] as? NSNumber
+        self.phoneNumber = dict["phone_no"] as? String
+        self.email = dict["email"] as? String
+        self.token = dict["token"] as? String
+    }
 }

@@ -17,15 +17,11 @@ public protocol BaseViewModelDelegate : class{
     
     func onDataDidLoad()
     func onDataDidLoadErrorWithMessage(errorMessage:String)
-    
+    func onSessionExpire()
     // Navigation Controller
     
     //func pushViewController(viewController: UIViewController, animated: Bool)
     
     // Loading
-    
-    func showLoading()
-    func showLoading(withText text: String)
-    func hideLoading()
-    
+ 
 }

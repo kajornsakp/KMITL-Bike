@@ -8,8 +8,8 @@
 
 import Foundation
 
-
-public protocol LoginDelegate{
+protocol LoginDelegate : class{
     func onLoginSuccess()
     func onFirstTimeLogin()
+    func onLoginError(message : String)
 }

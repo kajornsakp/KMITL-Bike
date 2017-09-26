@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BorrowBikeTableViewCell" rowHeight="83" id="Vmd-Wg-pDF" customClass="BorrowBikeTableViewCell" customModule="kmitlbike" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vmd-Wg-pDF" id="jki-qm-F6p">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="myr-U2-rVl">
+                        <rect key="frame" x="8" y="8" width="359" height="66.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kmitlbike_bike_giant" translatesAutoresizingMaskIntoConstraints="NO" id="BDE-yF-9Vv">
+                                <rect key="frame" x="0.0" y="13.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="YLj-A3-jws"/>
+                                    <constraint firstAttribute="width" constant="40" id="hkF-bp-g0Y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bike name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffe-fm-JMF">
+                                <rect key="frame" x="56" y="23" width="127" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="UNLOCK" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q8V-1l-Hf1">
+                                <rect key="frame" x="199" y="23" width="160" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.56078431370000004" green="0.75686274509999996" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="myr-U2-rVl" firstAttribute="leading" secondItem="jki-qm-F6p" secondAttribute="leadingMargin" id="3yZ-xD-cfL"/>
+                    <constraint firstItem="myr-U2-rVl" firstAttribute="top" secondItem="jki-qm-F6p" secondAttribute="topMargin" id="Pai-YD-aOF"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="myr-U2-rVl" secondAttribute="bottom" id="cFX-he-QtZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="myr-U2-rVl" secondAttribute="trailing" id="voS-7j-UjX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bikeIcon" destination="BDE-yF-9Vv" id="Q2c-ZI-2NG"/>
+                <outlet property="bikeLabel" destination="ffe-fm-JMF" id="Qnj-9h-sFI"/>
+                <outlet property="bikeUnlock" destination="Q8V-1l-Hf1" id="siY-EY-o09"/>
+            </connections>
+            <point key="canvasLocation" x="75.5" y="149.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="kmitlbike_bike_giant" width="40" height="40"/>
+    </resources>
+</document>

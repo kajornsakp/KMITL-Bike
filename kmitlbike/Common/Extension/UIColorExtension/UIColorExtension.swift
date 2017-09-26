@@ -54,6 +54,8 @@ public enum KmitlColor {
     case BlackAlpha_20
     case ClearTransparent
     case Pink
+    case MainGreenColor
+    case LightMainGreenColor
     
     public func color() -> UIColor {
         switch self {
@@ -115,6 +117,10 @@ public enum KmitlColor {
             return UIColor(netHex: 0xF196BF)
         case .ClearTransparent:
             return UIColor.clear
+        case .MainGreenColor:
+            return UIColor(netHex: 0x5D8730)
+        case .LightMainGreenColor:
+            return UIColor(netHex: 0x90C225)
         }
     }
 }

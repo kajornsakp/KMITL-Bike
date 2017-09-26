@@ -12,27 +12,33 @@ import RxSwift
 import SVProgressHUD
 class LoginViewModel: BaseViewModel {
     
-    let provider = RxMoyaProvider<KmitlBikeService>()
+    let provider = ServiceFactory.sharedInstance.resolve(service: RxMoyaProvider<KmitlBikeService>.self)
     var loginResponse : LoginResponse!
-    var loginDelegate : LoginDelegate!
+    weak var loginDelegate : LoginDelegate!
+    var username : String!
     func login(withUsername username : String, withPassword password : String){
         if username.isEmpty || password.isEmpty{
             self.invalidInput()
             return
         }
         SVProgressHUD.show()
-        provider.request(.login(username: username, password: password))
+        self.username = username
+        let form = LoginForm()
+        form.username = username
+        form.password = password
+        let _ = provider.request(.login(form: form))
             .filterSuccessfulStatusCodes()
             .mapJSON()
-            .showErrorHUD()
             .subscribe{ event in
+                print("event",event)
                 switch event{
                 case .next(let element):
                     self.loginResponse = LoginResponse(withDictionary: element as AnyObject)
                     self.checkLogin()
                 case .error(let error):
-                    print("error")
+                    self.showError(error: error as! Moya.Error)
                 default:
+                    SVProgressHUD.dismiss()
                     break
                 }
                 
@@ -42,38 +48,37 @@ class LoginViewModel: BaseViewModel {
     
     func checkLogin(){
         if self.loginResponse.result == "first_time" {
-            SVProgressHUD.dismiss()
             self.loginDelegate.onFirstTimeLogin()
         }
         else if self.loginResponse.result == "success"{
-            SVProgressHUD.showSuccess(withStatus: "Login Success")
+            guard let user = self.loginResponse.user else{
+                self.loginDelegate.onLoginError(message: "Cannot login to system, please try again later.")
+                return
+            }
+            UserSession.sharedInstance.storeUser(user: user)
+            UserSession.sharedInstance.storeUsername(username: self.username)
+            UserSession.sharedInstance.storeToken(token: user.token)
             self.loginDelegate.onLoginSuccess()
         }
     }
     func invalidInput(){
-        SVProgressHUD.showError(withStatus: "Invalid input")
+        self.loginDelegate.onLoginError(message: "Invalid input")
+    }
+    
+    override func showError(error : Moya.Error){
+        guard let errorResponse = error.response else{
+            self.loginDelegate.onLoginError(message: "Error")
+            return
+        }
+        switch errorResponse.statusCode {
+            case 400:
+                self.loginDelegate.onLoginError(message: "Failed to connect with the server")
+            case 406:
+                self.loginDelegate.onLoginError(message: "Invalid username/password. Your username/password is either incorrect or it is not KMITL Gen. 2 account")
+            default:
+                self.loginDelegate.onLoginError(message: "Error")
+        }
+        
     }
 }
 
-extension Observable {
-    func showErrorHUD() -> Observable<Element> {
-        return self.doOn { event in
-            switch event {
-            case .error(let e):
-                // Unwrap underlying error
-                guard let error = e as? Moya.Error else { throw e }
-                guard case .statusCode(let response) = error else { throw e }
-                
-                // Check statusCode and handle desired errors
-                if response.statusCode == 400 {
-                    SVProgressHUD.showError(withStatus: "Failed to connect the server")
-                    
-                } else if response.statusCode == 406 {
-                    SVProgressHUD.showError(withStatus: "Invalid username / password")
-                }
-                
-            default: break
-            }
-        }
-    }
-}

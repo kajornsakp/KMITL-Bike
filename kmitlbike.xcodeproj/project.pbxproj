@@ -7,10 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC15F0A61DB4719D005A5779 /* CommonGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F0A51DB4719D005A5779 /* CommonGlobal.swift */; };
+		AC15F0A61DB4719D005A5779 /* GlobalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F0A51DB4719D005A5779 /* GlobalModel.swift */; };
 		AC15F0A91DB47538005A5779 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F0A81DB47538005A5779 /* UserData.swift */; };
 		AC15F0AB1DB48144005A5779 /* LoginDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC15F0AA1DB48144005A5779 /* LoginDelegate.swift */; };
-		AC15F0AD1DB5CA48005A5779 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC15F0AC1DB5CA48005A5779 /* Signup.storyboard */; };
+		AC21E9C61E313AD400401CA9 /* BikeCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC21E9C51E313AD400401CA9 /* BikeCircleButton.swift */; };
+		AC21E9C81E313F6700401CA9 /* TutorialPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC21E9C71E313F6700401CA9 /* TutorialPopupViewController.swift */; };
+		AC2322541E277CA7005BF72E /* MoreButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2322521E277CA7005BF72E /* MoreButtonTableViewCell.swift */; };
+		AC2322551E277CA7005BF72E /* MoreButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC2322531E277CA7005BF72E /* MoreButtonTableViewCell.xib */; };
+		AC23225B1E29DCF9005BF72E /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23225A1E29DCF9005BF72E /* FindViewController.swift */; };
+		AC23225D1E29DD0D005BF72E /* FindViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23225C1E29DD0D005BF72E /* FindViewModel.swift */; };
+		AC23225F1E29DF72005BF72E /* BikeModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23225E1E29DF72005BF72E /* BikeModelResponse.swift */; };
+		AC30110E1EA5E2A80015DC7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC30110D1EA5E2A80015DC7D /* GoogleService-Info.plist */; };
+		AC38A8CA1E1F85CF00F10CEB /* Borrow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC38A8C91E1F85CF00F10CEB /* Borrow.storyboard */; };
+		AC38A8CE1E1F875B00F10CEB /* History.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC38A8CD1E1F875B00F10CEB /* History.storyboard */; };
+		AC38A8E21E1F8ACF00F10CEB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38A8E11E1F8ACF00F10CEB /* HistoryViewController.swift */; };
+		AC38A8E71E1F8B7200F10CEB /* CommonGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38A8E61E1F8B7200F10CEB /* CommonGlobal.swift */; };
+		AC5543941EDEEDA100B56C99 /* PointButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5543931EDEEDA100B56C99 /* PointButton.xib */; };
+		AC5543961EDEEDBB00B56C99 /* PointButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5543951EDEEDBB00B56C99 /* PointButton.swift */; };
+		AC6A683D1E29EF2600215DC1 /* CreditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A683C1E29EF2600215DC1 /* CreditViewController.swift */; };
+		AC6A68401E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A683E1E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift */; };
+		AC6A68411E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6A683F1E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib */; };
 		AC6B88A91DB1FBFE0037F189 /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88A81DB1FBFE0037F189 /* BaseViewModelProtocol.swift */; };
 		AC6B88AD1DB1FC800037F189 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88AC1DB1FC800037F189 /* BaseViewController.swift */; };
 		AC6B88B11DB1FDF40037F189 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88B01DB1FDF40037F189 /* UIColorExtension.swift */; };
@@ -22,22 +38,95 @@
 		AC6B88CB1DB365C40037F189 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88CA1DB365C40037F189 /* BaseResponse.swift */; };
 		AC6B88E41DB373990037F189 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88E31DB373990037F189 /* LoginResponse.swift */; };
 		AC6B88E91DB38DDC0037F189 /* CommonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6B88E81DB38DDC0037F189 /* CommonRouter.swift */; };
+		AC7EC5CD1E223C8700766960 /* KmitlBikeUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EC5CC1E223C8700766960 /* KmitlBikeUser.swift */; };
+		AC7EC5F11E2494D700766960 /* BikeHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EC5EF1E2494D700766960 /* BikeHistoryTableViewCell.swift */; };
+		AC7EC5F21E2494D700766960 /* BikeHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7EC5F01E2494D700766960 /* BikeHistoryTableViewCell.xib */; };
+		AC7EC5F41E249E7200766960 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EC5F31E249E7200766960 /* HistoryViewModel.swift */; };
+		AC7EC5F61E249EB900766960 /* HistoryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EC5F51E249EB900766960 /* HistoryDelegate.swift */; };
+		AC7EC5F81E24B3E400766960 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EC5F71E24B3E400766960 /* ServiceProvider.swift */; };
+		AC7EC5FA1E24CC5E00766960 /* HistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EC5F91E24CC5E00766960 /* HistoryResponse.swift */; };
+		AC7EC5FC1E25290400766960 /* HistorySummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EC5FB1E25290400766960 /* HistorySummaryViewController.swift */; };
+		AC7EC6041E26442400766960 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7EC6031E26442400766960 /* MoreViewController.swift */; };
+		AC7EC60A1E26529C00766960 /* MoreHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC7EC6081E26529C00766960 /* MoreHeaderTableViewCell.xib */; };
+		AC83B05D1E3EF973009350AB /* ReturnButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B05C1E3EF973009350AB /* ReturnButtonViewController.swift */; };
+		AC83B05F1E3EF985009350AB /* ReturnMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B05E1E3EF985009350AB /* ReturnMapViewController.swift */; };
+		AC83B0611E3F0D57009350AB /* ReturnBikeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B0601E3F0D57009350AB /* ReturnBikeProtocol.swift */; };
+		AC83B0651E3F0F28009350AB /* ReturnBikeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC83B0641E3F0F28009350AB /* ReturnBikeViewModel.swift */; };
+		AC86268D1E3F363500F1C6F0 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86268C1E3F363500F1C6F0 /* NotificationExtension.swift */; };
+		AC86268F1E3F428800F1C6F0 /* ReturnButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86268E1E3F428800F1C6F0 /* ReturnButtonViewModel.swift */; };
+		AC8626921E3F4C6D00F1C6F0 /* UnlockBikeCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626911E3F4C6D00F1C6F0 /* UnlockBikeCodeViewController.swift */; };
+		AC8626941E3F4C8400F1C6F0 /* ScanBikeBarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626931E3F4C8400F1C6F0 /* ScanBikeBarcodeViewController.swift */; };
+		AC8626961E3F742600F1C6F0 /* BikeStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626951E3F742600F1C6F0 /* BikeStatusResponse.swift */; };
+		AC8626981E40334000F1C6F0 /* BikeSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8626971E40334000F1C6F0 /* BikeSessionModel.swift */; };
+		AC86E3D01E40B921000CB940 /* RidingBikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86E3CF1E40B920000CB940 /* RidingBikeModel.swift */; };
+		AC872B151E89085B0085326B /* AttentionMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC872B141E89085B0085326B /* AttentionMapViewController.swift */; };
 		AC9068DF1DB1D235009BC898 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9068DE1DB1D235009BC898 /* AppDelegate.swift */; };
 		AC9068E11DB1D235009BC898 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9068E01DB1D235009BC898 /* ViewController.swift */; };
-		AC9068E41DB1D235009BC898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9068E21DB1D235009BC898 /* Main.storyboard */; };
 		AC9068E61DB1D235009BC898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC9068E51DB1D235009BC898 /* Assets.xcassets */; };
 		AC9068E91DB1D235009BC898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9068E71DB1D235009BC898 /* LaunchScreen.storyboard */; };
-		AC9068F21DB1D47A009BC898 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC9068F11DB1D47A009BC898 /* Login.storyboard */; };
+		AC93C5A91E4750870094CC00 /* CheckUpdateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93C5A81E4750870094CC00 /* CheckUpdateResponse.swift */; };
+		AC93C5AB1E4815EA0094CC00 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93C5AA1E4815EA0094CC00 /* UpdateViewController.swift */; };
+		ACA05EB51E27649000453D8D /* Find.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA05EB31E27649000453D8D /* Find.storyboard */; };
+		ACA05EB61E27649000453D8D /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA05EB41E27649000453D8D /* More.storyboard */; };
+		ACA05EBA1E276A0100453D8D /* MoreInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACA05EB81E276A0100453D8D /* MoreInfoTableViewCell.xib */; };
+		ACA05EBD1E276A2F00453D8D /* MoreHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA05EBB1E276A2F00453D8D /* MoreHeaderTableViewCell.swift */; };
+		ACA05EBE1E276A2F00453D8D /* MoreInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA05EBC1E276A2F00453D8D /* MoreInfoTableViewCell.swift */; };
+		ACB098841E6D7CB400DCAE1A /* RoundTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB098831E6D7CB400DCAE1A /* RoundTextField.swift */; };
+		ACC15FA81E3493E100088F6E /* BorrowBikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC15FA61E3493E100088F6E /* BorrowBikeTableViewCell.swift */; };
+		ACC15FA91E3493E100088F6E /* BorrowBikeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC15FA71E3493E100088F6E /* BorrowBikeTableViewCell.xib */; };
+		ACC15FAD1E34CB1B00088F6E /* AvailableBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC15FAC1E34CB1B00088F6E /* AvailableBikeViewController.swift */; };
+		ACC15FAF1E34CB4000088F6E /* AvailableBikeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC15FAE1E34CB4000088F6E /* AvailableBikeViewModel.swift */; };
+		ACC15FB31E3501E300088F6E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC15FB21E3501E300088F6E /* HomeViewModel.swift */; };
+		ACC15FB51E35123C00088F6E /* BorrowBikeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC15FB41E35123C00088F6E /* BorrowBikeResponse.swift */; };
+		ACC341791E37764F00C6A3E1 /* BorrowBikeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC341781E37764F00C6A3E1 /* BorrowBikeProtocol.swift */; };
+		ACC3417C1E387C1200C6A3E1 /* ScanBarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC3417B1E387C1200C6A3E1 /* ScanBarcodeViewController.swift */; };
+		ACC3417E1E387CD400C6A3E1 /* Barcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC3417D1E387CD400C6A3E1 /* Barcode.storyboard */; };
+		ACC341881E38929F00C6A3E1 /* ReturnBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC341871E38929F00C6A3E1 /* ReturnBikeViewController.swift */; };
+		ACC3418A1E38981400C6A3E1 /* Return.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC341891E38981400C6A3E1 /* Return.storyboard */; };
+		ACCB5C2E1E48733600D4B2B0 /* Integer+kmitlbike.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB5C2D1E48733600D4B2B0 /* Integer+kmitlbike.swift */; };
+		ACCB5C301E48E67800D4B2B0 /* SignUpTermsConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB5C2F1E48E67800D4B2B0 /* SignUpTermsConditionViewController.swift */; };
+		ACCB5C321E498A7100D4B2B0 /* UpdateBikeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCB5C311E498A7000D4B2B0 /* UpdateBikeResponse.swift */; };
+		ACD0873A1E46E54A008401E1 /* TermsConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD087391E46E54A008401E1 /* TermsConditionViewController.swift */; };
+		ACD0873C1E46E575008401E1 /* TermsConditionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0873B1E46E575008401E1 /* TermsConditionViewModel.swift */; };
+		ACD087451E4718BB008401E1 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD087441E4718BB008401E1 /* LaunchScreenViewController.swift */; };
+		ACD087471E4718E1008401E1 /* LaunchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD087461E4718E1008401E1 /* LaunchScreenViewModel.swift */; };
+		ACD8A5A61DF1145000E989AA /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5A51DF1145000E989AA /* ViewControllerFactory.swift */; };
+		ACD8A5A81DF1147D00E989AA /* BaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5A71DF1147D00E989AA /* BaseFactory.swift */; };
+		ACD8A5AB1DF116B100E989AA /* NSObject+kmitlbike.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5AA1DF116B100E989AA /* NSObject+kmitlbike.swift */; };
+		ACD8A5AE1DF121F400E989AA /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD8A5AD1DF121F400E989AA /* Login.storyboard */; };
+		ACD8A5B01DF1220200E989AA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD8A5AF1DF1220200E989AA /* Home.storyboard */; };
+		ACD8A5B31DF12B9700E989AA /* CommonForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5B21DF12B9700E989AA /* CommonForm.swift */; };
+		ACD8A5B81DF1303D00E989AA /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5B71DF1303D00E989AA /* SignupViewModel.swift */; };
+		ACD8A5BA1DF1306800E989AA /* SignupDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD8A5B91DF1306800E989AA /* SignupDelegate.swift */; };
+		ACE2934F1E8D311500448446 /* KmitlBikeBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE2934E1E8D311500448446 /* KmitlBikeBounceAnimation.swift */; };
+		ACEE800D1E101DBE007C6FC8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEE800C1E101DBE007C6FC8 /* HomeViewController.swift */; };
 		DEA3E90B88BB7F5E5CCD0A95 /* Pods_kmitlbike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CDC6F4C19EBAFA9028A4944 /* Pods_kmitlbike.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0CDC6F4C19EBAFA9028A4944 /* Pods_kmitlbike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kmitlbike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FBB5C3F714D66AD13AA384 /* Pods-kmitlbike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmitlbike.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kmitlbike/Pods-kmitlbike.debug.xcconfig"; sourceTree = "<group>"; };
-		AC15F0A51DB4719D005A5779 /* CommonGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonGlobal.swift; path = Common/Model/CommonGlobal.swift; sourceTree = "<group>"; };
+		AC15F0A51DB4719D005A5779 /* GlobalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GlobalModel.swift; path = Common/Model/GlobalModel.swift; sourceTree = "<group>"; };
 		AC15F0A81DB47538005A5779 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserData.swift; path = Common/Model/UserData.swift; sourceTree = "<group>"; };
 		AC15F0AA1DB48144005A5779 /* LoginDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginDelegate.swift; path = Login/Classes/Login/Protocol/LoginDelegate.swift; sourceTree = "<group>"; };
-		AC15F0AC1DB5CA48005A5779 /* Signup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Signup.storyboard; path = "Login/Login-Resources/Storyboard/Signup.storyboard"; sourceTree = "<group>"; };
+		AC21E9C51E313AD400401CA9 /* BikeCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BikeCircleButton.swift; path = Home/Classes/View/BikeCircleButton.swift; sourceTree = "<group>"; };
+		AC21E9C71E313F6700401CA9 /* TutorialPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TutorialPopupViewController.swift; path = Home/Classes/ViewController/TutorialPopupViewController.swift; sourceTree = "<group>"; };
+		AC2322521E277CA7005BF72E /* MoreButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreButtonTableViewCell.swift; path = More/Resources/Xib/MoreButtonTableViewCell.swift; sourceTree = "<group>"; };
+		AC2322531E277CA7005BF72E /* MoreButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoreButtonTableViewCell.xib; path = More/Resources/Xib/MoreButtonTableViewCell.xib; sourceTree = "<group>"; };
+		AC23225A1E29DCF9005BF72E /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindViewController.swift; path = Find/Classes/ViewController/FindViewController.swift; sourceTree = "<group>"; };
+		AC23225C1E29DD0D005BF72E /* FindViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindViewModel.swift; path = Find/Classes/ViewModel/FindViewModel.swift; sourceTree = "<group>"; };
+		AC23225E1E29DF72005BF72E /* BikeModelResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BikeModelResponse.swift; path = Find/Classes/Model/BikeModelResponse.swift; sourceTree = "<group>"; };
+		AC30110D1EA5E2A80015DC7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC30110F1EA5E72B0015DC7D /* kmitlbike.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kmitlbike.entitlements; sourceTree = "<group>"; };
+		AC38A8C91E1F85CF00F10CEB /* Borrow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Borrow.storyboard; path = Storyboard/Borrow.storyboard; sourceTree = "<group>"; };
+		AC38A8CD1E1F875B00F10CEB /* History.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = History.storyboard; path = Storyboard/History.storyboard; sourceTree = "<group>"; };
+		AC38A8E11E1F8ACF00F10CEB /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewController.swift; path = History/Classes/ViewController/HistoryViewController.swift; sourceTree = "<group>"; };
+		AC38A8E61E1F8B7200F10CEB /* CommonGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonGlobal.swift; path = Common/Global/CommonGlobal.swift; sourceTree = "<group>"; };
+		AC5543931EDEEDA100B56C99 /* PointButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PointButton.xib; path = Common/View/PointButton/PointButton.xib; sourceTree = "<group>"; };
+		AC5543951EDEEDBB00B56C99 /* PointButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PointButton.swift; path = Common/View/PointButton/PointButton.swift; sourceTree = "<group>"; };
+		AC6A683C1E29EF2600215DC1 /* CreditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditViewController.swift; path = More/Classes/ViewController/CreditViewController.swift; sourceTree = "<group>"; };
+		AC6A683E1E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreditPeopleTableViewCell.swift; path = More/Resources/Xib/CreditPeopleTableViewCell.swift; sourceTree = "<group>"; };
+		AC6A683F1E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CreditPeopleTableViewCell.xib; path = More/Resources/Xib/CreditPeopleTableViewCell.xib; sourceTree = "<group>"; };
 		AC6B88A81DB1FBFE0037F189 /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewModelProtocol.swift; path = Common/Protocol/BaseViewModelProtocol.swift; sourceTree = "<group>"; };
 		AC6B88AC1DB1FC800037F189 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = Common/ViewController/BaseViewController.swift; sourceTree = "<group>"; };
 		AC6B88B01DB1FDF40037F189 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Common/Extension/UIColorExtension/UIColorExtension.swift; sourceTree = "<group>"; };
@@ -49,14 +138,70 @@
 		AC6B88CA1DB365C40037F189 /* BaseResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseResponse.swift; path = Common/Model/BaseResponse.swift; sourceTree = "<group>"; };
 		AC6B88E31DB373990037F189 /* LoginResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginResponse.swift; path = Login/Classes/Login/Model/LoginResponse.swift; sourceTree = "<group>"; };
 		AC6B88E81DB38DDC0037F189 /* CommonRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonRouter.swift; path = Login/Classes/Router/CommonRouter.swift; sourceTree = "<group>"; };
+		AC7EC5CC1E223C8700766960 /* KmitlBikeUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KmitlBikeUser.swift; path = Common/Global/KmitlBikeUser.swift; sourceTree = "<group>"; };
+		AC7EC5EF1E2494D700766960 /* BikeHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BikeHistoryTableViewCell.swift; path = History/Classes/View/BikeHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		AC7EC5F01E2494D700766960 /* BikeHistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BikeHistoryTableViewCell.xib; path = History/Classes/View/BikeHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		AC7EC5F31E249E7200766960 /* HistoryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryViewModel.swift; path = History/Classes/ViewModel/HistoryViewModel.swift; sourceTree = "<group>"; };
+		AC7EC5F51E249EB900766960 /* HistoryDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryDelegate.swift; path = History/Classes/Protocol/HistoryDelegate.swift; sourceTree = "<group>"; };
+		AC7EC5F71E24B3E400766960 /* ServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceProvider.swift; path = Common/IoC/ServiceProvider.swift; sourceTree = "<group>"; };
+		AC7EC5F91E24CC5E00766960 /* HistoryResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryResponse.swift; path = History/Classes/Model/HistoryResponse.swift; sourceTree = "<group>"; };
+		AC7EC5FB1E25290400766960 /* HistorySummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistorySummaryViewController.swift; path = History/Classes/ViewController/HistorySummaryViewController.swift; sourceTree = "<group>"; };
+		AC7EC6031E26442400766960 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreViewController.swift; path = More/Classes/ViewController/MoreViewController.swift; sourceTree = "<group>"; };
+		AC7EC6081E26529C00766960 /* MoreHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoreHeaderTableViewCell.xib; path = More/Resources/Xib/MoreHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		AC83B05C1E3EF973009350AB /* ReturnButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReturnButtonViewController.swift; path = Return/ViewController/ReturnButtonViewController.swift; sourceTree = "<group>"; };
+		AC83B05E1E3EF985009350AB /* ReturnMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReturnMapViewController.swift; path = Return/ViewController/ReturnMapViewController.swift; sourceTree = "<group>"; };
+		AC83B0601E3F0D57009350AB /* ReturnBikeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReturnBikeProtocol.swift; path = Return/Protocol/ReturnBikeProtocol.swift; sourceTree = "<group>"; };
+		AC83B0641E3F0F28009350AB /* ReturnBikeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReturnBikeViewModel.swift; path = Return/ViewModel/ReturnBikeViewModel.swift; sourceTree = "<group>"; };
+		AC86268C1E3F363500F1C6F0 /* NotificationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotificationExtension.swift; path = Common/Extension/Notification/NotificationExtension.swift; sourceTree = "<group>"; };
+		AC86268E1E3F428800F1C6F0 /* ReturnButtonViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReturnButtonViewModel.swift; path = Return/ViewModel/ReturnButtonViewModel.swift; sourceTree = "<group>"; };
+		AC8626911E3F4C6D00F1C6F0 /* UnlockBikeCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnlockBikeCodeViewController.swift; path = Home/Classes/ViewController/Popup/UnlockBikeCodeViewController.swift; sourceTree = "<group>"; };
+		AC8626931E3F4C8400F1C6F0 /* ScanBikeBarcodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanBikeBarcodeViewController.swift; path = Home/Classes/ViewController/Barcode/ScanBikeBarcodeViewController.swift; sourceTree = "<group>"; };
+		AC8626951E3F742600F1C6F0 /* BikeStatusResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BikeStatusResponse.swift; path = Home/Classes/Model/BikeStatusResponse.swift; sourceTree = "<group>"; };
+		AC8626971E40334000F1C6F0 /* BikeSessionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BikeSessionModel.swift; path = Return/Model/BikeSessionModel.swift; sourceTree = "<group>"; };
+		AC86E3CF1E40B920000CB940 /* RidingBikeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RidingBikeModel.swift; path = Return/Model/RidingBikeModel.swift; sourceTree = "<group>"; };
+		AC872B141E89085B0085326B /* AttentionMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttentionMapViewController.swift; path = Home/Classes/ViewController/Popup/AttentionMapViewController.swift; sourceTree = "<group>"; };
 		AC9068DB1DB1D235009BC898 /* kmitlbike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kmitlbike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC9068DE1DB1D235009BC898 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC9068E01DB1D235009BC898 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC9068E31DB1D235009BC898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC9068E51DB1D235009BC898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC9068E81DB1D235009BC898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC9068EA1DB1D235009BC898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC9068F11DB1D47A009BC898 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = "Login/Login-Resources/Storyboard/Login.storyboard"; sourceTree = "<group>"; };
+		AC93C5A81E4750870094CC00 /* CheckUpdateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckUpdateResponse.swift; path = LaunchScreen/Model/CheckUpdateResponse.swift; sourceTree = "<group>"; };
+		AC93C5AA1E4815EA0094CC00 /* UpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpdateViewController.swift; path = LaunchScreen/ViewController/UpdateViewController.swift; sourceTree = "<group>"; };
+		ACA05EB31E27649000453D8D /* Find.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Find.storyboard; path = Storyboard/Find.storyboard; sourceTree = "<group>"; };
+		ACA05EB41E27649000453D8D /* More.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = More.storyboard; path = Storyboard/More.storyboard; sourceTree = "<group>"; };
+		ACA05EB81E276A0100453D8D /* MoreInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MoreInfoTableViewCell.xib; path = More/Resources/Xib/MoreInfoTableViewCell.xib; sourceTree = "<group>"; };
+		ACA05EBB1E276A2F00453D8D /* MoreHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreHeaderTableViewCell.swift; path = More/Classes/View/MoreHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		ACA05EBC1E276A2F00453D8D /* MoreInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreInfoTableViewCell.swift; path = More/Classes/View/MoreInfoTableViewCell.swift; sourceTree = "<group>"; };
+		ACB098831E6D7CB400DCAE1A /* RoundTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundTextField.swift; path = Common/View/TextField/RoundTextField.swift; sourceTree = "<group>"; };
+		ACC15FA61E3493E100088F6E /* BorrowBikeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorrowBikeTableViewCell.swift; path = Home/Resource/BorrowBikeTableViewCell.swift; sourceTree = "<group>"; };
+		ACC15FA71E3493E100088F6E /* BorrowBikeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BorrowBikeTableViewCell.xib; path = Home/Resource/BorrowBikeTableViewCell.xib; sourceTree = "<group>"; };
+		ACC15FAC1E34CB1B00088F6E /* AvailableBikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvailableBikeViewController.swift; path = Home/Classes/ViewController/AvailableBikeViewController.swift; sourceTree = "<group>"; };
+		ACC15FAE1E34CB4000088F6E /* AvailableBikeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AvailableBikeViewModel.swift; path = Home/Classes/ViewModel/AvailableBikeViewModel.swift; sourceTree = "<group>"; };
+		ACC15FB21E3501E300088F6E /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = Home/Classes/ViewModel/HomeViewModel.swift; sourceTree = "<group>"; };
+		ACC15FB41E35123C00088F6E /* BorrowBikeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorrowBikeResponse.swift; path = Home/Classes/Model/BorrowBikeResponse.swift; sourceTree = "<group>"; };
+		ACC341781E37764F00C6A3E1 /* BorrowBikeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BorrowBikeProtocol.swift; path = Home/Classes/Protocol/BorrowBikeProtocol.swift; sourceTree = "<group>"; };
+		ACC3417B1E387C1200C6A3E1 /* ScanBarcodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScanBarcodeViewController.swift; path = Home/Classes/ViewController/Barcode/ScanBarcodeViewController.swift; sourceTree = "<group>"; };
+		ACC3417D1E387CD400C6A3E1 /* Barcode.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Barcode.storyboard; path = Storyboard/Barcode.storyboard; sourceTree = "<group>"; };
+		ACC341871E38929F00C6A3E1 /* ReturnBikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReturnBikeViewController.swift; path = Return/ViewController/ReturnBikeViewController.swift; sourceTree = "<group>"; };
+		ACC341891E38981400C6A3E1 /* Return.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Return.storyboard; path = Storyboard/Return.storyboard; sourceTree = "<group>"; };
+		ACCB5C2D1E48733600D4B2B0 /* Integer+kmitlbike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Integer+kmitlbike.swift"; path = "Common/Extension/Integer/Integer+kmitlbike.swift"; sourceTree = "<group>"; };
+		ACCB5C2F1E48E67800D4B2B0 /* SignUpTermsConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpTermsConditionViewController.swift; path = Login/Classes/Signup/ViewController/SignUpTermsConditionViewController.swift; sourceTree = "<group>"; };
+		ACCB5C311E498A7000D4B2B0 /* UpdateBikeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpdateBikeResponse.swift; path = Return/Model/UpdateBikeResponse.swift; sourceTree = "<group>"; };
+		ACD087391E46E54A008401E1 /* TermsConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsConditionViewController.swift; path = More/Classes/ViewController/TermsConditionViewController.swift; sourceTree = "<group>"; };
+		ACD0873B1E46E575008401E1 /* TermsConditionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TermsConditionViewModel.swift; path = More/Classes/ViewModel/TermsConditionViewModel.swift; sourceTree = "<group>"; };
+		ACD087441E4718BB008401E1 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchScreenViewController.swift; path = LaunchScreen/ViewController/LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		ACD087461E4718E1008401E1 /* LaunchScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LaunchScreenViewModel.swift; path = LaunchScreen/ViewModel/LaunchScreenViewModel.swift; sourceTree = "<group>"; };
+		ACD8A5A51DF1145000E989AA /* ViewControllerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerFactory.swift; path = Common/IoC/ViewControllerFactory.swift; sourceTree = "<group>"; };
+		ACD8A5A71DF1147D00E989AA /* BaseFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseFactory.swift; path = Common/IoC/BaseFactory.swift; sourceTree = "<group>"; };
+		ACD8A5AA1DF116B100E989AA /* NSObject+kmitlbike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSObject+kmitlbike.swift"; path = "Common/Extension/NSObject/NSObject+kmitlbike.swift"; sourceTree = "<group>"; };
+		ACD8A5AD1DF121F400E989AA /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboard/Login.storyboard; sourceTree = "<group>"; };
+		ACD8A5AF1DF1220200E989AA /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Storyboard/Home.storyboard; sourceTree = "<group>"; };
+		ACD8A5B21DF12B9700E989AA /* CommonForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommonForm.swift; path = Common/Form/CommonForm.swift; sourceTree = "<group>"; };
+		ACD8A5B71DF1303D00E989AA /* SignupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupViewModel.swift; path = Login/Classes/Signup/ViewModel/SignupViewModel.swift; sourceTree = "<group>"; };
+		ACD8A5B91DF1306800E989AA /* SignupDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupDelegate.swift; path = Login/Classes/Signup/Protocol/SignupDelegate.swift; sourceTree = "<group>"; };
+		ACE2934E1E8D311500448446 /* KmitlBikeBounceAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KmitlBikeBounceAnimation.swift; path = Common/View/TabBarItemAnimation/KmitlBikeBounceAnimation.swift; sourceTree = "<group>"; };
+		ACEE800C1E101DBE007C6FC8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Home/Classes/ViewController/HomeViewController.swift; sourceTree = "<group>"; };
 		BBA16D7B7E6747D8E4AF3137 /* Pods-kmitlbike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kmitlbike.release.xcconfig"; path = "Pods/Target Support Files/Pods-kmitlbike/Pods-kmitlbike.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,10 +233,199 @@
 			name = Router;
 			sourceTree = "<group>";
 		};
+		AC21E9C41E313ABA00401CA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACC15FA61E3493E100088F6E /* BorrowBikeTableViewCell.swift */,
+				AC21E9C51E313AD400401CA9 /* BikeCircleButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AC38A8D11E1F898100F10CEB /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				AC38A8E31E1F8B0300F10CEB /* Classes */,
+			);
+			name = Find;
+			sourceTree = "<group>";
+		};
+		AC38A8D21E1F898900F10CEB /* History */ = {
+			isa = PBXGroup;
+			children = (
+				AC7EC5EC1E24949900766960 /* Resources */,
+				AC38A8D41E1F89CA00F10CEB /* Classes */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
+		AC38A8D31E1F898F00F10CEB /* More */ = {
+			isa = PBXGroup;
+			children = (
+				AC7EC6001E2643CF00766960 /* Resources */,
+				AC7EC5FF1E2643C800766960 /* Classes */,
+			);
+			name = More;
+			sourceTree = "<group>";
+		};
+		AC38A8D41E1F89CA00F10CEB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC7EC5EE1E2494B000766960 /* View */,
+				AC38A8D81E1F89DA00F10CEB /* Protocol */,
+				AC38A8D71E1F89D900F10CEB /* Model */,
+				AC38A8D61E1F89D600F10CEB /* ViewModel */,
+				AC38A8D51E1F89D000F10CEB /* ViewController */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		AC38A8D51E1F89D000F10CEB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AC38A8E11E1F8ACF00F10CEB /* HistoryViewController.swift */,
+				AC7EC5FB1E25290400766960 /* HistorySummaryViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AC38A8D61E1F89D600F10CEB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC7EC5F31E249E7200766960 /* HistoryViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC38A8D71E1F89D900F10CEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC7EC5F91E24CC5E00766960 /* HistoryResponse.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AC38A8D81E1F89DA00F10CEB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AC7EC5F51E249EB900766960 /* HistoryDelegate.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		AC38A8D91E1F89EF00F10CEB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AC23225A1E29DCF9005BF72E /* FindViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AC38A8DA1E1F89F200F10CEB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC23225C1E29DD0D005BF72E /* FindViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC38A8DB1E1F89F300F10CEB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		AC38A8DC1E1F89F400F10CEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC23225E1E29DF72005BF72E /* BikeModelResponse.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AC38A8DD1E1F8A0B00F10CEB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AC8626901E3F4C3E00F1C6F0 /* Popup */,
+				ACC3417A1E387BE600C6A3E1 /* Barcode */,
+				ACEE800C1E101DBE007C6FC8 /* HomeViewController.swift */,
+				AC21E9C71E313F6700401CA9 /* TutorialPopupViewController.swift */,
+				ACC15FAC1E34CB1B00088F6E /* AvailableBikeViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AC38A8DE1E1F8A0F00F10CEB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACC15FAE1E34CB4000088F6E /* AvailableBikeViewModel.swift */,
+				ACC15FB21E3501E300088F6E /* HomeViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		AC38A8DF1E1F8A1000F10CEB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				ACC341781E37764F00C6A3E1 /* BorrowBikeProtocol.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		AC38A8E01E1F8A1200F10CEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACC15FB41E35123C00088F6E /* BorrowBikeResponse.swift */,
+				AC8626951E3F742600F1C6F0 /* BikeStatusResponse.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AC38A8E31E1F8B0300F10CEB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC38A8DC1E1F89F400F10CEB /* Model */,
+				AC38A8DB1E1F89F300F10CEB /* Protocol */,
+				AC38A8DA1E1F89F200F10CEB /* ViewModel */,
+				AC38A8D91E1F89EF00F10CEB /* ViewController */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		AC38A8E41E1F8B0D00F10CEB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC21E9C41E313ABA00401CA9 /* View */,
+				AC38A8E01E1F8A1200F10CEB /* Model */,
+				AC38A8DF1E1F8A1000F10CEB /* Protocol */,
+				AC38A8DE1E1F8A0F00F10CEB /* ViewModel */,
+				AC38A8DD1E1F8A0B00F10CEB /* ViewController */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		AC38A8E51E1F8B5300F10CEB /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				AC38A8E61E1F8B7200F10CEB /* CommonGlobal.swift */,
+				AC7EC5CC1E223C8700766960 /* KmitlBikeUser.swift */,
+			);
+			name = Global;
+			sourceTree = "<group>";
+		};
+		AC5543921EDEED6300B56C99 /* PointButton */ = {
+			isa = PBXGroup;
+			children = (
+				AC5543931EDEEDA100B56C99 /* PointButton.xib */,
+				AC5543951EDEEDBB00B56C99 /* PointButton.swift */,
+			);
+			name = PointButton;
+			sourceTree = "<group>";
+		};
 		AC6B88A11DB1F88B0037F189 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AC6B88E51DB38D690037F189 /* Router */,
 				AC6B88BE1DB35C8D0037F189 /* Signup */,
 				AC6B88A21DB1F8910037F189 /* Login */,
 			);
@@ -136,6 +470,9 @@
 		AC6B88A61DB1FA620037F189 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				AC38A8E51E1F8B5300F10CEB /* Global */,
+				ACD8A5A41DF1142D00E989AA /* IoC */,
+				ACD8A5B11DF12B7600E989AA /* Form */,
 				AC15F0A71DB471D2005A5779 /* Router */,
 				AC6B88CE1DB3665F0037F189 /* Model */,
 				AC6B88B41DB35AA80037F189 /* View */,
@@ -174,6 +511,9 @@
 		AC6B88AE1DB1FDBC0037F189 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				ACCB5C2A1E48730D00D4B2B0 /* Integer */,
+				AC86268B1E3F361700F1C6F0 /* Notification */,
+				ACD8A5A91DF1168B00E989AA /* NSObject */,
 				AC6B88AF1DB1FDC50037F189 /* UIColorExtension */,
 			);
 			name = Extension;
@@ -190,6 +530,9 @@
 		AC6B88B41DB35AA80037F189 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AC5543921EDEED6300B56C99 /* PointButton */,
+				ACE2934D1E8D30E100448446 /* TabBarItemAnimation */,
+				ACB098821E6D7C9800DCAE1A /* TextField */,
 				AC6B88B51DB35AAE0037F189 /* Button */,
 			);
 			name = View;
@@ -216,6 +559,7 @@
 		AC6B88BF1DB35C990037F189 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				ACD8A5B91DF1306800E989AA /* SignupDelegate.swift */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -223,6 +567,7 @@
 		AC6B88C11DB35CA50037F189 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				ACD8A5B71DF1303D00E989AA /* SignupViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -231,6 +576,7 @@
 			isa = PBXGroup;
 			children = (
 				AC6B88C31DB35CF30037F189 /* SignUpViewController.swift */,
+				ACCB5C2F1E48E67800D4B2B0 /* SignUpTermsConditionViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -239,7 +585,7 @@
 			isa = PBXGroup;
 			children = (
 				AC6B88CA1DB365C40037F189 /* BaseResponse.swift */,
-				AC15F0A51DB4719D005A5779 /* CommonGlobal.swift */,
+				AC15F0A51DB4719D005A5779 /* GlobalModel.swift */,
 				AC15F0A81DB47538005A5779 /* UserData.swift */,
 			);
 			name = Model;
@@ -253,11 +599,104 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		AC6B88E51DB38D690037F189 /* Router */ = {
+		AC7EC5EC1E24949900766960 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC7EC5ED1E2494A100766960 /* Xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AC7EC5ED1E2494A100766960 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				AC7EC5F01E2494D700766960 /* BikeHistoryTableViewCell.xib */,
+			);
+			name = Xib;
+			sourceTree = "<group>";
+		};
+		AC7EC5EE1E2494B000766960 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC7EC5EF1E2494D700766960 /* BikeHistoryTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AC7EC5FF1E2643C800766960 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0873D1E46E57F008401E1 /* ViewModel */,
+				AC7EC60B1E2652E900766960 /* View */,
+				AC7EC6021E2643E800766960 /* Protocol */,
+				AC7EC6011E2643D500766960 /* ViewController */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		AC7EC6001E2643CF00766960 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC7EC6051E26526700766960 /* Xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AC7EC6011E2643D500766960 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AC7EC6031E26442400766960 /* MoreViewController.swift */,
+				AC6A683C1E29EF2600215DC1 /* CreditViewController.swift */,
+				ACD087391E46E54A008401E1 /* TermsConditionViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		AC7EC6021E2643E800766960 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Router;
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		AC7EC6051E26526700766960 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				AC7EC6081E26529C00766960 /* MoreHeaderTableViewCell.xib */,
+				ACA05EB81E276A0100453D8D /* MoreInfoTableViewCell.xib */,
+				AC6A683F1E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib */,
+				AC2322531E277CA7005BF72E /* MoreButtonTableViewCell.xib */,
+			);
+			name = Xib;
+			sourceTree = "<group>";
+		};
+		AC7EC60B1E2652E900766960 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC2322521E277CA7005BF72E /* MoreButtonTableViewCell.swift */,
+				ACA05EBB1E276A2F00453D8D /* MoreHeaderTableViewCell.swift */,
+				ACA05EBC1E276A2F00453D8D /* MoreInfoTableViewCell.swift */,
+				AC6A683E1E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		AC86268B1E3F361700F1C6F0 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				AC86268C1E3F363500F1C6F0 /* NotificationExtension.swift */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
+		AC8626901E3F4C3E00F1C6F0 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				AC8626911E3F4C6D00F1C6F0 /* UnlockBikeCodeViewController.swift */,
+				AC8626931E3F4C8400F1C6F0 /* ScanBikeBarcodeViewController.swift */,
+				AC872B141E89085B0085326B /* AttentionMapViewController.swift */,
+			);
+			name = Popup;
 			sourceTree = "<group>";
 		};
 		AC9068D21DB1D235009BC898 = {
@@ -281,14 +720,21 @@
 		AC9068DD1DB1D235009BC898 /* kmitlbike */ = {
 			isa = PBXGroup;
 			children = (
-				AC6B88A61DB1FA620037F189 /* Common */,
-				AC9068F01DB1D440009BC898 /* Login */,
+				AC30110F1EA5E72B0015DC7D /* kmitlbike.entitlements */,
+				AC30110D1EA5E2A80015DC7D /* GoogleService-Info.plist */,
 				AC9068DE1DB1D235009BC898 /* AppDelegate.swift */,
-				AC9068E01DB1D235009BC898 /* ViewController.swift */,
-				AC9068E21DB1D235009BC898 /* Main.storyboard */,
 				AC9068E51DB1D235009BC898 /* Assets.xcassets */,
-				AC9068E71DB1D235009BC898 /* LaunchScreen.storyboard */,
+				AC6B88A61DB1FA620037F189 /* Common */,
+				AC38A8D11E1F898100F10CEB /* Find */,
+				AC38A8D21E1F898900F10CEB /* History */,
+				ACD8A5B61DF12D5200E989AA /* Home */,
 				AC9068EA1DB1D235009BC898 /* Info.plist */,
+				ACD0873E1E471629008401E1 /* LaunchScreen */,
+				AC9068F01DB1D440009BC898 /* Login */,
+				AC38A8D31E1F898F00F10CEB /* More */,
+				ACC3417F1E38923600C6A3E1 /* Return */,
+				ACD8A5AC1DF121B300E989AA /* Storyboard */,
+				AC9068E01DB1D235009BC898 /* ViewController.swift */,
 			);
 			path = kmitlbike;
 			sourceTree = "<group>";
@@ -297,26 +743,198 @@
 			isa = PBXGroup;
 			children = (
 				AC6B88A11DB1F88B0037F189 /* Classes */,
-				AC9068F31DB1D481009BC898 /* Login-Resources */,
 			);
 			name = Login;
 			sourceTree = "<group>";
 		};
-		AC9068F31DB1D481009BC898 /* Login-Resources */ = {
+		ACB098821E6D7C9800DCAE1A /* TextField */ = {
 			isa = PBXGroup;
 			children = (
-				AC9068F41DB1D491009BC898 /* Storyboard */,
+				ACB098831E6D7CB400DCAE1A /* RoundTextField.swift */,
 			);
-			name = "Login-Resources";
+			name = TextField;
 			sourceTree = "<group>";
 		};
-		AC9068F41DB1D491009BC898 /* Storyboard */ = {
+		ACC15FAA1E3493E500088F6E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				AC9068F11DB1D47A009BC898 /* Login.storyboard */,
-				AC15F0AC1DB5CA48005A5779 /* Signup.storyboard */,
+				ACC15FAB1E34940300088F6E /* Xib */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		ACC15FAB1E34940300088F6E /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				ACC15FA71E3493E100088F6E /* BorrowBikeTableViewCell.xib */,
+			);
+			name = Xib;
+			sourceTree = "<group>";
+		};
+		ACC3417A1E387BE600C6A3E1 /* Barcode */ = {
+			isa = PBXGroup;
+			children = (
+				ACC3417B1E387C1200C6A3E1 /* ScanBarcodeViewController.swift */,
+			);
+			name = Barcode;
+			sourceTree = "<group>";
+		};
+		ACC3417F1E38923600C6A3E1 /* Return */ = {
+			isa = PBXGroup;
+			children = (
+				ACC341831E38925600C6A3E1 /* Protocol */,
+				ACC341821E38924F00C6A3E1 /* Model */,
+				ACC341811E38924900C6A3E1 /* ViewController */,
+				ACC341801E38924200C6A3E1 /* ViewModel */,
+			);
+			name = Return;
+			sourceTree = "<group>";
+		};
+		ACC341801E38924200C6A3E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AC83B0641E3F0F28009350AB /* ReturnBikeViewModel.swift */,
+				AC86268E1E3F428800F1C6F0 /* ReturnButtonViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACC341811E38924900C6A3E1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACC341871E38929F00C6A3E1 /* ReturnBikeViewController.swift */,
+				AC83B05C1E3EF973009350AB /* ReturnButtonViewController.swift */,
+				AC83B05E1E3EF985009350AB /* ReturnMapViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		ACC341821E38924F00C6A3E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC8626971E40334000F1C6F0 /* BikeSessionModel.swift */,
+				AC86E3CF1E40B920000CB940 /* RidingBikeModel.swift */,
+				ACCB5C311E498A7000D4B2B0 /* UpdateBikeResponse.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ACC341831E38925600C6A3E1 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				AC83B0601E3F0D57009350AB /* ReturnBikeProtocol.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		ACCB5C2A1E48730D00D4B2B0 /* Integer */ = {
+			isa = PBXGroup;
+			children = (
+				ACCB5C2D1E48733600D4B2B0 /* Integer+kmitlbike.swift */,
+			);
+			name = Integer;
+			sourceTree = "<group>";
+		};
+		ACD0873D1E46E57F008401E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0873B1E46E575008401E1 /* TermsConditionViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACD0873E1E471629008401E1 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				ACD087431E47187F008401E1 /* Model */,
+				ACD087421E471874008401E1 /* ViewModel */,
+				ACD087411E471873008401E1 /* ViewController */,
+			);
+			name = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		ACD087411E471873008401E1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACD087441E4718BB008401E1 /* LaunchScreenViewController.swift */,
+				AC93C5AA1E4815EA0094CC00 /* UpdateViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		ACD087421E471874008401E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACD087461E4718E1008401E1 /* LaunchScreenViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACD087431E47187F008401E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC93C5A81E4750870094CC00 /* CheckUpdateResponse.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ACD8A5A41DF1142D00E989AA /* IoC */ = {
+			isa = PBXGroup;
+			children = (
+				ACD8A5A51DF1145000E989AA /* ViewControllerFactory.swift */,
+				ACD8A5A71DF1147D00E989AA /* BaseFactory.swift */,
+				AC7EC5F71E24B3E400766960 /* ServiceProvider.swift */,
+			);
+			name = IoC;
+			sourceTree = "<group>";
+		};
+		ACD8A5A91DF1168B00E989AA /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				ACD8A5AA1DF116B100E989AA /* NSObject+kmitlbike.swift */,
+			);
+			name = NSObject;
+			sourceTree = "<group>";
+		};
+		ACD8A5AC1DF121B300E989AA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				ACA05EB31E27649000453D8D /* Find.storyboard */,
+				ACA05EB41E27649000453D8D /* More.storyboard */,
+				AC9068E71DB1D235009BC898 /* LaunchScreen.storyboard */,
+				ACD8A5AD1DF121F400E989AA /* Login.storyboard */,
+				ACD8A5AF1DF1220200E989AA /* Home.storyboard */,
+				AC38A8CD1E1F875B00F10CEB /* History.storyboard */,
+				AC38A8C91E1F85CF00F10CEB /* Borrow.storyboard */,
+				ACC3417D1E387CD400C6A3E1 /* Barcode.storyboard */,
+				ACC341891E38981400C6A3E1 /* Return.storyboard */,
 			);
 			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		ACD8A5B11DF12B7600E989AA /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				ACD8A5B21DF12B9700E989AA /* CommonForm.swift */,
+			);
+			name = Form;
+			sourceTree = "<group>";
+		};
+		ACD8A5B61DF12D5200E989AA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				ACC15FAA1E3493E500088F6E /* Resource */,
+				AC38A8E41E1F8B0D00F10CEB /* Classes */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		ACE2934D1E8D30E100448446 /* TabBarItemAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				ACE2934E1E8D311500448446 /* KmitlBikeBounceAnimation.swift */,
+			);
+			name = TabBarItemAnimation;
 			sourceTree = "<group>";
 		};
 		BE40503DC881AC69E04A49EE /* Pods */ = {
@@ -341,6 +959,7 @@
 				AC9068D91DB1D235009BC898 /* Resources */,
 				67EF960D56A9ADCA033367EC /* [CP] Embed Pods Frameworks */,
 				F0D1CF4F6F6B4AEE548957C0 /* [CP] Copy Pods Resources */,
+				AC23A4801E507C8900A6BF29 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -358,13 +977,20 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Kajornsak Peerapathananont";
 				TargetAttributes = {
 					AC9068DA1DB1D235009BC898 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = P2N373N3GP;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -391,11 +1017,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA05EB61E27649000453D8D /* More.storyboard in Resources */,
+				AC7EC60A1E26529C00766960 /* MoreHeaderTableViewCell.xib in Resources */,
+				AC2322551E277CA7005BF72E /* MoreButtonTableViewCell.xib in Resources */,
+				AC6A68411E2D23BA00215DC1 /* CreditPeopleTableViewCell.xib in Resources */,
+				AC5543941EDEEDA100B56C99 /* PointButton.xib in Resources */,
 				AC9068E91DB1D235009BC898 /* LaunchScreen.storyboard in Resources */,
-				AC9068F21DB1D47A009BC898 /* Login.storyboard in Resources */,
+				AC38A8CA1E1F85CF00F10CEB /* Borrow.storyboard in Resources */,
+				ACC3417E1E387CD400C6A3E1 /* Barcode.storyboard in Resources */,
+				AC38A8CE1E1F875B00F10CEB /* History.storyboard in Resources */,
+				ACC3418A1E38981400C6A3E1 /* Return.storyboard in Resources */,
+				ACA05EB51E27649000453D8D /* Find.storyboard in Resources */,
+				ACD8A5B01DF1220200E989AA /* Home.storyboard in Resources */,
+				ACC15FA91E3493E100088F6E /* BorrowBikeTableViewCell.xib in Resources */,
+				AC30110E1EA5E2A80015DC7D /* GoogleService-Info.plist in Resources */,
+				AC7EC5F21E2494D700766960 /* BikeHistoryTableViewCell.xib in Resources */,
+				ACA05EBA1E276A0100453D8D /* MoreInfoTableViewCell.xib in Resources */,
 				AC9068E61DB1D235009BC898 /* Assets.xcassets in Resources */,
-				AC15F0AD1DB5CA48005A5779 /* Signup.storyboard in Resources */,
-				AC9068E41DB1D235009BC898 /* Main.storyboard in Resources */,
+				ACD8A5AE1DF121F400E989AA /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +1055,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kmitlbike/Pods-kmitlbike-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		AC23A4801E507C8900A6BF29 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 1388d4c1a88eb7d52685b4282dff420ef063e99f d1a78670d5e711e6353343f1abb69f32d651d8b16237d1ea6880ea7054b757de ";
 		};
 		B963F14C798B9762C9DB8AAE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -454,36 +1106,87 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC86268F1E3F428800F1C6F0 /* ReturnButtonViewModel.swift in Sources */,
+				ACD8A5BA1DF1306800E989AA /* SignupDelegate.swift in Sources */,
+				AC23225D1E29DD0D005BF72E /* FindViewModel.swift in Sources */,
+				AC86E3D01E40B921000CB940 /* RidingBikeModel.swift in Sources */,
+				ACCB5C321E498A7100D4B2B0 /* UpdateBikeResponse.swift in Sources */,
+				AC6A68401E2D23BA00215DC1 /* CreditPeopleTableViewCell.swift in Sources */,
 				AC6B88A91DB1FBFE0037F189 /* BaseViewModelProtocol.swift in Sources */,
+				AC83B05F1E3EF985009350AB /* ReturnMapViewController.swift in Sources */,
+				AC83B05D1E3EF973009350AB /* ReturnButtonViewController.swift in Sources */,
+				AC86268D1E3F363500F1C6F0 /* NotificationExtension.swift in Sources */,
+				ACD8A5A81DF1147D00E989AA /* BaseFactory.swift in Sources */,
 				AC6B88AD1DB1FC800037F189 /* BaseViewController.swift in Sources */,
+				ACD8A5B81DF1303D00E989AA /* SignupViewModel.swift in Sources */,
 				AC15F0AB1DB48144005A5779 /* LoginDelegate.swift in Sources */,
+				AC21E9C61E313AD400401CA9 /* BikeCircleButton.swift in Sources */,
+				AC8626981E40334000F1C6F0 /* BikeSessionModel.swift in Sources */,
+				ACB098841E6D7CB400DCAE1A /* RoundTextField.swift in Sources */,
+				AC6A683D1E29EF2600215DC1 /* CreditViewController.swift in Sources */,
+				AC7EC5F81E24B3E400766960 /* ServiceProvider.swift in Sources */,
+				ACEE800D1E101DBE007C6FC8 /* HomeViewController.swift in Sources */,
 				AC6B88B71DB35ACF0037F189 /* RoundButton.swift in Sources */,
+				ACC15FAF1E34CB4000088F6E /* AvailableBikeViewModel.swift in Sources */,
+				AC38A8E71E1F8B7200F10CEB /* CommonGlobal.swift in Sources */,
+				AC2322541E277CA7005BF72E /* MoreButtonTableViewCell.swift in Sources */,
 				AC15F0A91DB47538005A5779 /* UserData.swift in Sources */,
+				AC83B0651E3F0F28009350AB /* ReturnBikeViewModel.swift in Sources */,
 				AC6B88CB1DB365C40037F189 /* BaseResponse.swift in Sources */,
+				AC7EC5FC1E25290400766960 /* HistorySummaryViewController.swift in Sources */,
 				AC6B88B11DB1FDF40037F189 /* UIColorExtension.swift in Sources */,
-				AC15F0A61DB4719D005A5779 /* CommonGlobal.swift in Sources */,
+				ACA05EBD1E276A2F00453D8D /* MoreHeaderTableViewCell.swift in Sources */,
+				ACCB5C301E48E67800D4B2B0 /* SignUpTermsConditionViewController.swift in Sources */,
+				AC23225F1E29DF72005BF72E /* BikeModelResponse.swift in Sources */,
+				ACC3417C1E387C1200C6A3E1 /* ScanBarcodeViewController.swift in Sources */,
+				ACD8A5A61DF1145000E989AA /* ViewControllerFactory.swift in Sources */,
+				AC7EC6041E26442400766960 /* MoreViewController.swift in Sources */,
+				ACC15FB51E35123C00088F6E /* BorrowBikeResponse.swift in Sources */,
+				AC21E9C81E313F6700401CA9 /* TutorialPopupViewController.swift in Sources */,
+				AC15F0A61DB4719D005A5779 /* GlobalModel.swift in Sources */,
+				ACD0873A1E46E54A008401E1 /* TermsConditionViewController.swift in Sources */,
+				ACD8A5AB1DF116B100E989AA /* NSObject+kmitlbike.swift in Sources */,
+				AC93C5A91E4750870094CC00 /* CheckUpdateResponse.swift in Sources */,
 				AC6B88B91DB35C210037F189 /* LoginViewController.swift in Sources */,
+				AC93C5AB1E4815EA0094CC00 /* UpdateViewController.swift in Sources */,
+				AC7EC5FA1E24CC5E00766960 /* HistoryResponse.swift in Sources */,
+				AC8626941E3F4C8400F1C6F0 /* ScanBikeBarcodeViewController.swift in Sources */,
+				AC38A8E21E1F8ACF00F10CEB /* HistoryViewController.swift in Sources */,
 				AC6B88B31DB1FF440037F189 /* BaseViewModel.swift in Sources */,
 				AC6B88C41DB35CF30037F189 /* SignUpViewController.swift in Sources */,
+				AC8626961E3F742600F1C6F0 /* BikeStatusResponse.swift in Sources */,
+				ACC15FA81E3493E100088F6E /* BorrowBikeTableViewCell.swift in Sources */,
 				AC9068E11DB1D235009BC898 /* ViewController.swift in Sources */,
+				AC23225B1E29DCF9005BF72E /* FindViewController.swift in Sources */,
+				ACD087471E4718E1008401E1 /* LaunchScreenViewModel.swift in Sources */,
+				ACC15FAD1E34CB1B00088F6E /* AvailableBikeViewController.swift in Sources */,
+				ACD8A5B31DF12B9700E989AA /* CommonForm.swift in Sources */,
+				ACC341791E37764F00C6A3E1 /* BorrowBikeProtocol.swift in Sources */,
 				AC6B88C61DB35E170037F189 /* LoginViewModel.swift in Sources */,
 				AC9068DF1DB1D235009BC898 /* AppDelegate.swift in Sources */,
+				AC7EC5CD1E223C8700766960 /* KmitlBikeUser.swift in Sources */,
+				AC7EC5F11E2494D700766960 /* BikeHistoryTableViewCell.swift in Sources */,
+				AC872B151E89085B0085326B /* AttentionMapViewController.swift in Sources */,
+				ACD0873C1E46E575008401E1 /* TermsConditionViewModel.swift in Sources */,
+				AC83B0611E3F0D57009350AB /* ReturnBikeProtocol.swift in Sources */,
+				ACE2934F1E8D311500448446 /* KmitlBikeBounceAnimation.swift in Sources */,
+				ACC341881E38929F00C6A3E1 /* ReturnBikeViewController.swift in Sources */,
 				AC6B88E91DB38DDC0037F189 /* CommonRouter.swift in Sources */,
+				ACC15FB31E3501E300088F6E /* HomeViewModel.swift in Sources */,
+				AC7EC5F61E249EB900766960 /* HistoryDelegate.swift in Sources */,
+				ACCB5C2E1E48733600D4B2B0 /* Integer+kmitlbike.swift in Sources */,
+				AC8626921E3F4C6D00F1C6F0 /* UnlockBikeCodeViewController.swift in Sources */,
 				AC6B88E41DB373990037F189 /* LoginResponse.swift in Sources */,
+				AC7EC5F41E249E7200766960 /* HistoryViewModel.swift in Sources */,
+				ACD087451E4718BB008401E1 /* LaunchScreenViewController.swift in Sources */,
+				ACA05EBE1E276A2F00453D8D /* MoreInfoTableViewCell.swift in Sources */,
+				AC5543961EDEEDBB00B56C99 /* PointButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AC9068E21DB1D235009BC898 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC9068E31DB1D235009BC898 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AC9068E71DB1D235009BC898 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -513,6 +1216,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -541,6 +1245,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -563,6 +1268,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -583,6 +1289,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -592,13 +1299,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18FBB5C3F714D66AD13AA384 /* Pods-kmitlbike.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kmitlbike/kmitlbike.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = P2N373N3GP;
 				INFOPLIST_FILE = kmitlbike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kajornsak.kmitlbike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -607,13 +1319,18 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BBA16D7B7E6747D8E4AF3137 /* Pods-kmitlbike.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kmitlbike/kmitlbike.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = P2N373N3GP;
 				INFOPLIST_FILE = kmitlbike/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kajornsak.kmitlbike;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

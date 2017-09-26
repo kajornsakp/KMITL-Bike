@@ -1,50 +1,99 @@
 PODS:
-  - Alamofire (4.0.1)
+  - Alamofire (4.2.0)
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
   - EZSwiftExtensions (1.7)
-  - GoogleMaps (2.1.0):
-    - GoogleMaps/Maps (= 2.1.0)
-  - GoogleMaps/Base (2.1.0)
-  - GoogleMaps/Maps (2.1.0):
-    - GoogleMaps/Base (= 2.1.0)
-  - MBProgressHUD (1.0.0)
-  - Moya (8.0.0-beta.2):
-    - Moya/Core (= 8.0.0-beta.2)
-  - Moya/Core (8.0.0-beta.2):
-    - Alamofire (~> 4.0.0)
-    - Result
-  - Moya/RxSwift (8.0.0-beta.2):
+  - Fabric (1.6.11)
+  - Firebase/Core (3.14.0):
+    - FirebaseAnalytics (= 3.7.0)
+    - FirebaseCore (= 3.5.1)
+  - Firebase/Messaging (3.14.0):
+    - Firebase/Core
+    - FirebaseMessaging (= 1.2.2)
+  - FirebaseAnalytics (3.7.0):
+    - FirebaseCore (~> 3.5)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseCore (3.5.1):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - FirebaseInstanceID (1.0.9)
+  - FirebaseMessaging (1.2.2):
+    - FirebaseAnalytics (~> 3.7)
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.1)
+  - GoogleMaps (2.1.1):
+    - GoogleMaps/Maps (= 2.1.1)
+  - GoogleMaps/Base (2.1.1)
+  - GoogleMaps/Maps (2.1.1):
+    - GoogleMaps/Base
+  - GoogleToolboxForMac/Defines (2.1.1)
+  - GoogleToolboxForMac/Logger (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - GoogleToolboxForMac/NSData+zlib (2.1.1):
+    - GoogleToolboxForMac/Defines (= 2.1.1)
+  - Moya (8.0.0-beta.4):
+    - Moya/Core (= 8.0.0-beta.4)
+  - Moya/Core (8.0.0-beta.4):
+    - Alamofire (~> 4.0)
+    - Result (~> 3.0)
+  - Moya/RxSwift (8.0.0-beta.4):
     - Moya/Core
-    - RxSwift
-  - Presentr (1.0.1)
-  - Result (3.0.0)
-  - RxCocoa (3.0.0-beta.2):
-    - RxSwift (~> 3.0.0-beta.2)
-  - RxSwift (3.0.0-beta.2)
-  - SVProgressHUD (2.0.3)
+    - RxSwift (~> 3.0)
+  - PermissionScope (1.1.1)
+  - PopupDialog (0.5.3)
+  - Protobuf (3.2.0)
+  - RAMAnimatedTabBarController (2.0.13)
+  - Result (3.1.0)
+  - RSBarcodes_Swift (3.0.3)
+  - RxCocoa (3.0.1):
+    - RxSwift (~> 3.0)
+  - RxSwift (3.0.1)
+  - SVProgressHUD (2.0.4)
+  - Swinject (2.0.0-beta.2)
 
 DEPENDENCIES:
-  - EZSwiftExtensions
-  - GoogleMaps
-  - MBProgressHUD (~> 1.0.0)
-  - Moya (= 8.0.0-beta.2)
-  - Moya/RxSwift
-  - Presentr
-  - RxCocoa (= 3.0.0-beta.2)
-  - RxSwift (= 3.0.0-beta.2)
-  - SVProgressHUD
+  - Crashlytics
+  - EZSwiftExtensions (= 1.7)
+  - Fabric
+  - Firebase/Core
+  - Firebase/Messaging
+  - GoogleMaps (= 2.1.1)
+  - Moya (= 8.0.0-beta.4)
+  - Moya/RxSwift (= 8.0.0-beta.4)
+  - PermissionScope
+  - PopupDialog (~> 0.5)
+  - RAMAnimatedTabBarController (~> 2.0.13)
+  - RSBarcodes_Swift (~> 3.0.3)
+  - RxCocoa (= 3.0.1)
+  - RxSwift (= 3.0.1)
+  - SVProgressHUD (= 2.0.4)
+  - Swinject (= 2.0.0-beta.2)
 
 SPEC CHECKSUMS:
-  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
   EZSwiftExtensions: 4afef248066a036903d8496bf07bc355b22ce766
-  GoogleMaps: 06589b9a38097bce0cd6e90f0fd9b5e4b4a9344c
-  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  Moya: 920d40f738e6f4ece84010cec701bb9693be8251
-  Presentr: d031e73e45b5fb18e4807e839aafc53b06d65306
-  Result: 1b3e431f37cbcd3ad89c6aa9ab0ae55515fae3b6
-  RxCocoa: 1dd105d8a4e18034ccd7bd6d136445363ce67c8e
-  RxSwift: 0ea939d7d97cb70657190ffde8dc2a9b455778fc
-  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  Firebase: 85a581fb04e44f63ae9f4fbc8d6dabf4a4c18653
+  FirebaseAnalytics: 0d1b7d81d5021155be37702a94ba1ec16d45365d
+  FirebaseCore: 225d40532489835a034b8f4e2c9c87fbf4f615a2
+  FirebaseInstanceID: 2d0518b1378fe9d685ef40cbdd63d2fdc1125339
+  FirebaseMessaging: df8267f378580a24174ce7861233aa11d5c90109
+  GoogleMaps: a5b5bbe47734e2443bde781a6aa64e69fdb6d785
+  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  Moya: bad6f72ec40661f09a8cd85ab470226d2795a485
+  PermissionScope: a30c16e015779ba27c97c124e7539e27b5829de2
+  PopupDialog: 533dd564f8781633375505b9fbd406f8f146ccc9
+  Protobuf: 745f59e122e5de98d4d7ef291e264a0eef80f58e
+  RAMAnimatedTabBarController: 2510f3b66954c3f77ea1042a35d34df8f5f3b604
+  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
+  RSBarcodes_Swift: 3b4a9c2e81fe9f435a26f18a1b8b826665e7cf89
+  RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
+  RxSwift: af5680055c4ad04480189c52d28385b1029493a6
+  SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
+  Swinject: 69a893192efa9f2cc44be79ef423d04d571b6af9
 
-PODFILE CHECKSUM: 2814c10900316762063dfdab9c6bfe5a155e649a
+PODFILE CHECKSUM: 2fa2ae6d7b94b6f05f1c6e0e398e9bfe5e6a8e50
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.1.1

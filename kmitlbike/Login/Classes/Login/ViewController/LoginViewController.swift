@@ -7,56 +7,79 @@
 //
 
 import UIKit
+import SVProgressHUD
+
 class LoginViewController: BaseViewController {
 
-    @IBOutlet weak var usernameTextField: UITextField!
-    
+    @IBOutlet weak var usernameTextField: RoundTextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+    @IBOutlet weak var placeholderTextField: RoundTextField!
     @IBOutlet weak var loginButton: RoundButton!
-    
+    static let segueIdentifier = "goToHomePageSegue"
     var viewModel : LoginViewModel!
-    
+    @IBOutlet weak var bikeIconHeight: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel = LoginViewModel(delegate : self)
         viewModel.loginDelegate = self
+        self.setTapGesture()
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     @IBAction func loginButtonClick(_ sender: Any) {
-        viewModel.login(withUsername: usernameTextField.text!, withPassword: passwordTextField.text!)
+        self.view.endEditing(true)
+        self.loginButton.isEnabled = false
+        if(Developer.ENABLED && Developer.BYPASS_LOGIN){
+           viewModel.login(withUsername: "s7090006", withPassword: "Abcde016400")
+        }
+        else{
+            viewModel.login(withUsername: usernameTextField.text!, withPassword: passwordTextField.text!)
+        }
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func onSignupIAMKmitlCLick(_ sender: Any) {
+        UIApplication.shared.openURL(URL(string: "https://iam.kmitl.ac.th/page_iamsystem.php")!)
     }
-    */
+    
+    
 }
 
 
 extension LoginViewController : LoginDelegate{
     func onLoginSuccess() {
-        //
+        self.loginButton.isEnabled = true
+        SVProgressHUD.dismiss()
+        SVProgressHUD.showSuccess(withStatus: "Login Success")
+        let storyboard = UIStoryboard(name: "Home", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: HomeViewController.TAB_BAR_CONTROLLER_IDENTIFIER)
+        UIApplication.shared.keyWindow?.rootViewController = vc
     }
     
     func onFirstTimeLogin() {
-        let storyboard = UIStoryboard(name: "Signup", bundle: nil)
-        guard let vc = storyboard.instantiateInitialViewController() as? SignUpViewController else{
-            print("storyboard not found")
+        self.loginButton.isEnabled = true
+        SVProgressHUD.dismiss()
+        let vc = ViewControllerFactory.sharedInstance.resolve(service: SignUpViewController.self)
+        vc.username = self.usernameTextField.text
+        guard let navigationController = self.navigationController else{
+            self.present(vc, animated: true, completion: nil)
             return
         }
-        vc.username = "s7090002"
-        self.present(vc, animated: true, completion: nil)
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func onLoginError(message: String) {
+        self.loginButton.isEnabled = true
+        SVProgressHUD.dismiss()
+        SVProgressHUD.showError(withStatus: message)
     }
 }
